@@ -1,0 +1,361 @@
+<main class="main">
+    <molla-page-header title="Product Checkout" subtitle="Shop"></molla-page-header>
+    <nav class="breadcrumb-nav">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a routerLink="/">Home</a>
+                </li>
+                <li class="breadcrumb-item active">Product Checkout</li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="checkout">
+            <div class="container">
+                <div class="checkout-discount">
+                    <!-- <form action="#" id="checkout-discount-form">
+                        <input type="text" class="form-control" required id="checkout-discount-input"
+                            (click)="addOpacity($event)">
+                        <label for="checkout-discount-input" class="text-truncate">Have a coupon? <span>Click here to
+                                enter your code</span></label>
+                    </form> -->
+                </div>
+                <form action="#" [formGroup]="userForm">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <h2 class="checkout-title">Billing Details</h2>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label>First Name *</label>
+                                    <input type="text" class="form-control" formControlName="firstName" name="firstName" required [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
+                                    <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                        <div *ngIf="f.firstName.errors.required">First Name is Required</div>
+                                      </div>
+                                      <div *ngIf="(userForm.controls.firstName.invalid &&  userForm.controls.firstName.touched) || userForm.controls.firstName.dirty">
+                                        <small *ngIf="userForm.controls.firstName.errors?.required" class="text-danger">First Name is Required</small>
+                                        <small *ngIf="userForm.controls.firstName.errors?.pattern" class="text-danger">Please Provide a Valid First Name</small>
+                                      </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label>Last Name *</label>
+                                    <input type="text" class="form-control" formControlName="lastName" name="lastName" required [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
+                                    <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                                        <div *ngIf="f.lastName.errors.required">Last Name is Required</div>
+                                      </div>
+
+                                      <div *ngIf="(userForm.controls.lastName.invalid &&  userForm.controls.lastName.touched) || userForm.controls.lastName.dirty">
+                                        <small *ngIf="userForm.controls.lastName.errors?.required" class="text-danger">Last Name is Required</small>
+                                        <small *ngIf="userForm.controls.lastName.errors?.pattern" class="text-danger">Please Provide a Valid Last Name</small>
+                                      </div>
+                                </div>
+                            </div>
+
+                            <!-- <label>Company Name (Optional)</label>
+                            <input type="text" class="form-control" name="company"> -->
+
+                            <label>Country *</label>
+                            <input type="text" class="form-control" formControlName="country" name="country" required [ngClass]="{ 'is-invalid': submitted && f.country.errors }">
+                            <div *ngIf="submitted && f.country.errors" class="invalid-feedback">
+                                <div *ngIf="f.country.errors.required">Country Name is Required</div>
+                              </div>
+                              <div *ngIf="(userForm.controls.country.invalid &&  userForm.controls.country.touched) || userForm.controls.country.dirty">
+                                <small *ngIf="userForm.controls.country.errors?.required" class="text-danger">Country Name is Required</small>
+                                <small *ngIf="userForm.controls.country.errors?.pattern" class="text-danger">Please Provide a Valid Country Name</small>
+                              </div>
+                            <label>Street Address *</label>
+                            <input type="text" class="form-control" name="street1" formControlName="address" placeholder="House Number And Street Name" required [ngClass]="{ 'is-invalid': submitted && f.address.errors }">
+                            <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+                                <div *ngIf="f.address.errors.required">Street Name is Required</div>
+                              </div>
+                              <div *ngIf="(userForm.controls.address.invalid &&  userForm.controls.address.touched) || userForm.controls.address.dirty">
+                                <small *ngIf="userForm.controls.address.errors?.required" class="text-danger">Address is Required</small>
+                                <small *ngIf="userForm.controls.address.errors?.pattern" class="text-danger">Please Provide a Valid Address</small>
+                              </div>
+                            <!-- <input type="text" class="form-control" name="street2" placeholder="Appartments, suite, unit etc ..."
+                                required> -->
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label>Town / City *</label>
+                                    <input type="text" name="city" formControlName="city" class="form-control" required [ngClass]="{ 'is-invalid': submitted && f.city.errors }">
+                                    <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+                                        <div *ngIf="f.city.errors.required">City Name is Required</div>
+                                      </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label>State *</label>
+                                    <select name="state" id="state" formControlName="state" class="form-control">
+                                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                        <option value="Assam">Assam</option>
+                                        <option value="Bihar">Bihar</option>
+                                        <option value="Chandigarh">Chandigarh</option>
+                                        <option value="Chhattisgarh">Chhattisgarh</option>
+                                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                        <option value="Daman and Diu">Daman and Diu</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Lakshadweep">Lakshadweep</option>
+                                        <option value="Puducherry">Puducherry</option>
+                                        <option value="Goa">Goa</option>
+                                        <option value="Gujarat">Gujarat</option>
+                                        <option value="Haryana">Haryana</option>
+                                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                        <option value="Jharkhand">Jharkhand</option>
+                                        <option value="Karnataka">Karnataka</option>
+                                        <option value="Kerala">Kerala</option>
+                                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                        <option value="Maharashtra">Maharashtra</option>
+                                        <option value="Manipur">Manipur</option>
+                                        <option value="Meghalaya">Meghalaya</option>
+                                        <option value="Mizoram">Mizoram</option>
+                                        <option value="Nagaland">Nagaland</option>
+                                        <option value="Odisha">Odisha</option>
+                                        <option value="Punjab">Punjab</option>
+                                        <option value="Rajasthan">Rajasthan</option>
+                                        <option value="Sikkim">Sikkim</option>
+                                        <option value="Tamil Nadu">Tamil Nadu</option>
+                                        <option value="Telangana">Telangana</option>
+                                        <option value="Tripura">Tripura</option>
+                                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                        <option value="Uttarakhand">Uttarakhand</option>
+                                        <option value="West Bengal">West Bengal</option>
+                                        </select>
+                                    <!-- <input type="text" name="state" formControlName="state" class="form-control" required [ngClass]="{ 'is-invalid': submitted && f.state.errors }"> -->
+                                    <div *ngIf="submitted && f.state.errors" class="invalid-feedback">
+                                        <div *ngIf="f.state.errors.required">state name is required</div>
+                                      </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label>Postcode / ZIP *</label>
+                                    <input type="text" name="postcode" formControlName="pinNumber" class="form-control" required [ngClass]="{ 'is-invalid': submitted && f.pinNumber.errors }">
+                                    
+                                    <div *ngIf="submitted && f.pinNumber.errors" class="invalid-feedback">
+                                        <div *ngIf="f.pinNumber.errors.required">Pincode is Required</div>
+                                      </div>
+                                      <div *ngIf="(userForm.controls.pinNumber.invalid &&  userForm.controls.pinNumber.touched) || userForm.controls.pinNumber.dirty">
+                                        <small *ngIf="userForm.controls.pinNumber.errors?.required" class="text-danger">Pincode is Required</small>
+                                        <small *ngIf="userForm.controls.pinNumber.errors?.pattern" class="text-danger">Please Provide a Valid Pin Number</small>
+                                      </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label>Phone *</label>
+                                    <input type="tel" name="tel" formControlName="Phone" class="form-control" required [ngClass]="{ 'is-invalid': submitted && f.Phone.errors }">
+                                    <div *ngIf="submitted && f.Phone.errors" class="invalid-feedback">
+                                        <div *ngIf="f.Phone.errors.required">Phone No is Required</div>
+                                      </div>
+                                      <div *ngIf="(userForm.controls.Phone.invalid &&  userForm.controls.Phone.touched) || userForm.controls.Phone.dirty">
+                                        <small *ngIf="userForm.controls.Phone.errors?.required" class="text-danger">Phone is Required</small>
+                                        <small *ngIf="userForm.controls.Phone.errors?.pattern" class="text-danger">Please Provide a Valid Phone Number</small>
+                                      </div>
+                                </div>
+                            </div>
+
+                            <label>Email Address *</label>
+                            <input type="email" name="email" formControlName="Email" class="form-control" required [ngClass]="{ 'is-invalid': submitted && f.Email.errors }">
+                            <div *ngIf="submitted && f.Email.errors" class="invalid-feedback">
+                                <div *ngIf="f.Email.errors.required">Email is Required</div>
+                              </div>
+                               <!-- <div *ngIf="userForm.control['Email'].error?.pattern">
+                                  <small> please enter Valid email.</small>
+                               </div>  -->
+                               <div *ngIf="(userForm.controls.Email.invalid &&  userForm.controls.Email.touched) || userForm.controls.Email.dirty">
+                                <small *ngIf="userForm.controls.Email.errors?.required" class="text-danger">Email is Required</small>
+                                <small *ngIf="userForm.controls.Email.errors?.pattern" class="text-danger">Please Provide a Valid Email Address</small>
+                              </div>
+
+
+                            <!-- <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkout-create-acc">
+                                <label class="custom-control-label" for="checkout-create-acc">Create an account?</label>
+                            </div>  
+
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox mt-0 address-box">
+                                    <input type="checkbox" class="custom-control-input" id="checkout-diff-address"
+                                        (change)="formToggle($event)">
+                                    <label class="custom-control-label" for="checkout-diff-address">Ship to a different
+                                        address?</label>
+                                </div>
+                               
+                            </div>
+
+                            <label>Order notes (optional)</label>
+                            <textarea class="form-control" cols="30" rows="4"
+                                placeholder="Notes about your order, e.g. special notes for delivery"></textarea> -->
+                        </div>
+                        <aside class="col-lg-3">
+                            <div class="summary">
+                                <h3 class="summary-title">Your Order</h3>
+
+                                <table class="table table-summary">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            
+                                            <td><a>{{this.info.name}}</a>
+                                            </td>
+                                            <td><i class="fa-solid fa-indian-rupee-sign"></i>{{total}}</td>
+                                        </tr>
+                                        <tr class="summary-subtotal">
+                                            <td>Subtotal:</td>
+                                            <td><i class="fa-solid fa-indian-rupee-sign"></i>{{total}}</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Discount:</td>
+                                            <td><i class="fa-solid fa-indian-rupee-sign"></i>{{discount}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shipping:</td>
+                                            <td>Free shipping</td>
+                                        </tr>
+                                        <tr class="summary-total">
+                                            <td>Total:</td>
+                                            <td><i class="fa-solid fa-indian-rupee-sign"></i>{{discountoffer}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                 <div>
+                                    <div class="form-check first_box">
+                                        <input class="form-check-input" type="radio" value="RZP" (change)="onItemChange($event)" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                          Online Payment
+                                        </label>
+                                      </div>
+                                      <div class="form-check second_box">
+                                        <input class="form-check-input" type="radio" value="COD" (change)="onItemChange($event)" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                          Cash on deleivery
+                                        </label>
+                                      </div>
+                                </div> 
+
+                                <!-- <molla-accordion adClass="accordion-summary" id="accordion-payment">
+                                    <div class="card">
+                                        <div class="card-header" id="heading-1">
+                                            <h2 class="card-title">
+                                                <a class="toggle-button" role="button" data-toggle="collapse"
+                                                    href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                                    Direct bank transfer
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse-1" class="collapse show" aria-labelledby="heading-1"
+                                            data-parent="#accordion-payment">
+                                            <div class="card-body">
+                                                Make your payment directly into our bank account. Please use your Order
+                                                ID as
+                                                the payment reference. Your order will not be shipped until the funds
+                                                have
+                                                cleared in our account.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading-2">
+                                            <h2 class="card-title">
+                                                <a class="toggle-button collapsed" role="button" data-toggle="collapse"
+                                                    href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                                    Check payments
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse-2" class="collapse" aria-labelledby="heading-2"
+                                            data-parent="#accordion-payment">
+                                            <div class="card-body">
+                                                Ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                                                volutpat mattis eros. Nullam malesuada erat ut turpis.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading-3">
+                                            <h2 class="card-title">
+                                                <a class="toggle-button collapsed" role="button" data-toggle="collapse"
+                                                    href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                                    Cash on delivery
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse-3" class="collapse" aria-labelledby="heading-3"
+                                            data-parent="#accordion-payment">
+                                            <div class="card-body">Quisque volutpat mattis eros. Lorem ipsum dolor sit
+                                                amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
+                                                eros.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading-4">
+                                            <h2 class="card-title">
+                                                <a class="toggle-button collapsed" role="button" data-toggle="collapse"
+                                                    href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                                    PayPal
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse-4" class="collapse" aria-labelledby="heading-4"
+                                            data-parent="#accordion-payment">
+                                            <div class="card-body">
+                                                <small class="float-right paypal-link">What is PayPal?</small>
+                                                Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non,
+                                                semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis
+                                                fermentum.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading-5">
+                                            <h2 class="card-title">
+                                                <a class="toggle-button collapsed" role="button" data-toggle="collapse"
+                                                    href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                                                    Credit Card (Stripe)
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse-5" class="collapse" aria-labelledby="heading-5"
+                                            data-parent="#accordion-payment">
+                                            <div class="card-body">
+                                                <img src="assets/images/payments-summary.png" alt="payments cards">
+                                                Donec nec justo eget felis facilisis fermentum.Lorem
+                                                ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                                                volutpat mattis eros. Lorem ipsum dolor sit ame.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </molla-accordion> -->
+
+                                <button type="submit" (click)="placeorder()" class="btn btn-outline-primary-2 btn-order btn-block">
+                                    <i [class.fa-refresh]="loader" class="fa fa-refresh fa-spin"></i>
+                                    <span class="btn-text">Place Order</span>
+                                    <span class="btn-hover-text">Proceed to Checkout</span>
+                                </button>
+                            </div>
+                        </aside>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>

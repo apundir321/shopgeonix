@@ -1,0 +1,181 @@
+<div class="product-details product-details-centered product-details-separator">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="product-title">{{ product.name }}</h1>
+
+             
+
+                <div  class="details-filter-row details-row-size">
+                    <label>Available Colors:</label>
+                    <div class="product-nav product-nav-dots">
+                        <div class="product-nav product-nav-dots">
+                            <a href="/product/Geonix/{{product.id}}?color={{item}}" 
+                                 [style.background-color]="item"
+                                *ngFor="let item of colors" ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-container set_new">
+                    <span class="ratings-text1"> <i class="fa-solid fa-indian-rupee-sign"></i> {{ amount }}</span>
+                </div>
+                
+
+                <!-- <div class="product-price" *ngIf="!product.stock || product.stock == 0 else elseBlock">
+                    <span class="out-price">${{ product.price.toFixed(2) }}</span>
+                </div>
+
+                <ng-template #elseBlock>
+                    <div class="product-price" *ngIf="minPrice == maxPrice else elseBlock">${{ minPrice.toFixed(2) }}
+                    </div>
+                    <ng-template #elseBlock>
+                        <div class="product-price" *ngIf="product.variants.length == 0 else elseBlock">
+                            <span class="new-price">${{ minPrice.toFixed(2) }}</span>
+                            <span class="old-price">${{ maxPrice.toFixed(2) }}</span>
+                        </div>
+                        <ng-template #elseBlock>
+                            <div class="product-price">${{minPrice.toFixed(2)}}&ndash;${{maxPrice.toFixed(2)}}</div>
+                        </ng-template>
+                    </ng-template>
+                </ng-template> -->
+
+                <!-- <div class="product-content">
+                    <p>{{ product.short_desc }}</p>
+                </div> -->
+
+                <div *ngIf="product.variants.length > 1">
+                    <!-- <div class="details-filter-row details-row-size">
+                        <label>Color:</label>
+                        <div class="product-nav product-nav-dots">
+                            <a href="javascript:;" [class.active]="item.color == selectedVariant.color"
+                                [class.disabled]="item.disabled" [style.background-color]="item.color"
+                                *ngFor="let item of colorArray" (click)="selectColor($event, item)"></a>
+                        </div>
+                    </div> -->
+<!-- 
+                    <div class="details-filter-row details-row-size">
+                        <label for="size">Size:</label>
+                        <div class="select-custom">
+                            <select name="size" id="size" class="form-control" [value]="selectedVariant.size"
+                                (change)="selectSize($event)">
+                                <option value="" [selected]="'' == selectedVariant.size">Select a size</option>
+                                <option [value]="item.size" *ngFor="let item of sizeArray"
+                                    [selected]="item.size == selectedVariant.size">{{ item.size }}</option>
+                            </select>
+                        </div>
+
+                        <a href="javascript:;" class="size-guide mr-4"><i class="icon-th-list"></i>size guide</a>
+                        <a href="javascript:;" (click)="clearSelection()"
+                            *ngIf="selectedVariant.color || selectedVariant.size != ''">clear</a>
+                    </div> -->
+
+                    <div class="details-filter-row details-row-size">
+                        <label for="size">Size:</label>
+                        <div class="select-custom">
+                            <select name="size" id="size" class="form-control" (change)="updateVarient($event)">
+                                <option value="" >Select a size</option>
+                                <option  *ngFor="let variant of uniquesize;" value="{{variant}}">{{variant}}</option>     
+                            </select>
+                        </div>
+            
+                        <!-- <a href="javascript:;" class="size-guide mr-4"><i class="icon-th-list"></i>size guide</a>
+                        <a href="javascript:;" (click)="clearSelection()"
+                            *ngIf="selectedVariant.color || selectedVariant.size != ''">clear</a> -->
+                    </div>
+            
+
+                    <div  class="details-filter-row details-row-size">
+                        <label>Color:</label>
+                        <div class="product-nav product-nav-dots">
+                            <div class="color_set" *ngFor="let color of colors">
+                                <input [disabled]="!size" type="radio" name="color" (click)="updateColor(color)" value="{{color}}">{{color}}
+                                <!-- <a [ngStyle]="{'backgroundColor': getcolor}"></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="variation-price" style="display: none;">
+                    <div class="product-price">
+                        ${{ selectedVariant.price ? selectedVariant.price.toFixed( 2 ) : 0 }}
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="col-md-6">
+                <div class="product-details-action mb-1">
+                    <div class="details-action-col">
+                        <!-- <molla-quantity-input [max]="product.stock" (changeQty)="onChangeQty( $event )" [value]="qty"
+                            adClass="mr-2 mr-sm-4">
+                        </molla-quantity-input> -->
+
+                        <label for="qty">Qty:</label>
+                        <molla-quantity-input [max]="product.stock" (changeQty)="onChangeQty( $event )" [value]="qty">
+                        </molla-quantity-input>
+
+                        <!-- <a href="javascript:;" class="btn-product btn-cart"
+                            [class.btn-disabled]="!cartService.canAddToCart( product, qty ) || ( product.variants.length > 0 && !( selectedVariant.color && selectedVariant.size != '' ) )"
+                            (click)="addCart( $event )"><span>add to cart</span></a> -->
+
+                            <a  href="javascript:;" class="btn-product btn-cart"
+                            [class.btn-disabled]="!( product.variants.length > 0 )"
+                            (click)="addCart( $event, 0 )"><span>add to cart</span></a>
+                    </div>
+
+                    <div style="padding-bottom: 10px;">
+                        <a><button  class="btn btn-outline-primary-2" (click)="buyNowLink($event)">
+                            <span>Buy Now</span><i
+                            class="icon-long-arrow-right"></i>
+                        </button></a>
+                    </div>
+
+                    <div class="details-action-wrapper">
+                        <a  href="javascript:;" class="btn-product btn-wishlist" [class.added-to-wishlist]="isInWishlist()"
+                        (click)="addToWishlist($event)">
+                        <span>{{ isInWishlist() ? 'Go' : 'Add' }} to Wishlist</span>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="product-details-footer details-footer-col">
+                    <!-- <div class="product-cat">
+                        <span>Category:</span>
+                        <span *ngFor="let cat of product.category; let i =index">
+                            <a [routerLink]="['/shop/sidebar/list']"
+                                [queryParams]="{category: cat.slug}">{{ cat.name }}</a>{{ i < product.category.length - 1 ? ',' : '' }}</span>
+                    </div> -->
+
+                    <div class="product-details-footer">
+       
+                        <span>Share this product with your loved ones</span>          
+            
+                </div>
+                       
+                    
+                    
+            
+                    <div class="social-icons social-icons-sm">
+                        <div>
+                            <share-buttons theme="circles-dark"
+                            [include]="['copy', 'facebook', 'telegram', 'twitter', 'whatsapp']"
+                            [showIcon]="true"
+                            [showText]="false"
+                            url={{this.liveurl}}
+                            description="Geonix Social Media"
+                            twitterAccount="Geonix"
+                            class="">
+                          </share-buttons>
+                        </div>
+                       
+                    
+                      
+            
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

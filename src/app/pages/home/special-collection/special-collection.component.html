@@ -1,0 +1,25 @@
+
+<div class="container special-collection featured">
+    <h2 class="title text-center mb-4" contentAnim aniName="blurIn">New Arrivals</h2>
+
+    <ul ngbNav #nav="ngbNav" class="nav nav-pills nav-border-anim nav-big justify-content-center pb-3 tab-content-carousel" [destroyOnHide]="false">
+        
+        <li [ngbNavItem]="titles[attr]" *ngFor="let attr of attrs">
+            <ng-template ngbNavContent>
+                <owl-carousel carouselClasses="owl-simple carousel-equal-height carousel-with-shadow"
+                    [options]="sliderOption" *ngIf="!loaded else loadedBlock">
+                    <div class="skel-pro" *ngFor="let i of [1,2,3,4,5]"></div>
+                </owl-carousel>
+                <ng-template #loadedBlock>
+                    <owl-carousel
+                        carouselClasses="owl-simple carousel-equal-height carousel-with-shadow owl-full"
+                        [options]="sliderOption">
+                        <molla-product-twelve [product]="product" *ngFor="let product of products | slice: 0 : 5">
+                        </molla-product-twelve>
+                    </owl-carousel>
+                </ng-template>
+            </ng-template>
+        </li>
+    </ul>
+    <div [ngbNavOutlet]="nav"></div>
+</div>

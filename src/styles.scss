@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import './scss/plugins/owl-carousel/owl.carousel.scss';
+@import './scss/style.scss';
+body {
+    visibility: visible;
+    opacity: 1;
+    font-family: 'Poppins',sans-serif !important;
+    // overflow-x: hidden;
+}
+// html {
+//     overflow-x: hidden;
+// }
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Poppins',sans-serif; }

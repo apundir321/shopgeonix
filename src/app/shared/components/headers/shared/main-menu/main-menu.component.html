@@ -1,0 +1,245 @@
+<nav class="main-nav">
+    <ul class="menu sf-arrows">
+        <li class="megamenu-container" [class.active]="current=='/'">
+            <a routerLink="/" class="sf-with-ul set-after">Home</a>
+        </li>
+
+        <!-- <li *ngFor="let list of categoryList" [class.active]="current.includes('/{{list}}')"> 
+            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: list.id,'page':1}" class="sf-with-ul set-after" >{{list.name}}</a>
+            <div class="megamenu megamenu-md">
+                <div class="row no-gutters"> 
+                    <div class="col-md-8">
+                        <div class="menu-col">
+                            <div class="row">
+                                <div class="col-md-6"> 
+                                                                                                
+                                    <ul *ngIf="productList">
+                                        <li *ngFor="let product of productList[list.name]" [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/{{product.id}}">{{product.name}}</a>
+                                        </li>                                       
+                                    </ul>                                 
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>       -->
+
+        <li > 
+            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 6,'page':1}" class="sf-with-ul set-after" >SSD</a>
+            <div class="megamenu megamenu-md">
+                <div class="row no-gutters"> 
+                    <div class="col-md-8">
+                        <div class="menu-col">
+                            <div class="row">
+                                <div class="col-md-6"> 
+                                                                                                
+                                    <ul >
+                                        <!-- <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 6,'page':1}">SSD 2.5 SATA</a>
+                                        </li>  -->
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 6,'page':1}">GOLD</a>
+                                        </li>    
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 7,'page':1}">M.2</a>
+                                        </li>  
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 8,'page':1}">NVME SSD</a>
+                                        </li>  
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 6,'page':1}">M SATA</a>
+                                        </li>
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 14,'page':1}">M.2 BREAKABLE</a>
+                                        </li>                                     
+                                    </ul>                                 
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li> 
+
+
+        <li > 
+            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 3,'page':1}" class="sf-with-ul set-after" >HDDs</a>
+            <div class="megamenu megamenu-md">
+                <div class="row no-gutters"> 
+                    <div class="col-md-8">
+                        <div class="menu-col">
+                            <div class="row">
+                                <div class="col-md-6"> 
+                                                                                                
+                                    <ul >
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 2,'page':1}">Desktop HDD</a>
+                                        </li> 
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 3,'page':1}">Laptop HDD</a>
+                                        </li>                                       
+                                    </ul>                                 
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li > 
+            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 3,'page':1}" class="sf-with-ul set-after" >RAM</a>
+            <div class="megamenu megamenu-md">
+                <div class="row no-gutters"> 
+                    <div class="col-md-8">
+                        <div class="menu-col">
+                            <div class="row">
+                                <div class="col-md-6"> 
+                                                                                                
+                                    <ul >
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 1,'page':1}">Desktop RAM</a>
+                                        </li> 
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 4,'page':1}">Laptop RAM</a>
+                                        </li>                                       
+                                    </ul>                                 
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li > 
+            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 11,'page':1}" class="sf-with-ul set-after" >Monitor</a>
+            <!-- <div class="megamenu megamenu-md">
+                <div class="row no-gutters"> 
+                    <div class="col-md-8">
+                        <div class="menu-col">
+                            <div class="row">
+                                <div class="col-md-6"> 
+                                                                                                
+                                    <ul >
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/244">PC MONITOR 15 INCH</a>
+                                        </li> 
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/254">PC MONITOR 17 INCH</a>
+                                        </li>    
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/256">PC MONITOR 18.5 INCH</a>
+                                        </li> 
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/258">PC MONITOR 19 INCH</a>
+                                        </li>                                    
+                                    </ul>                                 
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </li>
+
+        <li > 
+            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 12,'page':1}" class="sf-with-ul set-after" >Graphic Card</a>
+            <!-- <div class="megamenu megamenu-md">
+                <div class="row no-gutters"> 
+                    <div class="col-md-8">
+                        <div class="menu-col">
+                            <div class="row">
+                                <div class="col-md-6"> 
+                                                                                                
+                                    <ul >
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/12">Desktop RAM</a>
+                                        </li> 
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/12">Laptop RAM</a>
+                                        </li>                                       
+                                    </ul>                                 
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </li>
+        <li > 
+            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 13,'page':1}" class="sf-with-ul set-after" >Mother Board</a>
+            <!-- <div class="megamenu megamenu-md">
+                <div class="row no-gutters"> 
+                    <div class="col-md-8">
+                        <div class="menu-col">
+                            <div class="row">
+                                <div class="col-md-6"> 
+                                                                                                
+                                    <ul >
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/12">Desktop RAM</a>
+                                        </li> 
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/12">Laptop RAM</a>
+                                        </li>                                       
+                                    </ul>                                 
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </li>
+        <li > 
+            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 5,'page':1}" class="sf-with-ul set-after" >Riser Card</a>
+            <!-- <div class="megamenu megamenu-md">
+                <div class="row no-gutters"> 
+                    <div class="col-md-8">
+                        <div class="menu-col">
+                            <div class="row">
+                                <div class="col-md-6"> 
+                                                                                                
+                                    <ul >
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/12">Desktop RAM</a>
+                                        </li> 
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/12">Laptop RAM</a>
+                                        </li>                                       
+                                    </ul>                                 
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </li>
+        <li > 
+            <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 10,'page':1}" class="sf-with-ul set-after" >WI-FI</a>
+            <!-- <div class="megamenu megamenu-md">
+                <div class="row no-gutters"> 
+                    <div class="col-md-8">
+                        <div class="menu-col">
+                            <div class="row">
+                                <div class="col-md-6"> 
+                                                                                                
+                                    <ul >
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/12">Desktop RAM</a>
+                                        </li> 
+                                        <li  [class.active]="current.includes('shop/sidebar/{{list}}')">
+                                            <a routerLink="/product/Geonix/12">Laptop RAM</a>
+                                        </li>                                       
+                                    </ul>                                 
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </li>
+    </ul>
+</nav>

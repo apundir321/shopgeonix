@@ -1,0 +1,88 @@
+<section id="order-detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+                <p>Product</p>
+            </div>
+            <div class="col-md-3">
+                <p>Product Name</p>
+            </div>
+            <!-- <div class="col-lg-2">
+                <p>Product Name</p>
+            </div> -->
+            <div class="col-md-1">
+                <p>Quantity</p>
+            </div>
+            <!-- <div class="col-lg-2 col-3">
+                <p>size</p>
+            </div> -->
+            <div class="col-md-1">
+                <p>Price</p>
+            </div>
+            <div class="col-md-2">
+                <p>Tracking Url</p>
+            </div>
+            <div class="col-md-1">
+                <p>Tracking No.</p>
+            </div>
+            <div class="col-md-1">
+                <p>Status</p>
+            </div>
+            <div class="col-md-1">
+                <p>Invoice</p>
+            </div>
+            <div class="col-md-1">
+                <p>Payment Method</p>
+            </div>
+           
+        </div>
+        <hr>
+        <div class="order-list1">
+            <div class="row order-list" *ngFor="let data of myorder">
+                <div class="col-md-1">
+                    <div class="order-img">
+                        <img src="{{data.product.productImage[0].url}}" alt="">
+                    </div>
+                   
+                </div>
+                <div class="col-md-3 product_detail">
+                    <p>{{data.product.name}}</p>
+                </div>
+                <div class="col-md-1 product_detail">
+                    <p>{{data.quantity}}</p>
+                </div>
+                <!-- <div class="col-lg-2 col-3 product_detail">
+                    <p>{{data.variant.size}}</p>
+                </div> -->
+                <div class="col-md-1 product_detail">
+                    <p>{{data.price}}</p>
+                </div>
+
+                <div class="col-md-2 product_detail">
+                    <p *ngIf="order"> <a *ngIf="order.trackingURL" href="{{order.trackingURL}}">Tracking url</a></p>
+                </div>
+
+                <div class="col-md-1 product_detail">
+                    <p *ngIf="order"> {{order.trackingNo}}</p>
+                </div>
+                <div class="col-md-1 product_detail">
+                    <p>{{order.status}}</p>
+                </div>
+                <div class="col-md-1 product_detail">
+                    <p *ngIf="order"> <a href="{{order.invoiceURL}}">Invoice</a></p>
+                </div>
+                <div class="col-md-1 product_detail">
+                    <p *ngIf="order"> <span *ngIf="order.paymentMethod==='RZP'">Online</span>
+                        <span *ngIf="order.paymentMethod==='COD'">COD</span></p>
+                </div>
+                
+            </div> 
+        </div>
+
+        <!-- <div class="row">
+            <button class="btn" [routerLink]="['/shop/return/'+ orderId]">Return order</button>
+          </div> -->
+        
+        <hr>
+    </div>
+</section>

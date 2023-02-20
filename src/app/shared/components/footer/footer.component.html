@@ -1,0 +1,112 @@
+<footer class="footer">
+  <div class="footer-middle border-0">
+      <div class="container-fluid" [ngClass]="containerClass">
+          <div class="row">
+            <!-- <div class="col-lg-1 col-0"></div> -->
+              <div class="col-sm-6 col-lg-3">
+                  <div class="widget widget-about">
+                      <a routerLink="/">
+                          <img src="https://www.geonix.in/assets/images/geonix-logo.webp" class="footer-logo" alt="Footer Logo" width="105"
+                                  height="27">
+                      </a>
+                      <p>Established in 2012 geonix is an Indian brand dealing in high quality computer hardware and peripherals. As our tag line suggests our products are made to perform and provides value for money to our customers. </p>
+
+                      <div class="widget-call">
+                          <i class="icon-phone"></i>
+                          Got Question? Call us 24/7
+                          <a href="tel:#">+91 8920896230</a>         
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                  <div class="widget">
+                      <h4 class="widget-title">Contact</h4>
+
+                      <ul class="widget-list">
+                          <li><b>Corporate Office </b>: 203-204,
+                            Deepali Building-92,Nehru Place,
+                            New Delhi-110019
+                            
+                            </li>
+                          <li><b>Head Office</b> : E-45/3,
+                            Okhla Industrial Area,Phase 2,
+                            New Delhi-110020</li>
+                          <li><b>Phone </b>: ‎+91 8920896230</li>
+                          <li><b>For Service</b> : service@geonix.in</li>
+                          <li><b>For Queries</b> : contact@geonix.in</li>
+                          <li><b>Join Us </b>: hr@geonix.in</li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-2">
+                  <div class="widget">
+                      <h4 class="widget-title">Company</h4>
+
+                      <ul class="widget-list">
+                          <li><a  href="/">Home</a></li>
+                          <!-- <li><a href="https://www.geonix.in/about.html">About us</a></li> -->
+                          <li><a href="/shop/sidebar/3cols?category=3&page=1">Products</a></li>
+                          <!-- <li><a href="https://www.geonix.in/career.html">Career</a></li> -->
+                          <!-- <li><a href="https://www.geonix.in/contact.html">Contact Us</a></li> -->
+                          <li><a href="/privacy">Privacy Policy</a></li>
+                          <li><a href="/warranty">Warranty policy</a></li>
+                          <li><a href="/shippingpolicy">Shipping Policy</a></li>
+                          <li><a href="https://www.geonix.in/E-Waste%20Page%20Link.pdf">Swach Enviro (E-WASTE)</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-2">
+                  <div class="widget">
+                      <h4 class="widget-title">My Account</h4>
+
+                      <ul class="widget-list">
+                          <li><a routerLink="/shop/dashboard">Sign In</a></li>
+                          <li><a routerLink="/shop/cart">View Cart</a></li>
+                          <li><a routerLink="/shop/wishlist">My Wishlist</a></li>
+                          <!-- <li><a href="javascript:;">Track My Order</a></li>
+                          <li><a href="javascript:;">Help</a></li> -->
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-2">
+                <div class="widget">
+                    <h4 class="widget-title">Get it on</h4>
+
+                    <ul class="widget-list">
+                        <li><a href="https://play.google.com/store/apps/details?id=com.geonix.application.geonix_app"><img class="footer_img" src="https://www.geonix.in/assets/img/play-store.png" alt=""></a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.geonix.application.geonix_app"><img class="footer_img" src="https://www.geonix.in/assets/img/app-store.png" alt=""></a></li>
+                        <!-- <li><a routerLink="/shop/wishlist">My Wishlist</a></li>
+                        <li><a href="javascript:;">Track My Order</a></li>
+                        <li><a href="javascript:;">Help</a></li> -->
+                        <div class="social-links mt-3">
+                            <h4>Follow Us</h4>
+                            <a href="https://www.instagram.com/geonixofficial/" class="instagram" target="_blank"><i
+                                class="icon-instagram"></i></a>
+                            <a href="https://www.facebook.com/Geonixofficial-106566125519939" class="facebook" target="_blank"><i
+                                class="icon-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/geonix" class="linkedin" target="_blank"><i
+                                class="icon-linkedin"></i></a>
+                          </div>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="col-lg-1 col-0"></div> -->
+          </div>
+      </div>
+  </div>
+
+  <div class="footer-bottom">
+      <div [ngClass]="containerClass">
+          <p class="footer-copyright">Copyright © 2021 GEONIX. All Rights Reserved.</p>
+          <figure class="footer-payments">
+              <img src="https://d-themes.com/angular/molla/demo4/assets/images/payments.png" alt="Payment methods" width="272" height="20">
+          </figure>
+      </div>
+  </div>
+
+  <div class="mb-10" *ngIf="isBottomSticky"></div>
+</footer>

@@ -1,0 +1,24 @@
+// ::ng-deep .product.product-5 .product-body:hover {
+//     background-color: #000 !important;
+//     color: #0e2c5e !important;
+// }
+::ng-deep .product.product-5 .product-body {
+    background-color: #0e2c5e !important;
+    color: #0e2c5e !important;
+}
+::ng-deep .product.product-5 .product-body a:hover {
+    // background-color: #000 !important;
+    color: #000 !important;
+}
+::ng-deep .product.product-5 .product-body a {
+    // background-color: #0e2c5e !important;
+    color: #0e2c5e !important;
+}
+
+::ng-deep .btn-product-icon {
+    background-color: #14244b;
+}
+
+::ng-deep .product-action {
+    background-color: #202e53;
+}
