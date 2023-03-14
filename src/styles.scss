@@ -11,4 +11,127 @@ body {
 //     overflow-x: hidden;
 // }
 html, body { height: 100%; }
+// html {
+//     overflow: hidden;
+// }
 body { margin: 0; font-family: 'Poppins',sans-serif; }
+
+// <!-- my style changes -->
+
+// html {
+//     overflow: hidden;
+// }
+
+.owl-full {
+    .owl-nav {
+        display: none !important;
+    }
+}
+
+.dropdown-toggle:after {
+    content: "";
+    display: none !important;
+}
+
+.header-intro-clearance {
+    .header-bottom {
+        .container:after {
+            content: none !important;
+        }
+    }
+} 
+
+.header-intro-clearance {
+    .header-bottom {
+        .container:before {
+            content: none;
+        }
+    }
+}
+
+.menu.sf-arrows {
+    .sf-with-ul:after {
+        content: none;
+    }
+}
+
+.dropdown-toggle:hover {
+    color: #fff;
+    background-color: transparent !important;
+}
+
+.dropdown.category-dropdown:hover .dropdown-toggle {
+    background-color: transparent !important;
+}
+
+.category-dropdown, .category-dropdown{
+    .dropdown-toggle {
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.modalon-load {
+    .modal-dialog {
+        background-color: white !important;
+        padding: 50px !important;
+        top: 20vh !important;
+    }
+}
+
+.header-3 {
+
+    .mobile-menu-toggler {
+        color: #14244b !important;
+    }
+
+    .header-middle {
+        .header-right {
+            p {
+                color: #14244b;
+            }
+            i {
+                color: #14244b;
+            }
+        }
+    }
+
+    .header-bottom {
+        .menu>li>a:before {
+            bottom: 0;
+            top: unset;
+            background-color: white;
+            height: 2px;
+        }
+    }
+}
+
+.header-search {
+    .header-search-wrapper {
+        border-radius: 30px !important;
+        border-width: 2px !important;
+        overflow: hidden;
+    }
+}
+
+.header-search {
+    .search-wrapper-wide {
+        width: auto !important;
+    }
+}
+
+.header-center.d-none.d-lg-flex {
+    max-width: 35vw;
+}
+
+@media screen and (max-width: 992px) {
+    .header-3 {
+        .dropdown.category-dropdown {
+            display: none !important;
+        }
+    }
+}
+
+        

@@ -1,3 +1,44 @@
 ::ng-deep .category-dropdown:not(.is-on):hover .dropdown-toggle:after {
     content: none !important; 
 }
+
+.dropmenu-main {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    i {
+        color: black;
+    }
+
+    a {
+        padding-left: 15px !important;
+    }
+}
+
+.dropmenu-main:hover {
+    background-color: #446ab2;
+    i {
+        color: white;
+    }
+    a {
+        color: white;
+    }
+}
+
+.dropdown.category-dropdown:hover .dropmenu-main {
+    background-color: #446ab2;
+    color: white;
+    i {
+        color: white;
+    }
+}
+
+.item-lead {
+    a:hover {
+        background-color: #446ab2;
+        color: white;
+    }
+}

@@ -29,6 +29,9 @@ import { TopCollectionComponent } from './top-collection/top-collection.componen
 import { TrendyCollectionComponent } from './trendy-collection/trendy-collection.component';
 // import { BlogCollectionComponent } from './blog-collection/blog-collection.component';
 import { RecommendCollectionComponent } from './recommend-collection/recommend-collection.component';
+import { ModalBasicComponent } from './index/modal-basic/modal-basic.component';
+import { CarouselBasicComponent } from './index/carousel-basic/carousel-basic.component';
+
 
 @NgModule({
 	declarations: [
@@ -50,7 +53,9 @@ import { RecommendCollectionComponent } from './recommend-collection/recommend-c
   OrderPolicyComponent,
   SizeguideComponent,
 	TrendyCollectionComponent,
-  RecommendCollectionComponent
+  RecommendCollectionComponent,
+  ModalBasicComponent,
+  CarouselBasicComponent
 		// BlogCollectionComponent
 	],
 

@@ -57,7 +57,7 @@ import { ErrorInterceptor } from './shared/services/error.interceptor';
     ShareIconsModule, 
     // ElementsModule,
     // PagesModule,
- SharedModule,
+    SharedModule,
     HomeModule,
     // HttpModule,
     BrowserAnimationsModule,

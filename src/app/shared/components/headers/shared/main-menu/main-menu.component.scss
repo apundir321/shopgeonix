@@ -27,6 +27,7 @@
 // ::ng-deep .header-1 .header-bottom .menu ul {
 //     background: #0e2c5e !important;
 // }
+
 ::ng-deep .menu .megamenu li a {
     margin-top: 5px;
     font-weight: 600;
@@ -34,6 +35,7 @@
     color: #0e2b5ec3;
     transition: all 0.3s ease-in-out;
 }
+
 ::ng-deep .menu .megamenu li a:hover{
     padding-left: 6px;
     font-weight: 600;
@@ -41,6 +43,11 @@
 .menu .megamenu div>ul {
     min-width: 215px !important;
 }
+
+a.sf-with-ul.set-after {
+    color: white;
+}
+
 // ::ng-deep .sale-cat{
 //     background: #0e2c5e !important;
 // }

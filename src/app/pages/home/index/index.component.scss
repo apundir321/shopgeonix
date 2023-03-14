@@ -982,12 +982,14 @@ a{
     margin-left: 1px;
     background-color: #213361;
     transition: all .35s ease;
+    padding: 10px;
+    margin-top: 10px;
     
     &:hover,
     &:focus {
         color: #fff;
         text-decoration: none !important;
-        background-color: #fff;
+        background-color: #030303;
     }
 }
 
@@ -1018,5 +1020,131 @@ a{
     margin-left: 50px;
     margin-right: 50px;
 }
+
+.viewoptions {
+    .viewdiv {
+        background-image: url('https://geonix.in/assets/images/banner/PRINTERtonner.jpg');
+        background-size: 100% 100%;
+        min-height: 400px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding: 20px;
+        p {
+            color: white;
+        }
+        
+        h1 {
+            color: white;
+        }
+        button.new-button {
+            background: #fff;
+            color: #000;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px;
+            position: absolute;
+            bottom: 10px;
+            right: 0px;
+            min-width: 200px;
+            text-align: center;
+        }
+    }
+
+    .viewdiv-right {
+        background: aquamarine;
+        width: 100%;
+        height: 48%;
+    } 
+
+    .viewdiv-right.one {
+        background-image: url('https://geonix.in/assets/images/banner/3 (1).jpg');
+        background-size: 55% 125%;
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        background-color: #bddbff;
+        padding: 20px;
+        color: white;
+        position: relative;
+        margin-bottom: 2%;
+
+        p {
+            color: white;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        button.new-button {
+            background: #fff;
+            color: #000;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px;
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+            min-width: 200px;
+            text-align: center;
+        }
+    }
+
+    .viewdiv-right.two {
+        background-image: url('https://geonix.in/assets/images/banner/ssd1.jpg');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-color: #bddbff;
+        padding: 20px;
+        position: relative;
+
+        p {
+            color: white;
+            text-align: right;
+        }
+    
+        h3 {
+            color: white;
+            text-align: right;
+        }
+    
+        button.new-button {
+            background: #fff;
+            color: #000;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            min-width: 200px;
+            text-align: center;
+        }
+    }
+}
+
+.newarrial {
+    margin-top: 30px;
+}
+
+@media screen and(max-width: 576px) {
+    .viewoptions{
+        .viewdiv-right {
+            height: 80%;
+        }
+        .viewdiv {
+            background-size: cover;
+            min-height: 225px;
+        }
+    }
+    .newarrial {
+        margin-top: 180px;
+    }
+}
+
+   
+
+
+
 
 

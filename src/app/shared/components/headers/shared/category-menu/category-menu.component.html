@@ -1,11 +1,18 @@
 <div class="dropdown category-dropdown">
-    <a href="javascript:;" class="dropdown-toggle" title="Browse Categories">Browse Categories</a>
+
+    <div class="dropmenu-main">
+        <i class="fa-solid fa-bars-staggered"></i>
+        <a href="javascript:;" class="dropdown-toggle" title="Browse Categories">
+            Browse Categories
+        </a>
+    </div>
 
     <div class="dropdown-menu">
         <nav class="side-nav">
             <ul class="menu-vertical sf-arrows" *ngFor="let list of categoryList">
                 <li class="item-lead" routerLinkActive="active">
-                    <a [routerLink]="['shop/'+list.name+'/3cols/']" [queryParams]="{category: list.id,'page':1}">{{list.name}}</a>
+                    <a [routerLink]="['shop/'+list.name+'/3cols/']"
+                        [queryParams]="{category: list.id,'page':1}">{{list.name}}</a>
                 </li>
                 <!-- <li class="item-lead" routerLinkActive="active">
                     <a routerLink="/shop/sidebar/3cols" [queryParams]="{category: 'gift-idea'}">Gift Ideas</a>

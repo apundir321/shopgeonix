@@ -27,9 +27,9 @@ export const sliderOpt = {
     nav: true,
     navText: [ '<i class="icon-angle-left">', '<i class="icon-angle-right">' ],
     dots: true,
-    smartSpeed: 400,
-    autoplay: false,
-    autoplayTimeout: 15000
+    smartSpeed: 300,
+    autoplay: true,
+    autoplayTimeout: 2000
 }
 
 export const animations = {
