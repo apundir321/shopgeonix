@@ -20,8 +20,7 @@ import { CancelpolicyComponent } from './pages/home/cancelpolicy/cancelpolicy.co
 import { OrderPolicyComponent } from './pages/home/orderpolicy/orderpolicy.component';
 import { ReturnExchangeComponent } from './pages/home/returnexchange/returnexchange.component';
 import { SizeguideComponent } from './pages/home/sizeguide/sizeguide.component';
-
-
+import { TermsconditionComponent } from './pages/home/termscondition/termscondition.component';
 
 
 const routes: Routes = [
@@ -42,6 +41,14 @@ const routes: Routes = [
 			{
 				path: 'warranty',
 				component: TermsComponent
+			},
+			{
+				path: 'return-policy',
+				component: ReturnExchangeComponent
+			},
+			{
+				path: 'terms-&-conditions',
+				component: TermsconditionComponent
 			},
 			// {
 			// 	path: 'aboutUs',

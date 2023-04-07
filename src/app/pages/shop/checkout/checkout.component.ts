@@ -37,6 +37,11 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 	cartData : any ;
 	totalAmount : number = 0;
 	loader:boolean = false;
+
+
+	showCoupon:boolean =false;
+	couponApplied:boolean = false;
+	couponCodeApplied:string = '';
 	
 	CarListId:any=[]
 	private subscr: Subscription;
@@ -212,7 +217,7 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 		// var email=this.userForm.get("Email")?.value;
 		this.loader = true;
 		this.submitted = true;
-
+		let coupon = undefined;
 		if (this.userForm.invalid) {
 		this.loader = false;
 		  return;
@@ -239,11 +244,14 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 		else{
 			paymentString = 'RZP';
 		}
-		
+		if(this.couponApplied){
+			coupon = this.couponCodeApplied;
+		}
 		const data={
 			"cartItem":this.CarListId,
 			"paymentMethod":paymentString,
 			"amount":this.finalamount,
+			"couponcode":coupon,
 			"shippingAddress":{
 			  "name":this.userForm.get("firstName")?.value + this.userForm.get("lastName")?.value,
 			  "country":this.userForm.get("country")?.value,
@@ -388,10 +396,49 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 	}
 
 	addOpacity(event: any) {
+		if(!this.couponApplied){
+		this.showCoupon = true;
 		event.target.parentElement.querySelector("label").setAttribute("style", "opacity: 0");
 		event.stopPropagation();
-
 	}
+	
+	}
+	
+	applycoupon()
+	{
+		let paymentString = "";
+		const ele = document.getElementById("flexRadioDefault2") as HTMLInputElement;
+		
+		
+		if(ele.checked==true){
+			paymentString='COD';
+		}	  
+		else{
+			paymentString = 'RZP';
+		}
+		let coupon = (<HTMLInputElement>document.getElementById("checkout-discount-input")).value;
+		if(coupon===''|| coupon ==undefined)
+	{
+		this.toaster.error("Please enter coupon code");
+	}else if(paymentString=='COD'){
+		this.toaster.error("This coupon code is available for Online payment only! Please select online payment option.");
+	}
+		else if(coupon==='GOODFRIDAY')
+		{
+			this.toaster.success("Coupon Applied");
+            this.couponApplied = true;
+            this.couponCodeApplied = coupon;
+            this.showCoupon = false;
+            console.log(this.finalamount);
+            let couponDiscountPrice = this.finalamount - this.finalamount*5/100;
+            console.log(this.finalamount - this.finalamount*5/100);
+            this.finalamount = Math.round(couponDiscountPrice);
+		}
+		else{
+			this.toaster.error("Coupon Not Valid!")
+		}
+	}
+
 
 	formToggle(event: any) {
 		const parent: HTMLElement = event.target.closest('.custom-control');
@@ -415,7 +462,15 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 	onItemChange(e:any){
 		// console.log(" Value is : ", e.target.value );
 		this.paymentMode = e.target.value
-		console.log(this.paymentMode)
+		
+		if(this.paymentMode==='COD'){
+		if(this.couponApplied){
+			this.couponApplied=false;
+			this.couponCodeApplied='';
+			this.finalamount = this.totalAmount;
+			this.showCoupon = true;
+		}
+		}
 	 }
 }
 

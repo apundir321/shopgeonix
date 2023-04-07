@@ -35,7 +35,7 @@ export class MobileMenuComponent implements OnInit, OnDestroy {
 		this.liveurl = location.href
 
 		this.categoryService.getCategoryList().subscribe(res=>{
-			this.categoryList = res.slice(0,5);
+			this.categoryList = res.slice(0,20);
 			console.log("hi in main2",this.categoryList)
 		})
  

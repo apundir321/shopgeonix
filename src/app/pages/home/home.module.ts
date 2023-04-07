@@ -31,6 +31,7 @@ import { TrendyCollectionComponent } from './trendy-collection/trendy-collection
 import { RecommendCollectionComponent } from './recommend-collection/recommend-collection.component';
 import { ModalBasicComponent } from './index/modal-basic/modal-basic.component';
 import { CarouselBasicComponent } from './index/carousel-basic/carousel-basic.component';
+import { TermsconditionComponent } from './termscondition/termscondition.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { CarouselBasicComponent } from './index/carousel-basic/carousel-basic.co
 	TrendyCollectionComponent,
   RecommendCollectionComponent,
   ModalBasicComponent,
-  CarouselBasicComponent
+  CarouselBasicComponent,
+  TermsconditionComponent
 		// BlogCollectionComponent
 	],
 

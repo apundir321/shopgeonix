@@ -11,6 +11,9 @@ body {
 //     overflow-x: hidden;
 // }
 html, body { height: 100%; }
+html {
+    overflow-x: hidden;
+}
 // html {
 //     overflow: hidden;
 // }
@@ -134,4 +137,3 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
     }
 }
 
-        

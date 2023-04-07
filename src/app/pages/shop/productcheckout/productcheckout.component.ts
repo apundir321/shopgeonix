@@ -36,6 +36,11 @@ export class ProductcheckoutComponent implements OnInit {
  AllOrder: any;
 	order: any;
 
+	showCoupon:boolean =false;
+	couponApplied:boolean = false;
+	couponCodeApplied:string = '';
+	finalamount:any;
+
 
   constructor(private formBuilder: FormBuilder,
     private activeRoute:ActivatedRoute,
@@ -135,8 +140,15 @@ export class ProductcheckoutComponent implements OnInit {
 
   onItemChange(e:any){
 	// console.log(" Value is : ", e.target.value );
-	this.paymentMode = e.target.value
-	console.log(this.paymentMode)
+	this.paymentMode = e.target.value;
+	if(this.paymentMode==='COD'){
+	if(this.couponApplied){
+		this.couponApplied=false;
+		this.couponCodeApplied='';
+		this.finalamount = this.total;
+		this.showCoupon=true;
+	}
+	}
  }
 
   get f(): { [key: string]: AbstractControl } {
@@ -145,6 +157,7 @@ export class ProductcheckoutComponent implements OnInit {
 
 	  placeorder(){
 		let paymentString = "";
+		let coupon = undefined;
 		const ele = document.getElementById("flexRadioDefault2") as HTMLInputElement;
 		
 		
@@ -163,11 +176,14 @@ export class ProductcheckoutComponent implements OnInit {
 				return;
 			  }
 	  
-			
+			if(this.couponApplied){
+				coupon = this.couponCodeApplied;
+			}
 		  const data={
 				  "productId":this.pid,
 			"variantId":this.varient,
 			"quantity":this.change,
+			"couponcode":coupon,
 				  "paymentMethod":paymentString,
 				  "amount":this.discountoffer,
 				  "shippingAddress":{
@@ -255,13 +271,16 @@ export class ProductcheckoutComponent implements OnInit {
 			return;
 		  }
   
-  
+		  if(this.couponApplied){
+			coupon = this.couponCodeApplied;
+		}
 	  const data={
 			  "productId":this.pid,
 		"variantId":this.varient,
 		"quantity":this.change,
 			  "paymentMethod":paymentString,
 			  "amount":this.discountoffer,
+			  "couponcode":coupon,
 			  "shippingAddress":{
 				"name":this.userForm.get("firstName")?.value +" "+ this.userForm.get("lastName")?.value,
 				"country":this.userForm.get("country")?.value,
@@ -398,6 +417,50 @@ export class ProductcheckoutComponent implements OnInit {
 
 			GetAllOrder(){
 				return this.master.getMethod("/order/user/list");
+			}
+
+			addOpacity(event: any) {
+				if(!this.couponApplied){
+				this.showCoupon = true;
+				event.target.parentElement.querySelector("label").setAttribute("style", "opacity: 0");
+				event.stopPropagation();
+			}
+			
+			}
+			
+			applycoupon()
+			{
+				let paymentString = "";
+		const ele = document.getElementById("flexRadioDefault2") as HTMLInputElement;
+		
+		
+		if(ele.checked==true){
+			paymentString='COD';
+		}	  
+		else{
+			paymentString = 'RZP';
+		}
+				let coupon = (<HTMLInputElement>document.getElementById("checkout-discount-input")).value;
+				if(coupon===''|| coupon ==undefined)
+			{
+				this.toaster.error("Please enter coupon code");
+			}else if(paymentString=='COD'){
+				this.toaster.error("This coupon code is available for Online payment only! Please select online payment option.");
+			}
+				else if(coupon==='GOODFRIDAY')
+				{
+					this.toaster.success("Coupon Applied");
+					this.couponApplied = true;
+					this.couponCodeApplied = coupon;
+					this.showCoupon = false;
+					console.log(this.total);
+					let couponDiscountPrice = this.discountoffer - this.discountoffer*5/100;
+					console.log(this.discountoffer - this.discountoffer*5/100);
+					this.discountoffer = Math.round(couponDiscountPrice);
+				}
+				else{
+					this.toaster.error("Coupon Not Valid!")
+				}
 			}
 
 }
