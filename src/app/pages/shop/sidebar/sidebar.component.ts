@@ -108,7 +108,7 @@ export class SidebarPageComponent implements OnInit {
 		if (window.innerWidth > 991) this.toggle = false;
 		else this.toggle = true;
 
-		this.getid()
+		// this.getid()
 	}
 
 	getid(){

@@ -39,10 +39,10 @@ export class MobileMenuComponent implements OnInit, OnDestroy {
 			console.log("hi in main2",this.categoryList)
 		})
  
-		this.masterService.getMethod("/product/menu").subscribe((res)=>{
-			console.log(res);
-			this.productList= res
-		})
+		// this.masterService.getMethod("/product/menu").subscribe((res)=>{
+		// 	console.log(res);
+		// 	this.productList= res
+		// })
 	}
 
 	ngOnDestroy(): void {

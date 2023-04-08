@@ -80,29 +80,29 @@ export class ShopSidebarOneComponent implements OnInit {
 			console.log("new object", this.newObject)
 		})
 
-		this.masterService.getMethod("/product/menu").subscribe((res) => {
-			// console.log("james-bond",res);
-			console.log("james-bond", res);
-			this.productList = res
-			var i = 1
-			for (const [key, value] of Object.entries(this.productList)) {
-				const len = Object.keys(value).length;
-				console.log(key, value, len);
-				for (var NewList of this.newObject) {
-					if (key == NewList.name) {
-						this.newObject1.push({
-							id: NewList.id,
-							key: key,
-							value: len
-						});
-					}
+		// this.masterService.getMethod("/product/menu").subscribe((res) => {
+		// 	// console.log("james-bond",res);
+		// 	console.log("james-bond", res);
+		// 	this.productList = res
+		// 	var i = 1
+		// 	for (const [key, value] of Object.entries(this.productList)) {
+		// 		const len = Object.keys(value).length;
+		// 		console.log(key, value, len);
+		// 		for (var NewList of this.newObject) {
+		// 			if (key == NewList.name) {
+		// 				this.newObject1.push({
+		// 					id: NewList.id,
+		// 					key: key,
+		// 					value: len
+		// 				});
+		// 			}
 					
-				}
-				console.log("new Obejct3", this.newObject1)
+		// 		}
+		// 		console.log("new Obejct3", this.newObject1)
 
-			}
+		// 	}
 
-		})
+		// })
 		//    console.log("newobject",this.newObject)
 
 		this.getvarient()
