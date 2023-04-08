@@ -90,23 +90,7 @@
         background-size: cover;
         background-position: right;
     }
-
-    // .one {
-    //     background-image: url('/assets/images/banners/MOTHERBANNER.jpg');
-    //     background-size: cover;
-    // }
-
-    // .two {
-    //     background-image: url('/assets/images/banners/GRAPHIC\ CARD.jpg');
-    //     background-size: cover;
-    // }
-
-    // .three {
-    //     background-image: url('/assets/images/banners/HDD\ BANNER\ \(1\).jpg');
-    //     background-size: cover;
-    // }
 }
-
 
 // white button with black hover effect start
 
@@ -157,4 +141,33 @@
     }
 }
 
-// white button with black hover effect end
+// mobile size style starts here
+
+@media screen and (max-width: 576px) {
+
+    .homeslider {
+        .homeslider-main {
+            min-height: 500px;
+            
+            h3.smart {
+                font-size: 4vw;
+            }
+
+            .one {
+                background-image: url('/assets/images/New\ banner\ size.jpg');
+                background-size: cover;
+            }
+        
+            .two {
+                background-image: url('/assets/images/HDD\ BANNER.jpg');
+                background-size: cover;
+            }
+        
+            .three {
+                background-image: url('/assets/images/MOTHERBOARD\ BANNER.jpg');
+                background-size: cover;
+                background-position: right;
+            }
+        }
+    }
+}
