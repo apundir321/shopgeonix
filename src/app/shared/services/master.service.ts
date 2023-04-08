@@ -76,6 +76,14 @@ getMethod(dataApi:any){
     catchError(this.handleError)
   )
 }
+getProductJson(dataApi:any){
+  console.log(dataApi)
+  return this.http.get(dataApi, this.header())
+  .pipe(
+    retry(1),
+    catchError(this.handleError)
+  )
+}
 
 getGenericMethod(dataApi:any){
   console.log(this.apURL+dataApi)

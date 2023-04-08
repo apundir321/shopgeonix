@@ -30,16 +30,16 @@ export class MainMenuComponent implements OnInit, OnDestroy {
 	}
 
 	ngOnInit(): void {
-		this.categoryService.getCategoryList().subscribe(res=>{
-			this.categoryList = res.slice(0,4);
-			console.log("hi in main2",this.categoryList)
-		})
+		// this.categoryService.getCategoryList().subscribe(res=>{
+		// 	this.categoryList = res.slice(0,4);
+		// 	console.log("hi in main2",this.categoryList)
+		// })
  
-		this.masterService.getMethod("/product/menu").subscribe((res)=>{
-			console.log("res");
-			console.log(res);
-			this.productList= res
-		})
+		// this.masterService.getMethod("/product/menu").subscribe((res)=>{
+		// 	console.log("res");
+		// 	console.log(res);
+		// 	this.productList= res
+		// })
 	}
 
 	ngOnDestroy(): void {

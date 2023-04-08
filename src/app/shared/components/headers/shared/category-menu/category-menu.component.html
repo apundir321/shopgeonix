@@ -9,10 +9,91 @@
 
     <div class="dropdown-menu">
         <nav class="side-nav">
-            <ul class="menu-vertical sf-arrows" *ngFor="let list of categoryList">
+            <ul class="menu-vertical sf-arrows">
                 <li class="item-lead" routerLinkActive="active">
-                    <a [routerLink]="['shop/'+list.name+'/3cols/']"
-                        [queryParams]="{category: list.id,'page':1}">{{list.name}}</a>
+                    <a [routerLink]="['shop/DESKTOP RAM/3cols/']"
+                        [queryParams]="{category: 1,'page':1}">DESKTOP RAM</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/HDD – Hard Disk Drive/3cols/']"
+                        [queryParams]="{category: 2,'page':1}">HDD</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/Laptop HDD/3cols/']"
+                        [queryParams]="{category: 3,'page':1}">Laptop HDD</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/Laptop RAM/3cols/']"
+                        [queryParams]="{category: 4,'page':1}">Laptop RAM</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/Riser Card/3cols/']"
+                        [queryParams]="{category: 5,'page':1}">Riser Card</a>
+                </li>
+                
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/Geonix SSD/3cols/']"
+                        [queryParams]="{category: 6,'page':1}">Geonix SSD</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/DESKTOP RAM/3cols/']"
+                        [queryParams]="{category: 1,'page':1}">DESKTOP RAM</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/SSD M.2/3cols/']"
+                        [queryParams]="{category: 7,'page':1}">SSD M.2</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/Wifi USB Adapter/3cols/']"
+                        [queryParams]="{category: 9,'page':1}">Wifi USB Adapter</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/SSD NVMe/3cols/']"
+                        [queryParams]="{category: 10,'page':1}">SSD NVMe</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/Monitors/3cols/']"
+                        [queryParams]="{category: 11,'page':1}">Monitors</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/Graphic Card/3cols/']"
+                        [queryParams]="{category: 12,'page':1}">Graphic Card</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/Motherboard/3cols/']"
+                        [queryParams]="{category: 13,'page':1}">Motherboard</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/SSD M.2 BREAKABLE/3cols/']"
+                        [queryParams]="{category: 14,'page':1}">SSD M.2 BREAKABLE</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/Printer Tonner/3cols/']"
+                        [queryParams]="{category: 15,'page':1}">Printer Tonner</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/M SATA/3cols/']"
+                        [queryParams]="{category: 16,'page':1}">M SATA</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/PCI CARDS/3cols/']"
+                        [queryParams]="{category: 17,'page':1}">PCI CARDS</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/SSD Enclosure/3cols/']"
+                        [queryParams]="{category: 18,'page':1}">SSD Enclosure</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/External SSD M.2/3cols/']"
+                        [queryParams]="{category: 19,'page':1}">External SSD M.2</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/PCI CARDS/3cols/']"
+                        [queryParams]="{category: 20,'page':1}">External SSD NVME</a>
+                </li>
+                <li class="item-lead" routerLinkActive="active">
+                    <a [routerLink]="['shop/External SSD SATA/3cols/']"
+                        [queryParams]="{category: 21,'page':1}">External SSD SATA</a>
                 </li>
                 <!-- <li class="item-lead" routerLinkActive="active">
                     <a routerLink="/shop/sidebar/3cols" [queryParams]="{category: 'gift-idea'}">Gift Ideas</a>

@@ -59,18 +59,18 @@ export class IndexComponent implements OnInit {
 	ngOnInit(): void {
 	
 		this.offerList()
-		this.getlist()
+		// this.getlist()
 		this.getproduct()
 		
 	}
 
 	offerList(){
-		this.master.getMethod('/offer/list').subscribe(res=>{	
-			this.getoffer = res
-			console.log("offerlist",this.getoffer)
-			localStorage.setItem("offerData",JSON.stringify(res));
+		// this.master.getMethod('/offer/list').subscribe(res=>{	
+		// 	this.getoffer = res
+		// 	console.log("offerlist",this.getoffer)
+			localStorage.setItem("offerData",JSON.stringify([]));
 			// this.offerService.setofferList(res);
-		})
+		// })
 	}
 
 
@@ -157,7 +157,7 @@ export class IndexComponent implements OnInit {
 }
 
 getproduct(){
-	this.master.getMethod("/product/list").subscribe(res=>{
+	this.master.getProductJson("/assets/json/products.json").subscribe(res=>{
 		console.log("product-list",res['data'])
 		this.products=res['data'];
 		console.log("this.productssss");
@@ -165,8 +165,5 @@ getproduct(){
 		this.loaded = true;
 })
 
-
 }
-
-
 }

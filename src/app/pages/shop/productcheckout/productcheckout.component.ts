@@ -145,7 +145,7 @@ export class ProductcheckoutComponent implements OnInit {
 	if(this.couponApplied){
 		this.couponApplied=false;
 		this.couponCodeApplied='';
-		this.finalamount = this.total;
+		this.discountoffer = this.total;
 		this.showCoupon=true;
 	}
 	}
