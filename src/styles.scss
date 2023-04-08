@@ -170,3 +170,15 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
         transition: opacity .15s ease;
     }
 }
+
+// modal display none on mobile screens
+
+@media screen and (max-width: 576px) {
+    .modal-backdrop.fade.show {
+        display: none !important;
+    }
+
+    .modal-body {
+        display: none !important;
+    }
+}

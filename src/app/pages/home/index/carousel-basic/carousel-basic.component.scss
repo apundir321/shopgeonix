@@ -75,6 +75,14 @@
         right: 11vw;
     }
 
+    .motherboard {
+        position: absolute;
+        max-width: 14vw;
+        top: 4vw;
+        right: 9vw;
+        min-width: 30vw;
+    }
+
     .one {
         background-image: url('/assets/images/MONITOR\ HOME\ BANNER.jpg');
         background-size: cover;
@@ -147,27 +155,56 @@
 
     .homeslider {
         .homeslider-main {
+            align-items: flex-start !important;
+            padding-top: 6vw;
             min-height: 500px;
-            
+            box-shadow: inset 0 500px #0000003d;            
+
             h3.smart {
-                font-size: 4vw;
+                font-size: 4vw !important;
             }
 
-            .one {
-                background-image: url('/assets/images/New\ banner\ size.jpg');
-                background-size: cover;
+            .desktop-image, .hdd, .motherboard {
+                display: none;
             }
-        
-            .two {
-                background-image: url('/assets/images/HDD\ BANNER.jpg');
-                background-size: cover;
+
+            .discounttext {
+                top: 90vw;
+                left: 4vw;
+                font-size: 5vw;
+                line-height: 6vw;
+
+                span {
+                    font-size: 6vw;
+                }
             }
-        
-            .three {
-                background-image: url('/assets/images/MOTHERBOARD\ BANNER.jpg');
-                background-size: cover;
-                background-position: right;
+            
+            .extra {
+                p {
+                    max-width: 80%;
+                    color: white;
+                }
             }
+
+            .shop-white-btn {
+                display: none;
+            }
+        }
+
+        .one {
+            background-image: url('/assets/images/Newbanner.jpg');
+            background-size: cover;
+        }
+    
+        .two {
+            background-image: url('/assets/images/MOBILEBANNERMOTHERBOARD.jpg');
+            background-size: cover;
+        }
+    
+        .three {
+            background-image: url('/assets/images/MOBILE\ BANNER\ HDD.jpg');
+            background-size: cover;
+            background-position: right;
         }
     }
 }
