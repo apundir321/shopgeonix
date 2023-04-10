@@ -15,7 +15,9 @@ import {
 export class ModalBasicComponent implements OnInit {
 
 	title = 'molla-modal-basic';
+	showmodal:any = true
 	@ViewChild('content') content: ElementRef | undefined;
+
 	closeResult = '';
   
 	constructor(private modalService: NgbModal) {}
