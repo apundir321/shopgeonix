@@ -21,7 +21,7 @@ export class ModalBasicComponent implements OnInit {
 	closeResult = '';
   
 	constructor(private modalService: NgbModal) {}
-	ngAfterViewInit(): void {
+	ngAfterViewInit(): void { 
 	  this.open(this.content);
 	}
 	ngOnInit(): void {}

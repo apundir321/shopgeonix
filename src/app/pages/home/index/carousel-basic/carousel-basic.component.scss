@@ -3,7 +3,7 @@
 
 .homeslider {
     .homeslider-main {
-        min-height: 35vw;
+        min-height: 31vw;
         display: flex;
         align-items: center;
         padding-left: 10vw;
@@ -84,20 +84,20 @@
     }
 
     .one {
-        background-image: url('/assets/images/MONITOR\ HOME\ BANNER.jpg');
-        background-size: cover;
+        background-image: url('/assets/images/Geonix\ Hero\ GIF.gif');
+        background-size: contain;
     }
 
-    .two {
-        background-image: url('/assets/images/HDD\ BANNER.jpg');
-        background-size: cover;
-    }
+    // .two {
+    //     background-image: url('/assets/images/HDD\ BANNER.jpg');
+    //     background-size: cover;
+    // }
 
-    .three {
-        background-image: url('/assets/images/MOTHERBOARD\ BANNER.jpg');
-        background-size: cover;
-        background-position: right;
-    }
+    // .three {
+    //     background-image: url('/assets/images/MOTHERBOARD\ BANNER.jpg');
+    //     background-size: cover;
+    //     background-position: right;
+    // }
 }
 
 // white button with black hover effect start
@@ -192,19 +192,19 @@
         }
 
         .one {
-            background-image: url('/assets/images/Newbanner.jpg');
+            background-image: url('/assets/images/Mobile\ GIF\ Geonix.gif');
             background-size: cover;
         }
     
-        .two {
-            background-image: url('/assets/images/MOBILEBANNERMOTHERBOARD.jpg');
-            background-size: cover;
-        }
+        // .two {
+        //     background-image: url('/assets/images/MOBILEBANNERMOTHERBOARD.jpg');
+        //     background-size: cover;
+        // }
     
-        .three {
-            background-image: url('/assets/images/MOBILE\ BANNER\ HDD.jpg');
-            background-size: cover;
-            background-position: right;
-        }
+        // .three {
+        //     background-image: url('/assets/images/MOBILE\ BANNER\ HDD.jpg');
+        //     background-size: cover;
+        //     background-position: right;
+        // }
     }
 }

@@ -15,7 +15,7 @@ export class CategoryMenuComponent implements OnInit {
  constructor (private master:MasterService,private categoryService:CategoryService) { }
 
  ngOnInit (): void {
-  // this.getAllCategory();
+  this.getAllCategory();
  }
 
  getAllCategory(){

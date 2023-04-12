@@ -153,6 +153,7 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
         text-align: center;
         opacity: .5;
         transition: opacity .15s ease;
+        display: none;
     }
 
     .carousel-control-next {
@@ -168,6 +169,7 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
         text-align: center;
         opacity: .5;
         transition: opacity .15s ease;
+        display: none;
     }
 }
 
@@ -180,5 +182,9 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
 
     .modal-body {
         display: none !important;
+    }
+
+    a.logo img {
+        max-width: 100px !important;
     }
 }
