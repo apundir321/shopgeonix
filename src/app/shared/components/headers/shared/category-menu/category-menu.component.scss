@@ -42,3 +42,62 @@
         color: white;
     }
 }
+
+.menu-vertical {
+    i {
+        min-width: 0.4rem !important;
+    }
+
+    li {
+        a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .subcate {
+                position: absolute;
+                right: -101%;
+                top: 0px;
+                background-color: #f9f9f9;
+                width: 100%;
+                display: none;
+
+                li {
+                    border-bottom: 1px solid #ececec;
+
+                    a {
+                        font-weight: 500;
+                        font-size: 15px;
+                        padding: 10px;
+                    }
+                }
+            }
+
+            i {
+                min-width: 0.4rem !important;
+            }
+
+            div {
+                img {
+                    max-width: 25px;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }  
+
+        a:hover .subcate {
+            display: block;
+        }
+    }
+}
+
+.header-middle {
+    .container {
+        max-height: 85px;
+    }
+}

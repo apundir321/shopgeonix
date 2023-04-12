@@ -91,6 +91,10 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
     }
 
     .header-middle {
+            .container {
+                max-height: 85px;
+            }
+
         .header-right {
             p {
                 color: #14244b;

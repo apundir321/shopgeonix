@@ -9,45 +9,174 @@
 
     <div class="dropdown-menu">
         <nav class="side-nav">
-            <ul class="menu-vertical sf-arrows" *ngFor="let list of categoryList">
+            <!-- <ul class="menu-vertical sf-arrows" *ngFor="let list of categoryList">
                 <li class="item-lead" routerLinkActive="active">
                     <a [routerLink]="['shop/'+list.name+'/3cols/']"
                         [queryParams]="{category: list.id,'page':1}">{{list.name}}</a>
                 </li>
-                <!-- <li class="item-lead" routerLinkActive="active">
-                    <a routerLink="/shop/sidebar/3cols" [queryParams]="{category: 'gift-idea'}">Gift Ideas</a>
+            </ul> -->
+            <ul class="menu-vertical sf-arrows">
+                <li class="item-lead" routerLinkActive="active">
+                    <a href="#">
+                        <div>
+                            <img src="/assets/images/icons/ram2.png" class="img-fluid">
+                            RAM
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="subcate">
+                            <li>
+                                <a routerLink="/shop/Desktop RAM/3cols/" [queryParams]="{category: 1,'page':1}">
+                                    Desktop RAM
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/Laptop RAM/3cols/" [queryParams]="{category: 4,'page':1}">
+                                    Laptop RAM
+                                </a>
+                            </li>
+                        </div>
+                    </a>
                 </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/shop/sidebar/3cols" [queryParams]="{category: 'beds'}">Beds</a>
+                <li class="item-lead" routerLinkActive="active">
+                    <a href="#">
+                        <div>
+                            <img src="/assets/images/icons/hdd.png" class="img-fluid">
+                            HDD
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="subcate">
+                            <li>
+                                <a routerLink="/shop/HDD/3cols/" [queryParams]="{category: 2,'page':1}">
+                                    Desktop HDD
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/Laptop HDD/3cols/" [queryParams]="{category: 3,'page':1}">
+                                    Laptop HDD
+                                </a>
+                            </li>
+                        </div>
+                    </a>
                 </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/shop/sidebar/3cols" [queryParams]="{category: 'lighting'}">Lighting</a>
+                <li class="item-lead" routerLinkActive="active">
+                    <a href="#">
+                        <div>
+                            <img src="/assets/images/icons/ssd.png" class="img-fluid">
+                            SSD
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="subcate">
+                            <li>
+                                <a routerLink="/shop/SSD SATA/3cols/" [queryParams]="{category: 6,'page':1}">
+                                    SATA SSD
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/M SATA/3cols/" [queryParams]="{category: 16,'page':1}">
+                                    M Sata SSD
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/SSD M.2/3cols/" [queryParams]="{category: 7,'page':1}">
+                                    M.2 SSD
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/SSD M.2 BREAKABLE/3cols/" [queryParams]="{category: 14,'page':1}">
+                                    M.2 Breakable SSD
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/SSD NVMe/3cols/" [queryParams]="{category: 8,'page':1}">
+                                    NVMe SSD
+                                </a>
+                            </li>
+                        </div>
+                    </a>
                 </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/shop/sidebar/3cols" [queryParams]="{category: 'sofas-and-sleeper-sofas'}">Sofas &
-                        Sleeper sofas</a>
+                <li class="item-lead" routerLinkActive="active">
+                    <a href="#">
+                        <div>
+                            <img src="/assets/images/icons/external-link.png" class="img-fluid">
+                            External
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="subcate">
+                            <li>
+                                <a routerLink="/shop/Riser Card/3cols/" [queryParams]="{category: 5,'page':1}">
+                                    Riser Card
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/USB Adapter/3cols/" [queryParams]="{category: 10,'page':1}">
+                                    Wifi USB Adapter
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/Laptop RAM/3cols/" [queryParams]="{category: 18,'page':1}">
+                                    SSD Enclosure
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/External SSD M.2/3cols/" [queryParams]="{category: 19,'page':1}">
+                                    External SSD M.2
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/External SSD NVMe/3cols/" [queryParams]="{category: 20,'page':1}">
+                                    External SSD NVMe
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/External SSD SATA/3cols/" [queryParams]="{category: 21,'page':1}">
+                                    External SSD SATA
+                                </a>
+                            </li>
+                        </div>
+                    </a>
                 </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/shop/sidebar/3cols" [queryParams]="{category: 'storage'}">Storage</a>
+                <li class="item-lead" routerLinkActive="active">
+                    <a href="#">
+                        <div>
+                            <img src="/assets/images/icons/categories.png" class="img-fluid">
+                            Others
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="subcate">
+                            <li>
+                                <a routerLink="/shop/PCI Cards/3cols/" [queryParams]="{category: 17,'page':1}">
+                                    PCI Cards
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/SMPS/3cols/" [queryParams]="{category: 22,'page':1}">
+                                    SMPS
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/shop/Printer Toner/3cols/" [queryParams]="{category: 15,'page':1}">
+                                    Printer Toner
+                                </a>
+                            </li>
+                        </div>
+                    </a>
                 </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/shop/sidebar/3cols" [queryParams]="{category: 'armchairs-and-chaises'}">Armchairs &
-                        Chaises</a>
+                <li class="item-lead" routerLinkActive="active">
+                    <a routerLink="/shop/PC Monitors/3cols/" [queryParams]="{category: 11,'page':1}">
+                        <div>
+                            <img src="/assets/images/icons/monitor.png" class="img-fluid">
+                            PC Monitors
+                        </div>
+                    </a>
                 </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/shop/sidebar/3cols" [queryParams]="{category: 'decoration'}">Decoration</a>
+                <li class="item-lead" routerLinkActive="active">
+                    <a routerLink="/shop/Graphic Card/3cols/" [queryParams]="{category: 12,'page':1}">
+                        <div>
+                            <img src="/assets/images/icons/gpu.png" class="img-fluid">
+                            Graphic Card
+                        </div>
+                    </a>
                 </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/shop/sidebar/3cols" [queryParams]="{category: 'kitchen-cabinets'}">Kitchen
-                        Cabinets</a>
-                </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/shop/sidebar/3cols" [queryParams]="{category: 'coffee-and-tables'}">Coffee &
-                        Tables</a>
-                </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/shop/sidebar/3cols" [queryParams]="{category: 'furniture'}">Outdoor Furniture</a>
-                </li> -->
             </ul>
         </nav>
     </div>
