@@ -107,7 +107,8 @@ export class ProductcheckoutComponent implements OnInit {
 				"Email":this.order['shippingAddress']['email'],
 				"Phone":this.order['shippingAddress']['mobile'],
 				"pinNumber":this.order['shippingAddress']['pincode'],
-				"state":this.order['shippingAddress']['state']
+				"state":this.order['shippingAddress']['state'],
+				"gst":this.order['shippingAddress']['gst']
 			}
 			this.userForm.patchValue(shipData);
 		}
@@ -131,8 +132,8 @@ export class ProductcheckoutComponent implements OnInit {
         state:['', Validators.required],
         pinNumber:['', [Validators.required,Validators.pattern('[0-9 ]{6}')]],
         Phone:['', [Validators.required,Validators.pattern('[0-9 ]{10}')]],
-        Email:['', [Validators.required,Validators.pattern('^[a-zA-Z]+([.-]?[a-zA-Z0-9]+)*@([a-zA-Z]+([.-]?[a-zA-Z]))[.]{1}[a-zA-Z]{2,}$')]]
-   
+        Email:['', [Validators.required,Validators.pattern('^[a-zA-Z]+([.-]?[a-zA-Z0-9]+)*@([a-zA-Z]+([.-]?[a-zA-Z]))[.]{1}[a-zA-Z]{2,}$')]],
+		gst:['']
       }
          );
 
@@ -194,7 +195,8 @@ export class ProductcheckoutComponent implements OnInit {
 					"city":this.userForm.get("city")?.value,
 					"pincode":this.userForm.get("pinNumber")?.value,
 					"mobile":this.userForm.get("Phone")?.value,
-					"email":this.userForm.get("Email")?.value
+					"email":this.userForm.get("Email")?.value,
+					"gst":this.userForm.get("gst")?.value
 				  }
 			  }
 			  console.log("cart",this.pid)
@@ -289,7 +291,8 @@ export class ProductcheckoutComponent implements OnInit {
 				"city":this.userForm.get("city")?.value,
 				"pincode":this.userForm.get("pinNumber")?.value,
 				"mobile":this.userForm.get("Phone")?.value,
-				"email":this.userForm.get("Email")?.value
+				"email":this.userForm.get("Email")?.value,
+				"gst":this.userForm.get("gst")?.value
 			  }
 		  }
 		  console.log("cart",this.pid)
