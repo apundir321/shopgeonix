@@ -38,11 +38,6 @@ export class MobileMenuComponent implements OnInit, OnDestroy {
 			this.categoryList = res.slice(0,20);
 			console.log("hi in main2",this.categoryList)
 		})
- 
-		// this.masterService.getMethod("/product/menu").subscribe((res)=>{
-		// 	console.log(res);
-		// 	this.productList= res
-		// })
 	}
 
 	ngOnDestroy(): void {
@@ -78,4 +73,7 @@ export class MobileMenuComponent implements OnInit, OnDestroy {
 		this.searchTerm = e.currentTarget.querySelector('.form-control').value;
 		this.router.navigate(['/shop/sidebar/list'], { queryParams: { searchTerm: this.searchTerm } });
 	}
+
+	items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+	expandedIndex = 0;
 }

@@ -1,0 +1,42 @@
+
+.mobile-menu {
+    p {
+        font-weight: 600;
+        color: black;
+        font-size: 13px;
+    }
+
+    .product-image-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 81px;
+        background-color: lightgray;
+        border-radius: 7px;
+        padding: 5px;
+        margin: 5px 0px;
+
+        img {
+            min-width: 50px;
+            min-height: 50px;
+        }
+    }
+
+    a.drop-mobile-menu {
+        color: #14244b;
+        font-weight: 600;
+        font-size: 14px;
+
+        .img-fluid {
+            max-width: 30px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    
+        .mmenu-btn:after {
+            color: #14244b;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+}

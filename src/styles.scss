@@ -175,6 +175,10 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
         transition: opacity .15s ease;
         display: none;
     }
+
+    .carousel-indicators {
+        display: none;
+    }
 }
 
 // modal display none on mobile screens

@@ -35,7 +35,6 @@ import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { ErrorInterceptor } from './shared/services/error.interceptor';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
