@@ -74,38 +74,51 @@
         </div>
     </div>
 
-    <!-- <div class="container">
-        <molla-modal-basic></molla-modal-basic>
-    </div> -->
-
-    <!-- <molla-home-slider></molla-home-slider> -->
-
-    <!-- <div class="cat-blocks-container">
-        <h2 class="title text-center mb-4" contentAnim aniName="blurIn">Explore Popular Categories</h2>
-        <div class="row cats_row">
-            <div class="col-6 col-md-4 col-lg-3" *ngFor="let cat of cats">
-                <a [routerLink]="['shop/'+cat.name+'/'+'3cols/']" [queryParams]="{category: cat.id,'page':1}" class="cat-block">
-                    <figure>
-                        <span>
-                            <img [src]="cat.image" alt="desc" style="height: 9em;">
-                        </span>
-                    </figure>
-
-                    <h3 class="cat-block-title">{{ cat.name }}</h3>
-                </a>
-            </div>
-        </div>
-    </div> -->
     <div class="mb-4"></div>
 
-    <div class="viewoptions">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-sm-6 mb-2" [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 1,'page':1}">
+               <div class="product-image one">
+
+               </div>
+            </div>
+            <div class="col-sm-6 mb-2" [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 6,'page':1}">
+                <div class="product-image two">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 mb-2" [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 11,'page':1}">
+                <div class="product-image three">
+
+                </div>
+            </div>
+            <div class="col-sm-6 mb-2" [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 13,'page':1}">
+                <div class="product-image four">
+
+                </div>
+            </div>
+        </div>
+        <div class="center-content">
+            <div class="extra">
+                <h4>LATEST COLLECTION</h4>
+                <h3>SAVE <span> UP TO 50% </span></h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button class="btn" [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 2,'page':1}">View More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4"></div>
+
+    <!-- <div class="viewoptions">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 mb-1">
                     <a [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 15,'page':1}">
                         <div class="viewdiv">
-                            <!-- <p>Geonix</p>
-                            <h1>Laser Printer Toner</h1> -->
                             <button class="btn new-button">Shop Now</button>
                         </div>
                     </a>
@@ -128,7 +141,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- <molla-modal-popup></molla-modal-popup> -->
 

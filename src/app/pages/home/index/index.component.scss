@@ -1144,7 +1144,86 @@ a{
 
    
 
+// my style
 
+.product-image{
+    min-height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 7px #00000045;
+    transition: all 0.5s;
+}
 
+.product-image:hover {
+    transform: scale(1.05, 1.05);
+}
 
+.one {
+    background-image: url('/assets/images/banner1-1.png');
+}
 
+.two {
+    background-image: url('/assets/images/banner1-2.png');
+}
+
+.three {
+    background-image: url('/assets/images/banner1-3.png');
+}
+
+.four {
+    background-image: url('/assets/images/banner1-4.png');
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    width: 25vw;
+    height: 25vw;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 0 8px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 350px;
+    max-height: 350px;
+
+    h3 {
+        font-weight: 700;
+
+        span {
+            color: #00004d;
+        }
+    }
+
+    button.btn {
+        color: white;
+        background-color: #00004d;
+        margin-top: 15px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    button.btn:hover {
+        color: white;
+        background-color: #00004d;
+        margin-top: 15px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .center-content {
+        display: none;
+    }
+}

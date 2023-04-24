@@ -12,38 +12,7 @@
         <ul ngbNav #nav="ngbNav" class="nav nav-pills-mobile nav-border-anim">
             <li ngbNavItem>
                 <a ngbNavLink>
-                    Menu
-                </a>
-                <ng-template ngbNavContent>
-                    <nav class="mobile-nav">
-                        <ul class="mobile-menu">
-                            <li>
-                                <a class="drop-mobile-menu" routerLink="/">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a class="drop-mobile-menu" routerLink="/shop/sidebar/3cols?category=3&page=1">
-                                    products
-                                </a>
-                            </li>
-                            <li>
-                                <a class="drop-mobile-menu" routerLink="/shop/cart">
-                                    View Cart
-                                </a>
-                            </li>
-                            <li>
-                                <a class="drop-mobile-menu" routerLink="/shop/wishlist">
-                                    My Wishlist
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </ng-template>
-            </li>
-            <li ngbNavItem>
-                <a ngbNavLink>
-                    Categories
+                    CATEGORIES
                 </a>
                 <ng-template ngbNavContent>
                     <nav class="mobile-nav">
@@ -229,6 +198,37 @@
                                 <a class="drop-mobile-menu" routerLink="/shop/Graphic Card/3cols/" [queryParams]="{category: 13,'page':1}">
                                     <img src="/assets/images/icons/motherboard.png" class="img-fluid">
                                     Motherboard
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </ng-template>
+            </li>
+            <li ngbNavItem>
+                <a ngbNavLink>
+                    MENU
+                </a>
+                <ng-template ngbNavContent>
+                    <nav class="mobile-nav">
+                        <ul class="mobile-menu">
+                            <li>
+                                <a class="drop-mobile-menu" routerLink="/">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a class="drop-mobile-menu" routerLink="/shop/sidebar/3cols?category=3&page=1">
+                                    products
+                                </a>
+                            </li>
+                            <li>
+                                <a class="drop-mobile-menu" routerLink="/shop/cart">
+                                    View Cart
+                                </a>
+                            </li>
+                            <li>
+                                <a class="drop-mobile-menu" routerLink="/shop/wishlist">
+                                    My Wishlist
                                 </a>
                             </li>
                         </ul>
