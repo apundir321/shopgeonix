@@ -76,7 +76,7 @@
 
     <div class="mb-4"></div>
 
-    <div class="container position-relative">
+    <div class="second-section container position-relative">
         <div class="row">
             <div class="col-sm-6 mb-2" [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 1,'page':1}">
                <div class="product-image one">
@@ -95,7 +95,7 @@
 
                 </div>
             </div>
-            <div class="col-sm-6 mb-2" [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 13,'page':1}">
+            <div class="col-sm-6 mb-2" [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 2,'page':1}">
                 <div class="product-image four">
 
                 </div>
@@ -105,7 +105,7 @@
             <div class="extra">
                 <h4>LATEST COLLECTION</h4>
                 <h3>SAVE <span> UP TO 50% </span></h3>
-                <button class="btn" [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 2,'page':1}">View More</button>
+                <button class="btn" [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 12,'page':1}">View More</button>
             </div>
         </div>
     </div>
@@ -207,7 +207,9 @@
 
 
     <div class="newarrial">
-        <div></div>
+        <div>
+            <h2 class="title text-center">New Arrivals</h2>
+        </div>
         <molla-special-collection [products]="products" [loaded]="loaded" *ngIf="products"></molla-special-collection>
 
 
