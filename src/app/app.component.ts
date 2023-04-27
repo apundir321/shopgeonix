@@ -51,6 +51,13 @@ export class AppComponent {
 				this.viewPort.scrollToPosition([0, 0]);
 			}
 
+			document.getElementsByTagName('molla-header')[0].scrollIntoView({
+				behavior: "smooth",
+				block: "start",
+				inline: "nearest"
+			  });
+
+
 			this.modalService.dismissAll();
 		})
 
