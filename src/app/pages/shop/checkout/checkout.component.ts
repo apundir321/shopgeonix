@@ -423,7 +423,7 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 	}else if(paymentString=='COD'){
 		this.toaster.error("This coupon code is available for Online payment only! Please select online payment option.");
 	}
-		else if(coupon==='GOODFRIDAY')
+		else if(coupon==='PREPAID')
 		{
 			this.toaster.success("Coupon Applied");
             this.couponApplied = true;
