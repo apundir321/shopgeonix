@@ -141,6 +141,22 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
     }
 }
 
+// my style starts here
+
+.black-button {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid black;
+    transition: all 0.5s;
+}
+
+.black-button:hover {
+    color: black;
+    background-color: white;
+}
+
 // home banner slider style start
 
 .homeslider {
@@ -195,4 +211,9 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
     a.logo img {
         max-width: 100px !important;
     }
+}
+
+.footer-middle.border-0, .widget.widget-about p {
+    color: #6c6565;
+    font-weight: 500;
 }

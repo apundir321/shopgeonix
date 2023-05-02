@@ -76,8 +76,6 @@ import { PostFourComponent } from './components/blog-post/post-four/post-four.co
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SingleComponent } from './single/single.component';
 
-
-
 @NgModule({
 	declarations: [
 		// header
@@ -141,8 +139,7 @@ import { SingleComponent } from './single/single.component';
 		PostThreeComponent,
 		PostFourComponent,
 		CountToComponent,
-  SingleComponent,
- 
+  		SingleComponent,
 	],
 
 	imports: [

@@ -101,6 +101,10 @@ const routes: Routes = [
 				path: 'forgotpassword',
 				component: ForgotpasswordComponent							
 			},
+			{
+				path: 'about-us',
+				component: AboutNutriComponent							
+			},
 			
 			// {
 			// 	path: 'elements',

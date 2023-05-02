@@ -1205,7 +1205,7 @@ a{
         }
     }
 
-    button.btn {
+    .btn {
         color: white;
         background-color: #00004d;
         margin-top: 15px;
@@ -1213,7 +1213,7 @@ a{
         border-radius: 5px;
     }
 
-    button.btn:hover {
+    .btn:hover {
         color: white;
         background-color: #00004d;
         margin-top: 15px;
@@ -1227,3 +1227,113 @@ a{
         display: none;
     }
 }
+
+// .whatsappmenu {
+//     position: fixed;
+//     max-width: 50px;
+//     padding: 5px;
+//     background-color: lightgrey;
+//     right: 0px;
+//     bottom: 30%;
+//     cursor: pointer;
+//     z-index: 10;
+
+//     ul {
+//         margin: 0;
+
+//         li {
+
+//             a {
+//                 color: white;
+//             }
+//         }
+//     }
+
+//     div {
+//         min-width: 300px;
+//         text-align: left;
+//         font-style: italic;
+//     }
+
+//     li.icon-one {
+//         position: absolute;
+//         top: 0;
+//         display: block;
+//         color: white;
+//         background-color: #5c6190;
+//         text-align: center;
+//         border-radius: 40px;
+//         width: 40px;
+//         height: 40px;
+//         overflow: hidden;
+//         display: flex;
+//         align-items: center;
+//         padding: 10px 10px 10px 14px;
+//         opacity: 0;
+//         min-height: 40px;
+//         transition: all 0.5s, width 1.5s;
+//         right: 0;
+//     }
+
+//     li.icon-two {
+//         position: absolute;
+//         top: 0;
+//         display: block;
+//         color: white;
+//         background-color: #5c6190;
+//         text-align: center;
+//         border-radius: 40px;
+//         width: 40px;
+//         height: 40px;
+//         overflow: hidden;
+//         display: flex;
+//         align-items: center;
+//         padding: 10px 10px 10px 14px;
+//         opacity: 0;
+//         min-height: 40px;
+//         transition: all 1s, width 1.5s;
+//         right: 0;
+//     }
+
+//     li.icon-three {
+//         position: absolute;
+//         top: 0;
+//         display: block;
+//         color: white;
+//         background-color: #5c6190;
+//         text-align: center;
+//         border-radius: 40px;
+//         width: 40px;
+//         height: 40px;
+//         overflow: hidden;
+//         display: flex;
+//         align-items: center;
+//         padding: 10px 10px 10px 14px;
+//         opacity: 0;
+//         min-height: 40px;
+//         transition: all 1.5s, width 1.5s;
+//         right: 0;
+//     }
+
+//     li i {
+//         padding-left: 10px;
+//     }
+// }
+
+// .whatsappmenu:hover li.icon-one {
+//     opacity: 1;
+//     top: -100px;
+//     width: 300px;
+// }
+
+// .whatsappmenu:hover li.icon-two {
+//     opacity: 1;
+//     top: -50px;
+//     width: 300px;
+// }
+
+// .whatsappmenu:hover li.icon-three {
+//     opacity: 1;
+//     top: -150px;
+//     width: 300px;
+// }

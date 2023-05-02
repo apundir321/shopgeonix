@@ -1,0 +1,127 @@
+
+.whatsappmenu {
+    position: fixed;
+    max-width: 55px;
+    padding: 5px;
+    background-color: #449244;
+    right: 30px;
+    bottom: 30%;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    border: 2px solid #449244;
+    animation-name: whatsappanimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    img {
+        padding: 5px;
+    }
+
+    ul {
+        margin: 0;
+
+        li {
+            z-index: -1;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    div {
+        min-width: 300px;
+        text-align: left;
+        font-style: italic;
+    }
+
+    li.icon-one {
+        position: absolute;
+        top: 0;
+        display: block;
+        color: white;
+        background-color: #5c6190;
+        text-align: center;
+        border-radius: 40px;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding: 10px 10px 10px 14px;
+        opacity: 0;
+        min-height: 40px;
+        transition: all 0.5s, width 1.5s;
+        right: 0;
+    }
+
+    li.icon-two {
+        position: absolute;
+        top: 0;
+        display: block;
+        color: white;
+        background-color: #5c6190;
+        text-align: center;
+        border-radius: 40px;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding: 10px 10px 10px 14px;
+        opacity: 0;
+        min-height: 40px;
+        transition: all 1s, width 1.5s;
+        right: 0;
+    }
+
+    li.icon-three {
+        position: absolute;
+        top: 0;
+        display: block;
+        color: white;
+        background-color: #5c6190;
+        text-align: center;
+        border-radius: 40px;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding: 10px 10px 10px 14px;
+        opacity: 0;
+        min-height: 40px;
+        transition: all 1.5s, width 1.5s;
+        right: 0;
+    }
+
+    li i {
+        padding-left: 10px;
+    }
+}
+
+.whatsappmenu:hover li.icon-one {
+    opacity: 1;
+    top: -100px;
+    width: 300px;
+}
+
+.whatsappmenu:hover li.icon-two {
+    opacity: 1;
+    top: -50px;
+    width: 300px;
+}
+
+.whatsappmenu:hover li.icon-three {
+    opacity: 1;
+    top: -150px;
+    width: 300px;
+}
+
+@keyframes whatsappanimation {
+    0% {border: 1px solid #449244; box-shadow: 0px 0px 1px #449244;}
+    100% {border: 1px solid #449244; box-shadow: 0 0 3px 10px #44924400;}
+
+}

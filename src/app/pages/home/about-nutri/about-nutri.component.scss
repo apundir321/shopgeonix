@@ -1,0 +1,67 @@
+.about-firstsec {
+    padding: 50px 0px;
+
+    h1 {
+        font-size: 100px;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+    .experience{
+        border-left: 1px solid #b8b8b8;
+        padding-left: 25px;
+
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        img {
+            max-width: 65px;
+        }
+    }
+}
+
+.responsible {
+    background-color: black;
+    padding: 70px 0px;
+
+    h2 {
+        color: white;
+    }
+
+    .responsible-main {
+        background-color: white;
+        padding: 25px;
+        padding-top: 80px;
+        margin-top: 100px;
+
+        .icon {
+            position: absolute;
+            top: 45px;
+            background-color: black;
+            padding: 25px;
+            border-radius: 50%;
+            left: 50px;
+            border: 2px solid white;
+
+            img {
+                max-width: 65px;
+            }
+        }
+    }
+}
+
+.properties {
+    padding: 30px 0px;
+
+    .properties-main {
+        img {
+            max-width: 40%;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+    }
+}
