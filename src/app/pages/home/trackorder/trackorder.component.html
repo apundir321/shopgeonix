@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="track-order">
+        <h3>Please enter your Order Number <br> track your order status.</h3>
+        <form #trackOrder="ngForm" (ngSubmit)="onSubmit(trackOrder.value)">
+            <input type="number" placeholder="Enter Order Number to Search" name="trackid" ngModel required>
+            <input type="submit" value="Track">
+        </form>
+    </div>
+    <div *ngIf="orderinfo; else elseBlock">
+        <!-- Content to display when condition is true -->
+        <div class="shipping-details">
+            <h4 class="text-center">Shipment Details</h4>
+            <table class="table">
+                <tr>
+                    <td>AWB No</td>
+                    <td>Order No</td>
+                    <td>Order Status</td>
+                </tr>
+                <tr *ngFor="let item of orderinfo">
+                    <td>{{item.AWB_NO}}</td>
+                    <td>{{item.Order_No}}</td>
+                    <td>{{item.Order_Status}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <ng-template #elseBlock>
+        <!-- Content to display when condition is false -->
+    </ng-template>
+</div>

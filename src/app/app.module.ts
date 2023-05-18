@@ -33,6 +33,7 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './shared/layout/layout.component';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { ErrorInterceptor } from './shared/services/error.interceptor';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 @NgModule({
@@ -58,8 +59,9 @@ import { ErrorInterceptor } from './shared/services/error.interceptor';
     SharedModule,
     HomeModule,
     // HttpModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule, 
     NgxSliderModule,
+    MatExpansionModule,
     
     
     ToastrModule.forRoot({
