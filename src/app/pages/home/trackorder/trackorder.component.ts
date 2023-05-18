@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
-
 
 @Component({
   selector: 'molla-trackorder',
@@ -9,6 +9,8 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./trackorder.component.scss']
 })
 export class TrackorderComponent implements OnInit {
+
+  @ViewChild('trackOrder', { static: false }) trackOrder: NgForm;
 
   orderinfo:any
 
@@ -32,8 +34,8 @@ export class TrackorderComponent implements OnInit {
         // Handle error
         console.error('API error:', error)
         this.toaster.error("Invalid Credentials!")
-        location.reload()
       }
-    );
+    )
+    this.trackOrder.resetForm();
 	}
 }
