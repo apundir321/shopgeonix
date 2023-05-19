@@ -80,6 +80,8 @@
         </div>
     </div> -->
 
+    <div *ngIf="!product.outOfStock">
+
     <div class="details-filter-row details-row-size">
         <label for="qty">Qty:</label>
         <molla-quantity-input [max]="product.stock" (changeQty)="onChangeQty( $event )" [value]="qty">
@@ -110,6 +112,17 @@
             class="icon-long-arrow-right"></i>
         </button></a>
     </div>
+
+</div>
+
+<div *ngIf="product.outOfStock">
+    <div class="details-filter-row details-row-size">
+        <label for="qty" style="font-weight: 600;
+        font-size: 3.4rem;width: 100%;">OUT OF STOCK</label>
+        <!-- <label>Out of Stock</label> -->
+    </div>
+</div>
+
 
     <!-- <div *ngIf="!token" style="padding-bottom: 10px;">
         <a><button (click)="onhide()" [disabled]="!variant?true:false" class="btn btn-outline-primary-2">
