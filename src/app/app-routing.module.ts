@@ -21,7 +21,8 @@ import { OrderPolicyComponent } from './pages/home/orderpolicy/orderpolicy.compo
 import { ReturnExchangeComponent } from './pages/home/returnexchange/returnexchange.component';
 import { SizeguideComponent } from './pages/home/sizeguide/sizeguide.component';
 import { TermsconditionComponent } from './pages/home/termscondition/termscondition.component';
-
+import { TrackorderComponent } from './pages/home/trackorder/trackorder.component';
+import { ServiceCentersComponent } from './pages/home/service-centers/service-centers.component';
 
 const routes: Routes = [
 	
@@ -49,6 +50,14 @@ const routes: Routes = [
 			{
 				path: 'terms-&-conditions',
 				component: TermsconditionComponent
+			},
+			{
+				path: 'track-order',
+				component: TrackorderComponent
+			},
+			{
+				path: 'service-centers',
+				component: ServiceCentersComponent
 			},
 			// {
 			// 	path: 'aboutUs',

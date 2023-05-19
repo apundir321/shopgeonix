@@ -32,7 +32,8 @@ import { RecommendCollectionComponent } from './recommend-collection/recommend-c
 import { ModalBasicComponent } from './index/modal-basic/modal-basic.component';
 import { CarouselBasicComponent } from './index/carousel-basic/carousel-basic.component';
 import { TermsconditionComponent } from './termscondition/termscondition.component';
-
+import { TrackorderComponent } from './trackorder/trackorder.component';
+import { ServiceCentersComponent } from './service-centers/service-centers.component';
 
 @NgModule({
 	declarations: [
@@ -57,7 +58,9 @@ import { TermsconditionComponent } from './termscondition/termscondition.compone
   RecommendCollectionComponent,
   ModalBasicComponent,
   CarouselBasicComponent,
-  TermsconditionComponent
+  TermsconditionComponent,
+  TrackorderComponent,
+  ServiceCentersComponent,
 		// BlogCollectionComponent
 	],
 

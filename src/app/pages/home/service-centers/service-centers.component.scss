@@ -1,0 +1,18 @@
+.service-centers-header {
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/images/about-top.webp');
+    background-size: cover;
+    color: white;
+    box-shadow: inset 0px 2000px #00000030;
+
+    h2 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+}

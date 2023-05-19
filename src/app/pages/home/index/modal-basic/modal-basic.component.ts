@@ -14,6 +14,11 @@ import {
 })
 export class ModalBasicComponent implements OnInit {
 
+	arrayvalue:any = [
+		254, 45, 212, 365, 2543
+	  ]
+	  newval:any;
+
 	title = 'molla-modal-basic';
 	showmodal:any = true
 	@ViewChild('content') content: ElementRef | undefined;
@@ -24,7 +29,9 @@ export class ModalBasicComponent implements OnInit {
 	ngAfterViewInit(): void { 
 	  this.open(this.content);
 	}
-	ngOnInit(): void {}
+	ngOnInit(): void {
+		this.newvalues();
+	}
 
 	open(content) {
 		this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title', centered: true, size: 'sm' }).result.then(
@@ -37,8 +44,6 @@ export class ModalBasicComponent implements OnInit {
 		);
 	}
 
-
-
 	private getDismissReason(reason: any): string {
 		if (reason === ModalDismissReasons.ESC) {
 			return 'by pressing ESC';
@@ -48,5 +53,10 @@ export class ModalBasicComponent implements OnInit {
 			return `with: ${reason}`;
 		}
 	}
+
+	newvalues () {
+		this.newval = this.arrayvalue[Math.floor(Math.random()*this.arrayvalue.length)];
+		console.log('console random values of an array', this.newval);
+	  }
 
 }
