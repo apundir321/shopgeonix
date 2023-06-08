@@ -217,3 +217,18 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
     color: #6c6565;
     font-weight: 500;
 }
+
+.label-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.6rem;
+    height: 2.5rem;
+    min-width: 0;
+    line-height: 1;
+    font-size: 15px;
+    transform: rotate(315deg);
+    left: -31px;
+    top: 10px;
+    display: none;
+}

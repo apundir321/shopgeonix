@@ -1,0 +1,202 @@
+<div class="hrform mt-5">
+    <div class="container">
+        <div class="col-sm-6">
+
+        </div>
+        <div class="col-sm-12">
+            <div class="hrform-main">
+                <h3 class="text-center my-5">Manager Feedback Form</h3>
+                <form action="">
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="text" placeholder="Employee Name">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" placeholder="position">
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Department">
+                    <div class="rating-div">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4>Personal Communication & Positive body Language</h4>
+                                <p>The ability communicated personally wherever possible understanding the limitaions of electronics communication.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" *ngFor="let star of stars" (click)="setRating(star)"
+                                        [class.active]="star <= selectedRating"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-div">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4>Politeness & Courtesy</h4>
+                                <p>The ability to be polite in any interaction.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" *ngFor="let star of stars" (click)="setRating(star)"
+                                        [class.active]="star <= selectedRating"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-div">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4>Addressing needs & Empathetic</h4>
+                                <p>The ability to respond positively to individual needs, even in circumstances when the needs cannot be met, given all the circumstances & show empathy</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" *ngFor="let star of stars" (click)="setRating(star)"
+                                        [class.active]="star <= selectedRating"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-div">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4>Intellectual flexibility</h4>
+                                <p>The ability to think on one's feet and respond with credible choices, Alternatives and ideas.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" *ngFor="let star of stars" (click)="setRating(star)"
+                                        [class.active]="star <= selectedRating"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-div">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4>Emotional intelligence & Negotiation</h4>
+                                <p>The ability to be self-aware, self-regulate, motivate, show empathy and be Socially adept. The ability to negotiate a successful outcome in an interaction.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" *ngFor="let star of stars" (click)="setRating(star)"
+                                        [class.active]="star <= selectedRating"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-div">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4>Reliability & Fairness</h4>
+                                <p>The ability to do what one says & be open in interaction. The ability t be fair to anyone in an interaction,
+                                    Taking account of all the Circumstances, and to explain clearly the position that is taken and the reason</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" *ngFor="let star of stars" (click)="setRating(star)"
+                                        [class.active]="star <= selectedRating"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-div">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4>Humility</h4>
+                                <p>The ability to acknowledge mistakes, misunderstanding, errors and fault, and to apologise where necessary.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" *ngFor="let star of stars" (click)="setRating(star)"
+                                        [class.active]="star <= selectedRating"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-div">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4>Encourage contribution</h4>
+                                <p>The ability to motivate and encourage others to make a contribution in interaction.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" *ngFor="let star of stars" (click)="setRating(star)"
+                                        [class.active]="star <= selectedRating"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-div">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4>Verbally Aggressive/Angry Behaviour</h4>
+                                <p>A personality trait that predisposes persons to attack the self-concepts of other people. It include shouting, Swearing, insults, and unkind remarks.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" *ngFor="let star of stars" (click)="setRating(star)"
+                                        [class.active]="star <= selectedRating"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-div">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4>Conflict resolution</h4>
+                                <p>The ability to confront a conflict at the time of conflict and to try and resolve any Dispute at the time of the dispute.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" *ngFor="let star of stars" (click)="setRating(star)"
+                                        [class.active]="star <= selectedRating"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-div">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4>On scale of 5, how satisfactorily he contribute or help in smooth Channelization of your responsibilities?</h4>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" *ngFor="let star of stars" (click)="setRating(star)"
+                                        [class.active]="star <= selectedRating"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-div">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4>Overall Rating (Out of 6)</h4>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rating">
+                                    <input type="number" min="1" max="6" maxlength="1" style="width: 20%; text-align: center;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-div">
+                        <h4>Positive Feedback (List Key Points)</h4>
+                        <textarea style="width: 100%; height: 200px; margin-top: 10px; border: 1px solid lightgray; border-radius: 10px;">
+                            
+                        </textarea>
+                    </div>
+                    <div class="rating-div">
+                        <h4>Facing Problems/Improvement Required/Feedback (List Key Points)</h4>
+                        <textarea style="width: 100%; height: 200px; margin-top: 10px; border: 1px solid lightgray; border-radius: 10px;">
+
+                        </textarea>
+                    </div>
+                    <input type="submit" value="SUBMIT" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

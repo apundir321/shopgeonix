@@ -1,0 +1,25 @@
+.hrform {
+    .hrform-main {
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .rating-div {
+            h4 {
+                margin-bottom: 0px;
+                margin-top: 25px;
+            }
+
+            .rating {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 100%;
+            }
+        }
+    }
+}

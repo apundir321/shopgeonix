@@ -1233,6 +1233,7 @@ a{
         border: 1px solid lightgray;
         border-radius: 5px;
         overflow: hidden;
+        cursor: pointer;
 
         .video-div {
             display: flex;
@@ -1305,6 +1306,35 @@ a{
             i {
                 color: #0E2C5E;
             }
+        }
+    }
+}
+
+// gallery section style starts here
+
+
+.gallery {
+    // background-image: url('/assets/images/1.jpg');
+
+    .heading {
+        p {
+            font-size: 20px;
+        }
+
+        i {
+            color: #4665ac;
+        }
+    }
+
+    .gallery-main {
+        max-height: 250px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover !important;
+            object-position: center !important;
         }
     }
 }

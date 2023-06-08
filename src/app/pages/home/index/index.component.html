@@ -20,7 +20,7 @@
     <div class="bg-transparent">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-sm-6 col-lg-3" contentAnim aniName="fadeInLeftShorter">
+                <div class="col-6 col-xs-6 col-lg-3" contentAnim aniName="fadeInLeftShorter">
                     <div class="icon-box icon-box-side">
                         <span class="icon-box-icon text-dark">
                             <i class="icon-rocket"></i>
@@ -32,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-sm-6 col-lg-3" contentAnim aniName="fadeInLeftShorter">
+                <div class="col-6 col-xs-6 col-lg-3" contentAnim aniName="fadeInLeftShorter">
                     <div class="icon-box icon-box-side">
                         <span class="icon-box-icon text-dark">
                             <i class="icon-rotate-left"></i>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-sm-6 col-lg-3" contentAnim aniName="fadeInRightShorter">
+                <div class="col-6 col-xs-6 col-lg-3" contentAnim aniName="fadeInRightShorter">
                     <div class="icon-box icon-box-side">
                         <span class="icon-box-icon text-dark">
                             <i class="icon-info-circle"></i>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-sm-6 col-lg-3" contentAnim aniName="fadeInRightShorter">
+                <div class="col-6 col-xs-6 col-lg-3" contentAnim aniName="fadeInRightShorter">
                     <div class="icon-box icon-box-side">
                         <span class="icon-box-icon text-dark">
                             <i class="icon-life-ring"></i>
@@ -290,35 +290,27 @@
     <div class="mb-5"></div>
 
     <molla-recommend-collection [products]="products" [loaded]="loaded" *ngIf="products"></molla-recommend-collection>
-    
-    <!-- <div class="last-sec">
+
+    <div class="last-sec">
         <div class="container">
-            <div class="row">
-                <div class="col pe-0">
-                    <div class="last-sec-div">
+            <div class="row justify-content-center">
+                <div class="col-xs-6 col-lg pe-2 mb-3">
+                    <div class="last-sec-div" routerLink="/shop/ssd-gold/3cols/" [queryParams]="{category: 6,'page':1}">
                         <div class="video-div">
-                            <video width="100%" height="auto" onloadedmetadata="this.muted=true" autoplay loop>
-                                <source src="./assets/images/video8.mp4" type="video/mp4">
-                            </video>
-                            <div class="new-launch">
-                                <img src="./assets/images/party-popper.png" class="img-fluid">
-                                <span>NEW LAUNCH</span>
-                            </div>
+                            <img src="/assets/images/video8.gif" class="img-fluid">
                         </div>
                         <div class="ptoduct-image">
                             <img src="./assets/images/pcategory/sata.png" class="img-fluid">
                         </div>
                         <div class="product-info text-center">
-                            <h5 class="text-center">SSD Sata</h5>
+                            <h5 class="text-center">SSD</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col pe-2">
-                    <div class="last-sec-div">
+                <div class="col-xs-6 col-lg pe-2 mb-3">
+                    <div class="last-sec-div" routerLink="/shop/ssd-m2/3cols/" [queryParams]="{category: 7,'page':1}">
                         <div class="video-div">
-                            <video width="100%" height="auto" onloadedmetadata="this.muted=true" autoplay loop>
-                                <source src="./assets/images/video2.mp4" type="video/mp4">
-                            </video>
+                            <img src="/assets/images/video2.gif" class="img-fluid">
                         </div>
                         <div class="ptoduct-image">
                             <img src="./assets/images/pcategory/m.2 ssd.png" class="img-fluid">
@@ -328,12 +320,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col pe-0">
-                    <div class="last-sec-div">
+                <div class="col-xs-6 col-lg pe-0 mb-3">
+                    <div class="last-sec-div" routerLink="/shop/motherboard/3cols/"
+                        [queryParams]="{category: 13,'page':1}">
                         <div class="video-div">
-                            <video width="100%" height="auto" onloadedmetadata="this.muted=true" autoplay loop>
-                                <source src="/assets/images/video3.mp4" type="video/mp4">
-                            </video>
+                            <img src="/assets/images/video3.gif" class="img-fluid">
                         </div>
                         <div class="ptoduct-image">
                             <img src="/assets/images/H510.png" class="img-fluid">
@@ -343,27 +334,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col pe-2">
-                    <div class="last-sec-div">
+                <div class="col-xs-6 col-lg pe-2 mb-3">
+                    <div class="last-sec-div" routerLink="/shop/graphic-card/3cols/"
+                        [queryParams]="{category: 12,'page':1}">
                         <div class="video-div">
-                            <video width="100%" height="auto" onloadedmetadata="this.muted=true" autoplay loop muted>
-                                <source src="./assets/images/video7.mp4" type="video/mp4">
-                            </video>
+                            <img src="/assets/images/video7.gif" class="img-fluid">
                         </div>
                         <div class="ptoduct-image">
-                            <img src="./assets/images/pcategory/pc monitor.png" class="img-fluid">
+                            <img src="./assets/images/pcategory/GRAPHIC CARD png.png" class="img-fluid">
                         </div>
                         <div class="product-info text-center">
-                            <h5 class="text-center">Monitor</h5>
+                            <h5 class="text-center">Graphic Card</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col pe-0">
-                    <div class="last-sec-div">
+                <div class="col-xs-6 col-lg pe-0 mb-3">
+                    <div class="last-sec-div" routerLink="/shop/hdd/3cols/" [queryParams]="{category: 2,'page':1}">
                         <div class="video-div">
-                            <video width="100%" height="auto" onloadedmetadata="this.muted=true" autoplay loop muted>
-                                <source src="./assets/images/video6.mp4" type="video/mp4">
-                            </video>
+                            <img src="/assets/images/video6.gif" class="img-fluid">
                         </div>
                         <div class="ptoduct-image">
                             <img src="./assets/images/pcategory/desktophdd.png" class="img-fluid">
@@ -375,80 +363,126 @@
                 </div>
             </div>
         </div>
-    </div> -->
-
-    <div class="mb-3"></div>
-
-    <div class="mb-3"></div>
-    <div class="container instagram">
-        <div class="heading text-center">
-            <h2 class="title title-lg" contentAnim aniName="blurIn">Follow Us On Instagram</h2>
-
-        </div>
     </div>
 
-    <owl-carousel carouselClasses="owl-simple" [options]="testiSlider">
-        <a href="https://www.instagram.com/geonixofficial/">
-            <div class="instagram-feed">
-                <molla-image src="assets/images/home/instagram/1.jpeg" alt="img"></molla-image>
-
-                <div class="instagram-feed-content">
-                    <a href="javascript:;"><i class="icon-heart-o"></i>466</a>
-                    <a href="javascript:;"><i class="icon-comments"></i>65</a>
+    <!-- <div class="gallery py-5">
+        <div class="container">
+            <div class="heading">
+                <h2>Ice Cream Shop <i class="fa-solid fa-images"></i></h2>
+                <p>ICE CREAM MENU</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="row pb-1">
+                        <div class="col-sm-4 pl-0">
+                            <div class="gallery-main">
+                                <img src="./assets/images/gallery/one.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pl-0">
+                            <div class="gallery-main">
+                                <img src="./assets/images/gallery/two.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pl-0">
+                            <div class="gallery-main">
+                                <img src="./assets/images/gallery/three.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 pl-0">
+                            <div class="gallery-main">
+                                <img src="./assets/images/gallery/four.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pl-0">
+                            <div class="gallery-main">
+                                <img src="./assets/images/gallery/five.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pl-0">
+                            <div class="gallery-main">
+                                <img src="./assets/images/gallery/six.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/assets/images/1.jpg" class="img-fluid">
                 </div>
             </div>
-        </a>
-        <a href="https://www.instagram.com/geonixofficial/">
-            <div class="instagram-feed">
-                <molla-image src="assets/images/home/instagram/2.jpeg" alt="img"></molla-image>
 
-                <div class="instagram-feed-content">
-                    <a href="javascript:;"><i class="icon-heart-o"></i>39</a>
-                    <a href="javascript:;"><i class="icon-comments"></i>78</a>
-                </div>
-            </div>
-        </a>
-        <a href="https://www.instagram.com/geonixofficial/">
-            <div class="instagram-feed">
-                <molla-image src="assets/images/home/instagram/3.jpeg" alt="img"></molla-image>
+        </div>
+    </div> -->
 
-                <div class="instagram-feed-content">
-                    <a href="javascript:;"><i class="icon-heart-o"></i>691</a>
-                    <a href="javascript:;"><i class="icon-comments"></i>87</a>
-                </div>
-            </div>
-        </a>
-        <a href="https://www.instagram.com/geonixofficial/">
-            <div class="instagram-feed">
-                <molla-image src="assets/images/home/instagram/4.jpeg" alt="img"></molla-image>
+    <div class="insta-post mt-3">
+        <div class="heading text-center">
+            <h3 class="py-3">Follow Us On Instagram</h3>
+        </div>
+        <owl-carousel carouselClasses="owl-simple" [options]="testiSlider">
+            <a href="https://www.instagram.com/geonixofficial/">
+                <div class="instagram-feed">
+                    <molla-image src="assets/images/home/instagram/1.jpeg" alt="img"></molla-image>
 
-                <div class="instagram-feed-content">
-                    <a href="javascript:;"><i class="icon-heart-o"></i>508</a>
-                    <a href="javascript:;"><i class="icon-comments"></i>124</a>
+                    <div class="instagram-feed-content">
+                        <a href="javascript:;"><i class="icon-heart-o"></i>466</a>
+                        <a href="javascript:;"><i class="icon-comments"></i>65</a>
+                    </div>
                 </div>
-            </div>
-        </a>
-        <a href="https://www.instagram.com/geonixofficial/">
-            <div class="instagram-feed">
-                <molla-image src="assets/images/home/instagram/5.jpeg" alt="img"></molla-image>
+            </a>
+            <a href="https://www.instagram.com/geonixofficial/">
+                <div class="instagram-feed">
+                    <molla-image src="assets/images/home/instagram/2.jpeg" alt="img"></molla-image>
 
-                <div class="instagram-feed-content">
-                    <a href="javascript:;"><i class="icon-heart-o"></i>433</a>
-                    <a href="javascript:;"><i class="icon-comments"></i>27</a>
+                    <div class="instagram-feed-content">
+                        <a href="javascript:;"><i class="icon-heart-o"></i>39</a>
+                        <a href="javascript:;"><i class="icon-comments"></i>78</a>
+                    </div>
                 </div>
-            </div>
-        </a>
-        <a href="https://www.instagram.com/geonixofficial/">
-            <div class="instagram-feed">
-                <molla-image src="assets/images/home/instagram/6.jpg" alt="img"></molla-image>
+            </a>
+            <a href="https://www.instagram.com/geonixofficial/">
+                <div class="instagram-feed">
+                    <molla-image src="assets/images/home/instagram/3.jpeg" alt="img"></molla-image>
 
-                <div class="instagram-feed-content">
-                    <a href="javascript:;"><i class="icon-heart-o"></i>122</a>
-                    <a href="javascript:;"><i class="icon-comments"></i>55</a>
+                    <div class="instagram-feed-content">
+                        <a href="javascript:;"><i class="icon-heart-o"></i>691</a>
+                        <a href="javascript:;"><i class="icon-comments"></i>87</a>
+                    </div>
                 </div>
-            </div>
-        </a>
-    </owl-carousel>
+            </a>
+            <a href="https://www.instagram.com/geonixofficial/">
+                <div class="instagram-feed">
+                    <molla-image src="assets/images/home/instagram/4.jpeg" alt="img"></molla-image>
+
+                    <div class="instagram-feed-content">
+                        <a href="javascript:;"><i class="icon-heart-o"></i>508</a>
+                        <a href="javascript:;"><i class="icon-comments"></i>124</a>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/geonixofficial/">
+                <div class="instagram-feed">
+                    <molla-image src="assets/images/home/instagram/5.jpeg" alt="img"></molla-image>
+
+                    <div class="instagram-feed-content">
+                        <a href="javascript:;"><i class="icon-heart-o"></i>433</a>
+                        <a href="javascript:;"><i class="icon-comments"></i>27</a>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/geonixofficial/">
+                <div class="instagram-feed">
+                    <molla-image src="assets/images/home/instagram/6.jpg" alt="img"></molla-image>
+
+                    <div class="instagram-feed-content">
+                        <a href="javascript:;"><i class="icon-heart-o"></i>122</a>
+                        <a href="javascript:;"><i class="icon-comments"></i>55</a>
+                    </div>
+                </div>
+            </a>
+        </owl-carousel>
+    </div>
 
     <!-- <div class="whatsappmenu">
         <img src="./assets/images/whatsapp-icon.jpg" class="img-fluid">

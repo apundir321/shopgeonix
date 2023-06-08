@@ -3,7 +3,7 @@
 
 .homeslider {
     .homeslider-main {
-        min-height: 31vw;
+        min-height: 30.5vw;
         display: flex;
         align-items: center;
         padding-left: 10vw;
@@ -84,8 +84,8 @@
     }
 
     .one {
-        background-image: url('/assets/images/Geonix\ Hero\ GIF.gif');
-        background-size: contain;
+        background-image: url('/assets/images/Geonix\ Hero.gif');
+        background-size: cover;
     }
 
     // .two {

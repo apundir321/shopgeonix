@@ -33,8 +33,6 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './shared/layout/layout.component';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { ErrorInterceptor } from './shared/services/error.interceptor';
-import { MatExpansionModule } from '@angular/material/expansion';
-
 
 @NgModule({
   declarations: [
@@ -61,7 +59,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
     // HttpModule,
     BrowserAnimationsModule, 
     NgxSliderModule,
-    MatExpansionModule,
     
     
     ToastrModule.forRoot({
