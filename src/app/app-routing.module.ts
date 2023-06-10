@@ -81,7 +81,7 @@ const routes: Routes = [
 				component: SuccessComponent
 			},
 			{
-				path: 'hr-form',
+				path: 'leadership-feedback-form',
 				component: HrformComponent
 			},
 
