@@ -8,10 +8,25 @@
             margin-bottom: 10px;
         }
 
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            color: grey;
+        }
+
         .rating-div {
             h4 {
                 margin-bottom: 0px;
                 margin-top: 25px;
+            }
+
+            .rating-text {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 23px;
+                padding-right: 0px;
             }
 
             .rating {
@@ -19,6 +34,10 @@
                 align-items: center;
                 justify-content: space-evenly;
                 height: 100%;
+
+                i {
+                    cursor: pointer;
+                }
             }
         }
     }
