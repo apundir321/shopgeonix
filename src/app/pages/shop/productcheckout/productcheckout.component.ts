@@ -159,14 +159,14 @@ export class ProductcheckoutComponent implements OnInit {
 	  placeorder(){
 		let paymentString = "";
 		let coupon = undefined;
-		const ele = document.getElementById("flexRadioDefault2") as HTMLInputElement;
+		const ele = document.getElementById("flexRadioDefault1") as HTMLInputElement;
 		
 		
 		if(ele.checked==true){
-			paymentString='COD';
+			paymentString='RZP';
 		}	  
 		else{
-			paymentString = 'RZP';
+			paymentString = 'COD';
 		}
 		if(this.token){
 		  this.loader = true;
@@ -434,14 +434,14 @@ export class ProductcheckoutComponent implements OnInit {
 			applycoupon()
 			{
 				let paymentString = "";
-		const ele = document.getElementById("flexRadioDefault2") as HTMLInputElement;
+		const ele = document.getElementById("flexRadioDefault1") as HTMLInputElement;
 		
 		
 		if(ele.checked==true){
-			paymentString='COD';
+			paymentString='RZP';
 		}	  
 		else{
-			paymentString = 'RZP';
+			paymentString = 'COD';
 		}
 				let coupon = (<HTMLInputElement>document.getElementById("checkout-discount-input")).value;
 				if(coupon===''|| coupon ==undefined)

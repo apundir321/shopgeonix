@@ -235,14 +235,14 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 		// 	Phone:['', Validators.required],
 		// 	Email:['', Validators.required]
 		let paymentString = "";
-		const ele = document.getElementById("flexRadioDefault2") as HTMLInputElement;
+		const ele = document.getElementById("flexRadioDefault1") as HTMLInputElement;
 		
 		
 		if(ele.checked==true){
-			paymentString='COD';
+			paymentString='RZP';
 		}	  
 		else{
-			paymentString = 'RZP';
+			paymentString = 'COD';
 		}
 		if(this.couponApplied){
 			coupon = this.couponCodeApplied;
@@ -407,14 +407,14 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 	applycoupon()
 	{
 		let paymentString = "";
-		const ele = document.getElementById("flexRadioDefault2") as HTMLInputElement;
+		const ele = document.getElementById("flexRadioDefault1") as HTMLInputElement;
 		
 		
 		if(ele.checked==true){
-			paymentString='COD';
+			paymentString='RZP';
 		}	  
 		else{
-			paymentString = 'RZP';
+			paymentString = 'COD';
 		}
 		let coupon = (<HTMLInputElement>document.getElementById("checkout-discount-input")).value;
 		if(coupon===''|| coupon ==undefined)
