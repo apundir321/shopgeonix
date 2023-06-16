@@ -23,7 +23,6 @@ import { SizeguideComponent } from './pages/home/sizeguide/sizeguide.component';
 import { TermsconditionComponent } from './pages/home/termscondition/termscondition.component';
 import { TrackorderComponent } from './pages/home/trackorder/trackorder.component';
 import { ServiceCentersComponent } from './pages/home/service-centers/service-centers.component';
-import { HrformComponent } from './pages/home/hrform/hrform.component';
 
 const routes: Routes = [
 	
@@ -79,10 +78,6 @@ const routes: Routes = [
 			{
 				path: 'success',
 				component: SuccessComponent
-			},
-			{
-				path: 'leadership-feedback-form',
-				component: HrformComponent
 			},
 
 			// {

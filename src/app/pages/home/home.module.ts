@@ -34,7 +34,6 @@ import { CarouselBasicComponent } from './index/carousel-basic/carousel-basic.co
 import { TermsconditionComponent } from './termscondition/termscondition.component';
 import { TrackorderComponent } from './trackorder/trackorder.component';
 import { ServiceCentersComponent } from './service-centers/service-centers.component';
-import { HrformComponent } from './hrform/hrform.component';
 
 @NgModule({
 	declarations: [
@@ -62,7 +61,6 @@ import { HrformComponent } from './hrform/hrform.component';
   TermsconditionComponent,
   TrackorderComponent,
   ServiceCentersComponent,
-  HrformComponent,
 		// BlogCollectionComponent
 	],
 

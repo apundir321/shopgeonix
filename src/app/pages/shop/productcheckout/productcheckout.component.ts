@@ -30,11 +30,13 @@ export class ProductcheckoutComponent implements OnInit {
   offervalue:any
   discountoffer:any
   discount:number=0;
- paymentMode="RZP";
- varient:number;
- token:any=localStorage.getItem("token");
- AllOrder: any;
-	order: any;
+  paymentMode="RZP";
+  varient:number;
+  token:any=localStorage.getItem("token");
+  AllOrder: any;
+  order: any;
+  deliverytext: string = "Free Delivery";
+  priceoncod:number = 0;
 
 	showCoupon:boolean =false;
 	couponApplied:boolean = false;
@@ -140,7 +142,15 @@ export class ProductcheckoutComponent implements OnInit {
   }
 
   onItemChange(e:any){
-	// console.log(" Value is : ", e.target.value );
+	// console.log("console pay method is here", e.target.value );
+	if(e.target.value == "COD") {
+		this.deliverytext = 'Delivery Charges ₹99 included'
+		this.priceoncod = 99;
+	}
+	else {
+		this.deliverytext = 'Free Delivery'
+		this.priceoncod = 0;
+	}
 	this.paymentMode = e.target.value;
 	if(this.paymentMode==='COD'){
 	if(this.couponApplied){
@@ -186,7 +196,7 @@ export class ProductcheckoutComponent implements OnInit {
 			"quantity":this.change,
 			"couponcode":coupon,
 				  "paymentMethod":paymentString,
-				  "amount":this.discountoffer,
+				  "amount":this.discountoffer + this.priceoncod,
 				  "shippingAddress":{
 					"name":this.userForm.get("firstName")?.value + this.userForm.get("lastName")?.value,
 					"country":this.userForm.get("country")?.value,

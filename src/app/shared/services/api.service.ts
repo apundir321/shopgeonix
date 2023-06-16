@@ -108,4 +108,5 @@ export class ApiService {
 	public fetchElementBlog(): Observable<any> {
 		return this.http.get(`${environment.MOLLA_URL}/elements/blogs`);
 	}
+
 }
