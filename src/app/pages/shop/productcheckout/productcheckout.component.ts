@@ -172,15 +172,21 @@ export class ProductcheckoutComponent implements OnInit {
 
 	placeorder() {
 		let paymentString = "";
+		let fastdelivery = false;
 		let coupon = undefined;
 		const ele = document.getElementById("flexRadioDefault1") as HTMLInputElement;
-
+		const fastdeliveryChecked = document.getElementById("flexRadioDefault3") as HTMLInputElement;
 
 		if (ele.checked == true) {
 			paymentString = 'RZP';
 		}
 		else {
 			paymentString = 'COD';
+		}
+
+		if(fastdeliveryChecked.checked == true){
+			paymentString = 'RZP'
+			fastdelivery = true;
 		}
 		if (this.token) {
 			this.loader = true;
@@ -200,7 +206,7 @@ export class ProductcheckoutComponent implements OnInit {
 				"quantity": this.change,
 				"couponcode": coupon,
 				"paymentMethod": paymentString,
-				"amount": this.discountoffer,
+				"amount": this.discountoffer+this.priceoncod,
 				"shippingAddress": {
 					"name": this.userForm.get("firstName")?.value + this.userForm.get("lastName")?.value,
 					"country": this.userForm.get("country")?.value,
@@ -217,7 +223,7 @@ export class ProductcheckoutComponent implements OnInit {
 			console.log("cart", this.pid)
 			// location.reload()
 			// console.log("card-remove",this.cartService.removeFromCart(this.cartItems))
-			this.master.methodPost(data, "/order/product").subscribe(res => {
+			this.master.methodPost(data, "/order/product?fastDelivery="+fastdelivery).subscribe(res => {
 				console.log(res, res.msg == "make payment");
 				this.loader = false;
 				if (!res.status) {
@@ -314,7 +320,7 @@ export class ProductcheckoutComponent implements OnInit {
 			console.log("cart", this.pid)
 			// location.reload()
 			// console.log("card-remove",this.cartService.removeFromCart(this.cartItems))
-			this.master.methodPost(data, "/order/guest").subscribe(res => {
+			this.master.methodPost(data, "/order/guest?fastDelivery="+fastdelivery).subscribe(res => {
 				console.log("guest", res)
 				localStorage.setItem("token", res['response'].guestToken);
 				localStorage.setItem("userId", res['response'].guestId);
