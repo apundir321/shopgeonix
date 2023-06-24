@@ -209,10 +209,10 @@
                                 </div>
                             </div>
                         </li>
-                        <li>Shop</li>
-                        <li>About</li>
-                        <li>Service Centers</li>
-                        <li>Track Order</li>
+                        <li [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 16,'page':1}">Shop</li>
+                        <!-- <li routerLink='shop/sidebar/3cols/'>About</li> -->
+                        <li routerLink='/service-centers'>Service Centers</li>
+                        <li routerLink='/track-order'><i class="fa-solid fa-location-dot"></i> Track Order</li>
                     </ul>
                 </div>
 

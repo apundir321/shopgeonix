@@ -103,7 +103,7 @@
                         background-color: white;
                         position: absolute;
                         top: -8px;
-                        left: 27%;
+                        left: 34%;
                         transform: rotateZ(45deg);
                     }
                 }
@@ -125,6 +125,14 @@
                 width: 10vw !important;
             }
         }
+    }
+}
+
+@media only screen and (min-width : 1145px) {
+    .menu-cat-image {
+        padding: 10px;
+        min-width: 105px !important;
+        text-align: center;
     }
 }
 
