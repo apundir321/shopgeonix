@@ -6,6 +6,7 @@ import {
 	ViewChild,
   } from '@angular/core';
   import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+  
 
 @Component({
   selector: 'molla-modal-basic',
