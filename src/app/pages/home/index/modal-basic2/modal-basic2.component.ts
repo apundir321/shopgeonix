@@ -15,7 +15,7 @@ export class ModalBasic2Component implements OnInit {
 	constructor(private modalService: NgbModal) {}
 
 	open(content) {
-		this.modalService.open(content, { ariaLabelledBy: 'modal-basic2-title' }).result.then(
+		this.modalService.open(content, { ariaLabelledBy: 'modal-basic2-title', centered: true }).result.then(
 			(result) => {
 				this.closeResult = `Closed with: ${result}`;
 			},
