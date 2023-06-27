@@ -200,13 +200,13 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
 // modal display none on mobile screens
 
 @media screen and (max-width: 576px) {
-    .modal-backdrop.fade.show {
-        display: none !important;
-    }
+    // .modal-backdrop.fade.show {
+    //     display: none !important;
+    // }
 
-    .modal-body {
-        display: none !important;
-    }
+    // .modal-body {
+    //     display: none !important;
+    // }
 
     a.logo img {
         max-width: 100px !important;

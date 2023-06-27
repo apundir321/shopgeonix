@@ -1335,11 +1335,13 @@ a{
             width: 100%;
             object-fit: cover !important;
             object-position: center !important;
+            min-height: 262px;
         }
     }
 
     .gallery-main2 {
-        img{
+        img{      
+            min-height: 540px;
         }
 
         .video-btn {
