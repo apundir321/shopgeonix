@@ -404,8 +404,6 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 	applycoupon() {
 		let paymentString = "";
 		const ele = document.getElementById("flexRadioDefault1") as HTMLInputElement;
-
-
 		if (ele.checked == true) {
 			paymentString = 'RZP';
 		}

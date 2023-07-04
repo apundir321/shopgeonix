@@ -10,6 +10,7 @@ export class ServiceCentersComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log()
   }
 
   panels = [

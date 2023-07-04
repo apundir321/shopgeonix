@@ -5,7 +5,7 @@
     </div>
 </div>
 
-<div class="service-centers mt-5">
+<div class="service-centers mt-5 mb-5">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6 sticky-image">
@@ -16,7 +16,7 @@
                 <div class="accordion">
                     <div *ngFor="let panel of panels" class="panel">
                       <div class="panel-header" (click)="togglePanel(panel)">
-                        <span>{{ panel.title }}</span>
+                        <span style="text-transform: uppercase;">{{ panel.title }}</span>
                         <i class="arrow" [ngClass]="{'rotated': panel.expanded}"></i>
                       </div>
                       <div *ngIf="panel.expanded" class="panel-content">
