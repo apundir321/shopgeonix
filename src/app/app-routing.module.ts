@@ -23,6 +23,7 @@ import { SizeguideComponent } from './pages/home/sizeguide/sizeguide.component';
 import { TermsconditionComponent } from './pages/home/termscondition/termscondition.component';
 import { TrackorderComponent } from './pages/home/trackorder/trackorder.component';
 import { ServiceCentersComponent } from './pages/home/service-centers/service-centers.component';
+import { Page404Component } from './pages/home/page404/page404.component';
 
 const routes: Routes = [
 	
@@ -58,6 +59,10 @@ const routes: Routes = [
 			{
 				path: 'service-centers',
 				component: ServiceCentersComponent
+			},
+			{
+				path: 'error-page',
+				component: Page404Component
 			},
 			// {
 			// 	path: 'aboutUs',
@@ -154,7 +159,7 @@ const routes: Routes = [
 	
 	{
 		path: '**',
-		redirectTo: '/pages/404'
+		redirectTo: '/error-page'
 	}
 ];
 

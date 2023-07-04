@@ -35,6 +35,7 @@ import { TermsconditionComponent } from './termscondition/termscondition.compone
 import { TrackorderComponent } from './trackorder/trackorder.component';
 import { ServiceCentersComponent } from './service-centers/service-centers.component';
 import { ModalBasic2Component } from './index/modal-basic2/modal-basic2.component';
+import { Page404Component } from './page404/page404.component';
 
 @NgModule({
 	declarations: [
@@ -63,6 +64,7 @@ import { ModalBasic2Component } from './index/modal-basic2/modal-basic2.componen
   TrackorderComponent,
   ServiceCentersComponent,
   ModalBasic2Component,
+  Page404Component,
 		// BlogCollectionComponent
 	],
 
