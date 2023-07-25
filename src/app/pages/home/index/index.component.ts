@@ -1,4 +1,4 @@
-import { Component, DebugNode, OnInit } from '@angular/core';
+import { Component, DebugNode, OnInit, ViewChild } from '@angular/core';
 import { ModalService } from 'src/app/shared/services/modal.service';
 import { ApiService } from 'src/app/shared/services/api.service';
 import { UtilsService } from 'src/app/shared/services/utils.service';
@@ -19,6 +19,7 @@ declare var $:any;
 })
 
 export class IndexComponent implements OnInit {
+
 	cats = cats;
 	emailForm?:any
 	categoryList:any=[]
@@ -141,9 +142,6 @@ export class IndexComponent implements OnInit {
 		nav: true
 	  }
 
-
-
-
 	getlist(){
 		this.master.getMethod("/GetCategories").subscribe(data=>{
 			// console.log(data);
@@ -161,7 +159,6 @@ getproduct(){
 		console.log("this.productssss");
 		console.log(this.products);
 		this.loaded = true;
-})
+})}
 
-}
 }

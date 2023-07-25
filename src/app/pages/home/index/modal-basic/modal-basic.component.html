@@ -1,15 +1,50 @@
 <div class="modalon-load">
 	<ng-template #content let-modal>
-			<div class="modal-body">
-				<button type="button" class="btn-close" aria-label="Close"
-				(click)="modal.dismiss('Cross click')">
+		<div class="modal-body">
+			<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')">
 				<i class="fa-solid fa-circle-xmark"></i></button>
-				<div class="bodymain-div">
-					<img src="assets/images/popup.jpeg" class="img-fluid">
+			<div class="bodymain-div">
+				<h3>Press the wheel to land on a random prize</h3>
+				<h3>Or press the button to land on the corresponding prize</h3>
+				<ngx-wheel
+				  Roulette
+				  width="400"
+				  height="400"
+				  spinDuration="8"
+				  [items]="items"
+				  [innerRadius]="20"
+				  [spinAmount]="10"
+				  [textOrientation]="textOrientation"
+				  [textAlignment]="textAlignment"
+				  pointerStrokeColor="black"
+				  pointerFillColor="gold"
+				  [idToLandOn]="idToLandOn"
+				  (onSpinStart)="before()"
+				  (onSpinComplete)="after()"
+				></ngx-wheel>
+				<div class="reset">
+				  <button (click)="reset()">Reset</button>
 				</div>
-				<!-- <h1>{{newval}}</h1> -->
+				<div class="buttons">
+				  <button (click)="spin(0)">Prize 0</button>
+				  <button (click)="spin(1)">Prize 1</button>
+				  <button (click)="spin(2)">Prize 2</button>
+				  <button (click)="spin(3)">Prize 3</button>
+				  <button (click)="spin(4)">Prize 4</button>
+				  <button (click)="spin(5)">Prize 5</button>
+				  <button (click)="spin(6)">Prize 6</button>
+				  <button (click)="spin(7)">Prize 7</button>
+				  <button (click)="spin(8)">Prize 8</button>
+				  <button (click)="spin(9)">Prize 9</button>
+				  <button (click)="spin(10)">Prize 10</button>
+				  <button (click)="spin(11)">Prize 11</button>
+				</div>
 			</div>
+			<!-- <h1>{{newval}}</h1> -->
+		</div>
 	</ng-template>
-	<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+	<!-- <button class="btn btn-lg btn-outline-primary d-none" (click)="open(content)">Launch demo modal</button> -->
 	<!-- <hr /> -->
+	<div id="chart"></div>
+    <div id="question"><h1></h1></div>
 </div>
