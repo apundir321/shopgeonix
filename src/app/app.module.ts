@@ -33,6 +33,7 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './shared/layout/layout.component';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { ErrorInterceptor } from './shared/services/error.interceptor';
+import { NgxWheelModule } from 'ngx-wheel';
 
 @NgModule({
   declarations: [
@@ -59,8 +60,7 @@ import { ErrorInterceptor } from './shared/services/error.interceptor';
     // HttpModule,
     BrowserAnimationsModule, 
     NgxSliderModule,
-    
-    
+    NgxWheelModule,
     ToastrModule.forRoot({
       timeOut: 2000,
       progressBar: false,
