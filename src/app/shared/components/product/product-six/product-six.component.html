@@ -5,7 +5,7 @@
         <span class="product-label label-top" *ngIf="product.top">Top</span> -->
       
 
-        <a [routerLink]="['/product/'+product.category.name+'/'+ product.name]">
+        <a [routerLink]="['/product/'+product.category.name+'/'+ product.productUrl]">
             <molla-image [src]="product.image" alt="Product" class="product-image">
             </molla-image>
         </a>
@@ -39,7 +39,7 @@
 
     <div class="product-body">
         <h3 class="product-title">
-            <a [routerLink]="['/product/'+product.category.name+'/'+ product.name]">{{ product.name }}</a>
+            <a [routerLink]="['/product/'+product.category.name+'/'+ product.productUrl]">{{ product.name }}</a>
         </h3>
 
         <div class="product-price" *ngIf="!product.stock || product.stock == 0 else elseBlock">

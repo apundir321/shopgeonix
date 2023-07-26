@@ -84,7 +84,7 @@ export class ApiService {
 		
 	}
 	public getSingleProductByName(slug: string, isQuickView = false): Observable<any> {
-		return this.http.get(`${environment.SERVER_URL}/product/productinfo/${slug}`);
+		return this.http.get(`${environment.SERVER_URL}/product/producturl/${slug}`);
 		
 	}
 

@@ -213,7 +213,7 @@
                                     <tbody>
                                         <tr *ngFor="let product of cartData">
                                             <td><a
-                                                    [routerLink]="['/product/Geonix/'+ product.inventory.product.name]">{{ product.inventory.product.name }}</a>
+                                                    [routerLink]="['/product/Geonix/'+ product.inventory.product.productUrl]">{{ product.inventory.product.name }}</a>
                                             </td>
                                             <td><i class="fa-solid fa-indian-rupee-sign"></i>{{product.quantity * product.inventory.price}}</td>
                                         </tr>

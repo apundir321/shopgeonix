@@ -3,7 +3,7 @@
         <span class="product-label label-circle label-new">New</span>
 
 
-        <a [routerLink]="['/product/'+product.category.name+'/'+ product.name]" *ngIf="product">
+        <a [routerLink]="['/product/'+product.category.name+'/'+ product.productUrl]" *ngIf="product">
             <molla-image [src]="product['image']" alt="Product" class="product-image"
                 *ngIf="product['productImage'][0]">
             </molla-image>
@@ -39,7 +39,7 @@
         </div>
 
         <h3 class="product-title">
-            <a [routerLink]="['/product/'+product.category.name+'/'+ product.name]">{{ product.name }}</a>
+            <a [routerLink]="['/product/'+product.category.name+'/'+ product.productUrl]">{{ product.name }}</a>
         </h3>
         <div class="product-price">
             <span class="new-price">Rs. {{ product.defaultPrice }}</span>
