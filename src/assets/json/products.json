@@ -12,7 +12,8 @@
                 "name": "HDD – Hard Disk Drive",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/HDD.jpg",
-                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg"
+                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg",
+                "categoryUrl": "hdd-hard-disk-drive"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/13/Geonix%201TB%20Hard%20Disk%20Drive/1.jpg",
@@ -72,7 +73,8 @@
                 "name": "HDD – Hard Disk Drive",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/HDD.jpg",
-                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg"
+                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg",
+                "categoryUrl": "hdd-hard-disk-drive"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/16/Geonix%202TB%20Hard%20Disk%20Drive/1.jpg",
@@ -132,7 +134,8 @@
                 "name": "HDD – Hard Disk Drive",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/HDD.jpg",
-                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg"
+                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg",
+                "categoryUrl": "hdd-hard-disk-drive"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3717/Desktop%203TB%20Hard%20Drive%20/1.jpg",
@@ -192,7 +195,8 @@
                 "name": "HDD – Hard Disk Drive",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/HDD.jpg",
-                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg"
+                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg",
+                "categoryUrl": "hdd-hard-disk-drive"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/24/Geonix%204TB%20Hard%20Disk%20Drive/1.jpg",
@@ -252,7 +256,8 @@
                 "name": "HDD – Hard Disk Drive",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/HDD.jpg",
-                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg"
+                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg",
+                "categoryUrl": "hdd-hard-disk-drive"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/26/Geonix%20500GB%20Hard%20Disk%20Drive/1.jpg",
@@ -312,7 +317,8 @@
                 "name": "HDD – Hard Disk Drive",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/HDD.jpg",
-                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg"
+                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg",
+                "categoryUrl": "hdd-hard-disk-drive"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2029/Geonix%206TB%20Hard%20Disk%20Drive/1.jpg",
@@ -372,7 +378,8 @@
                 "name": "Desktop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "desktop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3057/Geonix%202GB%20DDR2%20800%20MHz/1.jpg",
@@ -432,7 +439,8 @@
                 "name": "Desktop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "desktop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3064/Geonix%202GB%20DDR3%201333%20MHz/1.jpg",
@@ -492,7 +500,8 @@
                 "name": "Desktop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "desktop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4/Geonix%204GB%20DDR3%201333%20Mhz/1.jpg",
@@ -552,7 +561,8 @@
                 "name": "Desktop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "desktop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/7/Geonix%204GB%20DDR3%201600%20Mhz/1.jpg",
@@ -612,7 +622,8 @@
                 "name": "Desktop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "desktop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3071/Geonix%204GB%20DDR4%202400T%20MHz/1.jpg",
@@ -672,7 +683,8 @@
                 "name": "Desktop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "desktop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/10/Geonix%208GB%20DDR3%201600%20Mhz/1.jpg",
@@ -732,7 +744,8 @@
                 "name": "External SSD M.2",
                 "code": "ESSD",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "external-ssd-m2"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4145/External%20SSD%20M.2%20128GB/1.jpg",
@@ -797,7 +810,8 @@
                 "name": "External SSD M.2",
                 "code": "ESSD",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "external-ssd-m2"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4152/External%20SSD%20M.2%201TB/1.jpg",
@@ -862,7 +876,8 @@
                 "name": "External SSD M.2",
                 "code": "ESSD",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "external-ssd-m2"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4147/External%20SSD%20M.2%20256GB/1.jpg",
@@ -927,7 +942,8 @@
                 "name": "External SSD M.2",
                 "code": "ESSD",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "external-ssd-m2"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4149/External%20SSD%20M.2%20512GB/1.jpg",
@@ -992,7 +1008,8 @@
                 "name": "External SSD NVME",
                 "code": "ESSDNVME",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "external-ssd-nvme"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4154/External%20SSD%20NVME%20128GB/1.jpg",
@@ -1057,7 +1074,8 @@
                 "name": "External SSD NVME",
                 "code": "ESSDNVME",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "external-ssd-nvme"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4160/External%20SSD%20NVME%201TB/1.jpg",
@@ -1122,7 +1140,8 @@
                 "name": "External SSD NVME",
                 "code": "ESSDNVME",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "external-ssd-nvme"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4156/External%20SSD%20NVME%20256GB/1.jpg",
@@ -1187,7 +1206,8 @@
                 "name": "External SSD NVME",
                 "code": "ESSDNVME",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "external-ssd-nvme"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4158/External%20SSD%20NVME%20512GB/1.jpg",
@@ -1252,7 +1272,8 @@
                 "name": "External SSD SATA",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "external-ssd-sata"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4439/External%20SSD%20SATA%20128GB/1.jpg",
@@ -1317,7 +1338,8 @@
                 "name": "External SSD SATA",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "external-ssd-sata"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4654/External%20SSD%20SATA%201TB/1.jpg",
@@ -1382,7 +1404,8 @@
                 "name": "External SSD SATA",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "external-ssd-sata"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4441/External%20SSD%20SATA%20256GB/1.jpg",
@@ -1447,7 +1470,8 @@
                 "name": "External SSD SATA",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "external-ssd-sata"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4652/External%20SSD%20SATA%20512GB/1.jpg",
@@ -1512,7 +1536,8 @@
                 "name": "HDD – Hard Disk Drive",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/HDD.jpg",
-                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg"
+                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg",
+                "categoryUrl": "hdd-hard-disk-drive"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/12869/Geonix%2010TB%20Desktop%20Hard%20Drive/10%20f.jpg",
@@ -1587,7 +1612,8 @@
                 "name": "M SATA",
                 "code": "",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "m-sata"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3011/Geonix%20128GB%20Supersonic%20M%201%20SATA%20SSD/1.jpg",
@@ -1642,7 +1668,8 @@
                 "name": "Geonix SSD",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "geonix-ssd"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/56/Geonix%20128GB%20Supersonic%20SSD%20Gold%20Edition/1.jpg",
@@ -1702,7 +1729,8 @@
                 "name": "SSD NVMe",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-nvme"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/817/Geonix%201TB%20M.2%20NVMe%20SSD/1.jpg",
@@ -1757,7 +1785,8 @@
                 "name": "SSD M.2",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-m.2"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/815/Geonix%201TB%20SSD%20M.2/1.jpg",
@@ -1812,7 +1841,8 @@
                 "name": "Geonix SSD",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "geonix-ssd"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/813/Geonix%201TB%20Supersonic%20SSD%20Gold%20Edition/1.jpg",
@@ -1872,7 +1902,8 @@
                 "name": "M SATA",
                 "code": "",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "m-sata"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3015/Geonix%20256GB%20Supersonic%20M%201%20SATA%20SSD/1.jpg",
@@ -1927,7 +1958,8 @@
                 "name": "Geonix SSD",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "geonix-ssd"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/60/Geonix%20256GB%20Supersonic%20SSD%20Gold%20Edition/1.jpg",
@@ -1987,7 +2019,8 @@
                 "name": "SMPS",
                 "code": "SMPS",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "smps"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/6945/Geonix%20500-%20Watt%20SMPS%20/1.jpg",
@@ -2052,7 +2085,8 @@
                 "name": "SSD M.2",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-m.2"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/72/Geonix%20512GB%20SSD%20M.2/1.jpg",
@@ -2107,7 +2141,8 @@
                 "name": "M SATA",
                 "code": "",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "m-sata"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3013/Geonix%20512GB%20Supersonic%20M%201%20SATA%20SSD/1.jpg",
@@ -2162,7 +2197,8 @@
                 "name": "Geonix SSD",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "geonix-ssd"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/64/Geonix%20512GB%20Supersonic%20SSD%20Gold%20Edition/1.jpg",
@@ -2222,7 +2258,8 @@
                 "name": "HDD – Hard Disk Drive",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/HDD.jpg",
-                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg"
+                "image": "https://www.geonix.in/assets/images/banner/HDD.jpg",
+                "categoryUrl": "hdd-hard-disk-drive"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/12867/Geonix%208%20TB%20Desktop%20Hard%20Drive/8tb%201.jpg",
@@ -2297,7 +2334,8 @@
                 "name": "SSD M.2 BREAKABLE",
                 "code": "SSD M.2 BREAKABLE",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-m2-breakable"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/848/GEONIX%20Black%20128GB%20SSD%20M.2%202280%20mSATA%20III%20BREAKABLE/1.jpg",
@@ -2352,7 +2390,8 @@
                 "name": "SSD NVMe",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-nvme"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/76/Geonix%20Black%20128GB%20SSD%20NVMe/1.jpg",
@@ -2407,7 +2446,8 @@
                 "name": "SSD M.2",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-m.2"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/842/GEONIX%20Black%20256GB%20SSD%20M.2/1.jpg",
@@ -2462,7 +2502,8 @@
                 "name": "SSD M.2 BREAKABLE",
                 "code": "SSD M.2 BREAKABLE",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-m2-breakable"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/850/GEONIX%20Black%20256GB%20SSD%20M.2%202280%20SATA%20III%20BREAKABLE/1.jpg",
@@ -2517,7 +2558,8 @@
                 "name": "SSD NVMe",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-nvme"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/78/Geonix%20Black%20256GB%20SSD%20NVMe/1.jpg",
@@ -2572,7 +2614,8 @@
                 "name": "SSD NVMe",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-nvme"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/80/Geonix%20Black%20512GB%20SSD%20NVMe/1.jpg",
@@ -2627,7 +2670,8 @@
                 "name": "Desktop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "desktop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/11858/Geonix%20Desktop%20RAM%208GB%20DDR4-%202666MHz-%2016%20IC/1.jpg",
@@ -2692,7 +2736,8 @@
                 "name": "Desktop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "desktop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/11854/Geonix%20Desktop%20RAM%208GB%20DDR4-%202666MHz-%208IC/1.jpg",
@@ -2752,7 +2797,8 @@
                 "name": "SSD Enclosure",
                 "code": "ssdE",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-enclosure"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3691/Geonix%20External%20NGFF%20M.2%20SSD%20Enclosure%20USB%203.1%20GEN%202%20Type-c%20Port%20/1.jpg",
@@ -2822,7 +2868,8 @@
                 "name": "SSD Enclosure",
                 "code": "ssdE",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-enclosure"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3693/Geonix%20External%20NGFF%20NVME%20SSD%20Enclosure%20USB%203.1%20GEN%202%20Type-c%20Port%20/1.jpg",
@@ -2892,7 +2939,8 @@
                 "name": "SSD Enclosure",
                 "code": "ssdE",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-enclosure"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4388/Geonix%20External%20SATA%20SSD%20Enclosure/1.jpg",
@@ -2972,7 +3020,8 @@
                 "name": "Graphic Card",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/graphic.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "graphic-card"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/752/GEONIX%20GEFORCE%20GT%20210LP%201GB%20DDR3/1.jpg",
@@ -3027,7 +3076,8 @@
                 "name": "Graphic Card",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/graphic.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "graphic-card"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/754/GEONIX%20GEFORCE%20GT%20610LP%202GB%20DDR3/1.jpg",
@@ -3082,7 +3132,8 @@
                 "name": "Graphic Card",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/graphic.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "graphic-card"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/756/GEONIX%20GEFORCE%20GT%20730LP%204GB%20DDR3/1.jpg",
@@ -3137,7 +3188,8 @@
                 "name": "Laptop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.info/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "laptop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4943/Geonix%20Laptop%20RAM%2016GB%20DDR4%202666mhz./1.jpg",
@@ -3197,7 +3249,8 @@
                 "name": "Laptop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.info/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "laptop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4945/Geonix%20Laptop%20RAM%204GB%20DDR4%202133P%20mhz./1.jpg",
@@ -3257,7 +3310,8 @@
                 "name": "Laptop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.info/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "laptop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/11856/Geonix%20Laptop%20RAM%208GB%20DDR4-%202666mhz%2C%2016-IC/1.JPG",
@@ -3327,7 +3381,8 @@
                 "name": "Laptop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.info/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "laptop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/4941/Geonix%20Laptop%20RAM%208GB%20DDR4L%202400mhz/1.jpg",
@@ -3397,7 +3452,8 @@
                 "name": "Riser Card",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/risercard.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "riser-card"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/51/Geonix%20PCI-E%201X%20TO%20TO%2016X%20Riser%20Card/1.jpg",
@@ -3457,7 +3513,8 @@
                 "name": "Wifi",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/wifi.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "wifi"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/85/GEONIX%20WiFi%20Mini%20USB%20Adapter/1.jpg",
@@ -3532,7 +3589,8 @@
                 "name": "Keyboard Mouse",
                 "code": "KM",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "keyboard-mouse"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/15745/Geonix%20Wired%20keyboard%20mouse%20combo-GXBK-01/GXBM-01/1.JPG",
@@ -3597,7 +3655,8 @@
                 "name": "Keyboard Mouse",
                 "code": "KM",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "keyboard-mouse"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/15743/Geonix%20Wireless%20keyboard%20mouse%20combo-%20GXWBK-01/GXWBM-01/1.jpg",
@@ -3662,7 +3721,8 @@
                 "name": "SSD M.2",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/ssd.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "ssd-m.2"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/74/Geonix128GB%20SSD%20M.2/1.jpg",
@@ -3717,7 +3777,8 @@
                 "name": "Motherboard",
                 "code": "Motherboard",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/motherboard.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "motherboard"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/779/G41%20D2/1.jpg",
@@ -3772,7 +3833,8 @@
                 "name": "Motherboard",
                 "code": "Motherboard",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/motherboard.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "motherboard"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/781/G41%20D3/1.jpg",
@@ -3827,7 +3889,8 @@
                 "name": "Motherboard",
                 "code": "Motherboard",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/motherboard.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "motherboard"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/787/H110%20D4/1.jpg",
@@ -3882,7 +3945,8 @@
                 "name": "Motherboard",
                 "code": "Motherboard",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/motherboard.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "motherboard"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2566/H310%20D4/1.jpg",
@@ -3947,7 +4011,8 @@
                 "name": "Motherboard",
                 "code": "Motherboard",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/motherboard.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "motherboard"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2568/H510%20D4/1.jpg",
@@ -4012,7 +4077,8 @@
                 "name": "Motherboard",
                 "code": "Motherboard",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/motherboard.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "motherboard"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2564/H55%20D3/1.jpg",
@@ -4067,7 +4133,8 @@
                 "name": "Motherboard",
                 "code": "Motherboard",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/motherboard.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "motherboard"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/783/H61%20D3/1.jpg",
@@ -4122,7 +4189,8 @@
                 "name": "Motherboard",
                 "code": "Motherboard",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/motherboard.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "motherboard"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/785/H81%20D3/1.jpg",
@@ -4177,7 +4245,8 @@
                 "name": "Laptop HDD",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/HDD.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "laptop-hdd"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/31/Geonix%201TB%20Laptop%20Hard%20Drive/1.jpg",
@@ -4237,7 +4306,8 @@
                 "name": "Laptop HDD",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/HDD.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "laptop-hdd"
             },
             "status": 0,
             "image": "https://geonix.in/assets/images/1.jpg",
@@ -4297,7 +4367,8 @@
                 "name": "Laptop HDD",
                 "code": "",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/HDD.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "laptop-hdd"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/35/Geonix%20500GB%20Laptop%20Hard%20Drive/1.jpg",
@@ -4357,7 +4428,8 @@
                 "name": "Laptop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.info/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "laptop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3386/2GB%20DDR-2%2C%20800Mhz/1.jpg",
@@ -4417,7 +4489,8 @@
                 "name": "Laptop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.info/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "laptop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/42/GEONIX%202GB%20DDR3L%201600%20MHZ/1.jpg",
@@ -4477,7 +4550,8 @@
                 "name": "Laptop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.info/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "laptop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3393/4GB%20DDR3%201333%20MHz/1.jpg",
@@ -4537,7 +4611,8 @@
                 "name": "Laptop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.info/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "laptop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/44/Geonix%204GB%20DDR3L%201600%20MHz/1.jpg",
@@ -4597,7 +4672,8 @@
                 "name": "Laptop RAM",
                 "code": "",
                 "coverImage": "https://www.geonix.info/assets/images/banner/new/ram.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "laptop-ram"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/46/Geonix%208GB%20DDR3L%201600%20MHz/1.jpg",
@@ -4657,7 +4733,8 @@
                 "name": "Printer Tonner",
                 "code": "PT",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/printerton.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "printer-tonner"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2765/101-A/1.jpg",
@@ -4727,7 +4804,8 @@
                 "name": "Printer Tonner",
                 "code": "PT",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/printerton.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "printer-tonner"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2545/12-A/1.jpg",
@@ -4802,7 +4880,8 @@
                 "name": "Printer Tonner",
                 "code": "PT",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/printerton.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "printer-tonner"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2771/2365/1.jpg",
@@ -4872,7 +4951,8 @@
                 "name": "Printer Tonner",
                 "code": "PT",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/printerton.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "printer-tonner"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2767/337-A/1.jpg",
@@ -4942,7 +5022,8 @@
                 "name": "Printer Tonner",
                 "code": "PT",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/printerton.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "printer-tonner"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2547/388-A/1.jpg",
@@ -5012,7 +5093,8 @@
                 "name": "Printer Tonner",
                 "code": "PT",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/printerton.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "printer-tonner"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2763/78-A/1.jpg",
@@ -5082,7 +5164,8 @@
                 "name": "Printer Tonner",
                 "code": "PT",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/printerton.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "printer-tonner"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2769/925/1.jpg",
@@ -5152,7 +5235,8 @@
                 "name": "Monitors",
                 "code": "MON",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/monitor.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "monitors"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/254/PC%20MONITOR%2017%20INCH/1.JPG",
@@ -5217,7 +5301,8 @@
                 "name": "Monitors",
                 "code": "MON",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/monitor.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "monitors"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/256/PC%20MONITOR%2018.5%20INCH/1.JPG",
@@ -5277,7 +5362,8 @@
                 "name": "Monitors",
                 "code": "MON",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/monitor.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "monitors"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/258/PC%20MONITOR%2019.5%20INCH/1.jpg",
@@ -5342,7 +5428,8 @@
                 "name": "Monitors",
                 "code": "MON",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/monitor.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "monitors"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2502/PC%20Monitor%2022%20Inch/1.JPG",
@@ -5402,7 +5489,8 @@
                 "name": "Monitors",
                 "code": "MON",
                 "coverImage": "https://www.geonix.in/assets/images/banner/new/monitor.jpg",
-                "image": null
+                "image": null,
+                "categoryUrl": "monitors"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/2811/PC%20Monitor%2024%20Inch/1.jpg",
@@ -5472,7 +5560,8 @@
                 "name": "PCI CARDS",
                 "code": "PCI",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "pci-cards"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3328/PCI%20DIAGNOSTIC%20CARD/1.jpg",
@@ -5532,7 +5621,8 @@
                 "name": "PCI CARDS",
                 "code": "PCI",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "pci-cards"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3336/PCI%20EXPRESS%20FIRE%20WIRE%20CARD/1.jpg",
@@ -5597,7 +5687,8 @@
                 "name": "PCI CARDS",
                 "code": "PCI",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "pci-cards"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3604/PCI%20EXPRESS%20PARALLEL%20CARD/1.jpg",
@@ -5662,7 +5753,8 @@
                 "name": "PCI CARDS",
                 "code": "PCI",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "pci-cards"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3602/PCI%20EXPRESS%20PARALLEL%20SERIAL%20CARD/1.jpg",
@@ -5722,7 +5814,8 @@
                 "name": "PCI CARDS",
                 "code": "PCI",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "pci-cards"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3330/PCI%20EXPRESS%20SERIAL%20CARD/1.jpg",
@@ -5787,7 +5880,8 @@
                 "name": "PCI CARDS",
                 "code": "PCI",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "pci-cards"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3338/PCI%20EXPRESS%20SOUND%20CARD/1.jpg",
@@ -5847,7 +5941,8 @@
                 "name": "PCI CARDS",
                 "code": "PCI",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "pci-cards"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3606/PCI%20EXPRESS%20USB%203.0%2C%202%20PORT%20CARD/1.jpg",
@@ -5912,7 +6007,8 @@
                 "name": "PCI CARDS",
                 "code": "PCI",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "pci-cards"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3608/PCI%20EXPRESS%20USB%203.0%2C%204%20PORT%20CARD/2.jpg",
@@ -5977,7 +6073,8 @@
                 "name": "PCI CARDS",
                 "code": "PCI",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "pci-cards"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3332/PCI%20PARALLEL%20CARD/1.jpg",
@@ -6042,7 +6139,8 @@
                 "name": "PCI CARDS",
                 "code": "PCI",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "pci-cards"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3340/PCI%20SATA%20CARD/1.jpg",
@@ -6107,7 +6205,8 @@
                 "name": "PCI CARDS",
                 "code": "PCI",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "pci-cards"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3709/PCI%20Serial%20Card/1.jpg",
@@ -6172,7 +6271,8 @@
                 "name": "PCI CARDS",
                 "code": "PCI",
                 "coverImage": null,
-                "image": null
+                "image": null,
+                "categoryUrl": "pci-cards"
             },
             "status": 0,
             "image": "https://geonix.s3.us-east-2.amazonaws.com/3633/PCI%20SOUND%20CARD/1.jpg",

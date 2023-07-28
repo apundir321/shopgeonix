@@ -168,14 +168,14 @@
             <div class="row">
                 <div class="col-6">
                     <figure class="product-media">
-                        <a [routerLink]="['/product/'+product.category.name+'/'+ product.productUrl]">
+                        <a [routerLink]="['/product/'+product.category.categoryUrl+'/'+ product.productUrl]">
                             <molla-image [src]="product.image" alt="Product"
                                 class="product-image" style="object-fit: contain;">
                             </molla-image>
                         </a>
                     </figure>
                     <h3 class="product-title">
-                        <a [routerLink]="['/product/'+product.category.name+'/'+ product.productUrl]">{{ product.name }}</a>
+                        <a [routerLink]="['/product/'+product.category.categoryUrl+'/'+ product.productUrl]">{{ product.name }}</a>
                     </h3>
                 </div>
 
