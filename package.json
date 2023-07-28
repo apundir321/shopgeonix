@@ -63,6 +63,7 @@
     "ngx-sharebuttons": "^9.0.0",
     "ngx-toastr": "^14.1.4",
     "ngx-wheel": "^4.0.5",
+    "ngx-wheel-selector": "^1.0.0",
     "nouislider": "^15.5.0",
     "popper.js": "^1.16.1",
     "rxjs": "^7.4.0",

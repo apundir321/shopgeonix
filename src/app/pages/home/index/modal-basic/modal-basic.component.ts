@@ -6,7 +6,6 @@ import {
 	ViewChild,
   } from '@angular/core';
   import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-  import { NgxWheelComponent, TextAlignment, TextOrientation } from 'ngx-wheel';
 
 @Component({
   selector: 'molla-modal-basic',
@@ -14,20 +13,13 @@ import {
   styleUrls: ['./modal-basic.component.scss'],
 })
 export class ModalBasicComponent implements OnInit {
-	// @ViewChild(NgxWheelComponent, { static: false }) wheel;
 
 	arrayvalue:any = [
 		254, 45, 212, 365, 2543
 	  ]
 	  newval:any;
+	  isModalOpened = false;
 
-	  @ViewChild(NgxWheelComponent, { static: false }) wheel;
-
-	  seed = [...Array(12).keys()];
-	  idToLandOn: any;
-	  items: any[];
-	  textOrientation: TextOrientation = TextOrientation.HORIZONTAL;
-	  textAlignment: TextAlignment = TextAlignment.OUTER;
 
 	title = 'molla-modal-basic';
 	showmodal:any = true
@@ -35,21 +27,15 @@ export class ModalBasicComponent implements OnInit {
 
 	closeResult = '';
   
-	constructor(private modalService: NgbModal) {}
+	constructor(private modalService: NgbModal, private elementRef: ElementRef) {}
 	ngAfterViewInit(): void { 
-	  this.open(this.content);
+		const modalOpenedBefore = localStorage.getItem('modalOpened');
+		if (!modalOpenedBefore) {
+		  this.open(this.content);
+		  localStorage.setItem('modalOpened', 'true');
+		}
 	}
 	ngOnInit(): void {
-		this.idToLandOn = this.seed[Math.floor(Math.random() * this.seed.length)];
-		const colors = ["#FF0000", "#000000"];
-		this.items = this.seed.map((value) => ({
-		  fillStyle: colors[value % 2],
-		  text: `Prize ${value}`,
-		  id: value,
-		  textFillStyle: "white",
-		  textFontSize: "16"
-		}));
-		this.newvalues();
 	}
 
 	open(content) {
@@ -67,7 +53,7 @@ export class ModalBasicComponent implements OnInit {
 		if (reason === ModalDismissReasons.ESC) {
 			return 'by pressing ESC';
 		} else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-			return 'by clicking on a backdrop';
+			return 'by clicking on a backdrop'; 
 		} else {
 			return `with: ${reason}`;
 		}
@@ -104,22 +90,4 @@ export class ModalBasicComponent implements OnInit {
 	// reset(){
 	//    this.wheel.reset();
 	// }
-  
-	reset() {
-	  this.wheel.reset();
-	}
-	before() {
-	  alert("Your wheel is about to spin");
-	}
-  
-	async spin(prize) {
-	  this.idToLandOn = prize;
-	  await new Promise((resolve) => setTimeout(resolve, 0));
-	  this.wheel.spin();
-	}
-  
-	after() {
-	  alert("You have been bamboozled");
-	}
-
 }
