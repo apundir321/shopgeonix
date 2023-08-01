@@ -696,7 +696,7 @@ export class ServiceCentersComponent implements OnInit {
       address: '510, Suneja Tower - 2, District Centre, Janak Puri, New Delhi - 110058',
       contactperson: 'VINAY',
       email: 'LOTUSCOMPUTECH@GMAIL.COM',
-      phone1: 9810582252,
+      phone1: 9718051232,
       phone2: 1147330512,
       state: 'DELHI',
       city: 'JANAK PURI',

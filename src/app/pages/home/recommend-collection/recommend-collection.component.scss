@@ -1,0 +1,68 @@
+.recomand-div {
+
+    .recomandmain {
+        background-color: #d3d3d373;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        padding: 20px;
+
+        .man-div {
+            background-color: white;
+            margin: 10px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+
+            .main-image-div {
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                background-color: #ebebeb;
+                margin: 15px;
+                border-radius: 10px;
+                margin-right: 0px;
+                overflow: hidden;
+            }
+
+            .main-content-div {
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                .rating {
+                    color: orange;
+                }
+
+                .price {
+                    color: #084d9f;
+
+                    span {
+                        color: gray;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+    }
+
+    .heading {
+        text-align: center;
+        
+        p {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: #084d9f;
+            font-weight: 700;
+            font-size: 15px;
+
+            span {
+                padding: 5px;
+                display: inline-flex;
+                background-color: #084d9f;
+                border-radius: 50%;
+                margin-right: 10px;
+                font-size: 18px;
+                color: white;
+            }
+        }
+    }
+}
