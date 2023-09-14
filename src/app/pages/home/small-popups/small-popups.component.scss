@@ -1,0 +1,101 @@
+.small-popup-main {
+    max-width: 275px;
+    background-color: #f7f4eb;
+    position: fixed;
+    bottom: -300px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 1px 5px 4px 2px #0000004a;
+    animation: popup;
+    animation-duration: 10s;
+    animation-iteration-count: 6;
+    animation-timing-function: linear;
+    opacity: 1;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    padding-bottom: 40px;
+    padding-top: 35px;
+
+    .rating {
+        content: '';
+        position: absolute;
+        z-index: 11111;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #9fc3d1;
+        padding: 0px 10px;
+        border-radius: 30px;
+        border: 1px solid grey;
+        bottom: 20px;
+
+        i {
+            color: #f2e2ae;
+            /* border: 1px solid; */
+        }
+    }
+
+
+    p {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    a {
+        text-decoration: underline !important;
+        cursor: pointer;
+    }
+
+    h6 {
+        margin-bottom: 5px;
+    }
+}
+
+.small-popup-main::after {
+    content: "";
+    width: 100%;
+    height: 40px;
+    bottom: 0px;
+    border-top: 1px solid #000;
+    position: absolute;
+    background-color: #e9c7c6;
+    z-index: 1111;
+    left: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.small-popup-main::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 13px;
+    background-color: #e9c7c6;
+    z-index: 1111;
+    left: -5px;
+    top: 11px;
+    border-radius: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
+}
+
+.down-arrow {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #e9c7c6;
+    z-index: 11111;
+    bottom: -12px;
+    transform: rotate(45deg);
+    left: 30px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+@keyframes popup {
+    0%   {bottom: -350px; opacity: 0;}
+    30%  {bottom: 50px; opacity: 1;}
+    70%  {bottom: 50px; opacity: 1;}
+    100% {bottom: -350px; opacity: 0;}
+  }

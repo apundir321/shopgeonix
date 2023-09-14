@@ -24,6 +24,9 @@ import { TermsconditionComponent } from './pages/home/termscondition/termscondit
 import { TrackorderComponent } from './pages/home/trackorder/trackorder.component';
 import { ServiceCentersComponent } from './pages/home/service-centers/service-centers.component';
 import { Page404Component } from './pages/home/page404/page404.component';
+import { BlogsComponent } from './pages/home/blogs/blogs/blogs.component';
+import { SingleBlogComponent } from './pages/home/blogs/single-blog/single-blog.component';
+import { DriversComponent } from './pages/home/drivers/drivers.component';
 
 const routes: Routes = [
 	
@@ -61,8 +64,20 @@ const routes: Routes = [
 				component: ServiceCentersComponent
 			},
 			{
+				path: 'blogs',
+				component: BlogsComponent
+			},
+			{
+				path: 'single-blog/:blogId',
+				component: SingleBlogComponent
+			},
+			{
 				path: 'error-page',
 				component: Page404Component
+			},
+			{
+				path: 'drivers',
+				component: DriversComponent
 			},
 			// {
 			// 	path: 'aboutUs',
@@ -139,8 +154,7 @@ const routes: Routes = [
 			{
 				path: 'product',
 				loadChildren: () => import( './pages/product/product.module' ).then( m => m.ProductModule )
-			}
-			
+			}			
 			
 		]
 	},
@@ -164,8 +178,8 @@ const routes: Routes = [
 ];
 
 @NgModule( {
-	imports: [ RouterModule.forRoot( routes, { useHash: false, anchorScrolling: 'disabled', scrollPositionRestoration: 'disabled' } ) ],
-	exports: [ RouterModule ]
+	imports: [ RouterModule.forRoot( routes, { useHash: false, anchorScrolling: 'disabled', scrollPositionRestoration: 'disabled' })],
+	exports: [ RouterModule ],
 } )
 
 export class AppRoutingModule { }

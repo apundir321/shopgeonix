@@ -109,4 +109,12 @@ export class ApiService {
 		return this.http.get(`${environment.MOLLA_URL}/elements/blogs`);
 	}
 
+	public getblogs(){
+		return this.http.get('http://localhost:8000/blogs/');
+	}
+
+	public getsingleblog(id:string){
+		return this.http.get(`http://localhost:8000/blogs/${id}`);
+	}
+
 }

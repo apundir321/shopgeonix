@@ -644,7 +644,7 @@ export class ServiceCentersComponent implements OnInit {
       address: 'G-32 Ground floor Opp Red apple Tej kumar plaza near Hotel Levana hazratganj lucknow 226001',
       contactperson: 'Mr. Alok Rastogi',
       email: '',
-      phone1: 9997479018,
+      phone1: 9235566533,
       phone2: '',
       state: 'Uttar Pradesh',
       city: 'LUCKNOW',

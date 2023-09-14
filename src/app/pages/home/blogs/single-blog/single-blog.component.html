@@ -1,0 +1,26 @@
+<nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a routerlink="/" href="/">Home</a>
+            </li>
+            <li class="breadcrumb-item"> Single Blog </li>
+        </ol>
+    </div>
+</nav>
+<div class="single-blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="single-blog-image">
+                    <img src="/assets/images/blogs/single-blog-image.jpg" class="img-fluid">
+                </div>
+                <div class="single-blog-text">
+                    <span>by JOHN DOE on {{bloginfo.publishdate}}</span>
+                    <h3>{{bloginfo.title}}</h3>
+                    <p>{{bloginfo.discription}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

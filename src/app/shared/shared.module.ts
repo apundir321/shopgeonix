@@ -33,6 +33,7 @@ import { ProductNineComponent } from './components/product/product-nine/product-
 import { ProductTenComponent } from './components/product/product-ten/product-ten.component';
 import { ProductElevenComponent } from './components/product/product-eleven/product-eleven.component';
 import { ProductTwelveComponent } from './components/product/product-twelve/product-twelve.component';
+import { RecommendationProductsComponent } from './components/product/recommendation-products/recommendation-products.component';
 
 // Footer Component
 import { FooterComponent } from './components/footer/footer.component';
@@ -104,6 +105,7 @@ import { SingleComponent } from './single/single.component';
 		ProductTenComponent,
 		ProductElevenComponent,
 		ProductTwelveComponent,
+    	RecommendationProductsComponent,
 
 		// single-use components
 		BreadcrumbComponent,

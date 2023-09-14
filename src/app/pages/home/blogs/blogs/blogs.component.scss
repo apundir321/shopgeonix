@@ -1,0 +1,36 @@
+
+.readmore-blog {
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+    a {
+        i {
+            margin-left: 7px;
+        }
+    }
+}
+
+.blog-image {
+    padding-bottom: 10px;
+}
+
+.blog-category ul {
+    list-style: none;
+}
+
+.blog-category li {
+    cursor: pointer;
+    font-weight: 500;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.blog-text p {
+    max-height: 102px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

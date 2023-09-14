@@ -36,6 +36,10 @@ import { TrackorderComponent } from './trackorder/trackorder.component';
 import { ServiceCentersComponent } from './service-centers/service-centers.component';
 import { ModalBasic2Component } from './index/modal-basic2/modal-basic2.component';
 import { Page404Component } from './page404/page404.component';
+import { DriversComponent } from './drivers/drivers.component';
+import { BlogsComponent } from './blogs/blogs/blogs.component';
+import { SingleBlogComponent } from './blogs/single-blog/single-blog.component';
+import { SmallPopupsComponent } from './small-popups/small-popups.component';
 
 @NgModule({
 	declarations: [
@@ -65,7 +69,10 @@ import { Page404Component } from './page404/page404.component';
   ServiceCentersComponent,
   ModalBasic2Component,
   Page404Component,
-		// BlogCollectionComponent
+  DriversComponent,
+	BlogsComponent,
+  SingleBlogComponent,
+  SmallPopupsComponent
 	],
 
 	imports: [
