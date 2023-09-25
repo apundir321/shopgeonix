@@ -27,6 +27,7 @@ import { Page404Component } from './pages/home/page404/page404.component';
 import { BlogsComponent } from './pages/home/blogs/blogs/blogs.component';
 import { SingleBlogComponent } from './pages/home/blogs/single-blog/single-blog.component';
 import { DriversComponent } from './pages/home/drivers/drivers.component';
+import { RefrenceCodeComponent } from './pages/home/refrence-code/refrence-code.component';
 
 const routes: Routes = [
 	
@@ -78,6 +79,10 @@ const routes: Routes = [
 			{
 				path: 'drivers',
 				component: DriversComponent
+			},
+			{
+				path: 'refrence-codes',
+				component: RefrenceCodeComponent
 			},
 			// {
 			// 	path: 'aboutUs',

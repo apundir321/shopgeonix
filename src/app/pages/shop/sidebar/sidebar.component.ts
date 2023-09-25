@@ -90,7 +90,7 @@ export class SidebarPageComponent implements OnInit {
 					this.totalCount = result.totalPage;
 					console.log(this.totalCount)
 					console.log("product",this.products)
-					// console.log('fazil console is here', this.products[0].category.name);
+					console.log('fazil console is here', this.products[0].category.name);
 					this.titleservice.setTitle(this.products[0].category.name)
 
 					// dynamic title and meta tag code start 
@@ -191,6 +191,16 @@ export class SidebarPageComponent implements OnInit {
 								this.titleservice.setTitle("Best External SSD NVME ")
 								this.meta.updateTag({name: 'description', content: 'Experience unparalleled speed for your data transfers, and multimedia needs.'})
 								this.meta.updateTag({name: 'keyword', content: 'external nvme ssd  drive, 1tb external ssd Nvme hard drive, geonix external nvme ssd price'})
+								break;
+							case "External SSD NVME":
+								this.titleservice.setTitle("Keyboard Mouse")
+								this.meta.updateTag({name: 'description', content: 'Upgrade your home office with our keyboard and mouse combo'})
+								this.meta.updateTag({name: 'keyword', content: 'wireless keyboard mouse, keyboard and mouse combo, best bluetooth keyboard and mouse, bluetooth keyboard mouse combo'})
+								break;
+							case "External SSD NVME":
+								this.titleservice.setTitle("Laptop Adapter")
+								this.meta.updateTag({name: 'description', content: 'With our laptop adapter, charge your beast instantly and upgrade your productivity.'})
+								this.meta.updateTag({name: 'keyword', content: 'laptop charger adapter, laptop power adapter, usb laptop charger price, usb adapter for laptop, notebook power adapter price, laptop charger cable type-c, laptop adapter power cable price'})
 								break;
 						
 							default:

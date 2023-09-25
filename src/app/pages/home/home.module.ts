@@ -40,6 +40,7 @@ import { DriversComponent } from './drivers/drivers.component';
 import { BlogsComponent } from './blogs/blogs/blogs.component';
 import { SingleBlogComponent } from './blogs/single-blog/single-blog.component';
 import { SmallPopupsComponent } from './small-popups/small-popups.component';
+import { RefrenceCodeComponent } from './refrence-code/refrence-code.component';
 
 @NgModule({
 	declarations: [
@@ -72,7 +73,8 @@ import { SmallPopupsComponent } from './small-popups/small-popups.component';
   DriversComponent,
 	BlogsComponent,
   SingleBlogComponent,
-  SmallPopupsComponent
+  SmallPopupsComponent,
+  RefrenceCodeComponent
 	],
 
 	imports: [
