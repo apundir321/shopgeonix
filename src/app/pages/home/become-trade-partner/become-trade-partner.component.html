@@ -1,0 +1,401 @@
+<div class="become-partner-main">
+    <div class="container">
+        <div class="form-main">
+            <div class="row">
+                <div class="col-sm-8 m-auto">
+                    <div class="content form-content trade-partner">
+                        <div class="alert success_msg" id="tradepartner-success_msg" style="display: none;">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×
+                            </a>
+                        </div>
+                        <div class="alert common_error" id="tradepartner-common_error" style="display:none;color:red;">
+                        </div>
+                        <div class="clearfix"></div>
+                        <form class="flexForm" #myForm="ngForm" (ngSubmit)="onSubmit()">
+                            <input type="hidden" name="action" value="Trade-partner">
+                            <!-- Row Start -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="field  clearfix business-list form-control-div">
+
+
+                                            <div class="topPartnerBox">
+                                                <h5 class="subTitle">Partner Type</h5>
+                                                <div class="divideBox">
+
+                                                    <label class="radio-inline smallcheck">
+                                                        <input type="radio" name="partner_type"
+                                                            class="current_bussiness_sales" value="Retail Outlet"
+                                                            data-gtm-form-interact-field-id="1" [(ngModel)]="formData.partner_type">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Retail Outlet</span>
+                                                    </label>
+
+                                                    <label class="radio-inline smallcheck active">
+                                                        <input type="radio" id="Direct_Sales_Dealer_radio"
+                                                            name="partner_type" class="current_bussiness_sales"
+                                                            value="Direct Sales Dealer" data-gtm-form-interact-field-id="2" [(ngModel)]="formData.partner_type">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Direct Sales Dealer</span>
+                                                    </label>
+
+                                                    <label class="radio-inline smallcheck">
+                                                        <input type="radio" name="partner_type"
+                                                            class="current_bussiness_sales" value="Service Franchise" [(ngModel)]="formData.partner_type">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Service Franchise</span>
+                                                    </label>
+
+                                                </div>
+                                                <!--<div id="partNerType" class="error"></div>
+                                    <div  id="download_pdf">
+                                    </div> -->
+                                            </div>
+
+
+                                        </div>
+                                        <!--<div class="field  clearfix business-list form-control-div">
+                                  <label style="padding-left: 25%;" class="smallcheck errorbusn ">
+                                     <span class="texts" id="retailer_distributor"><a href="pdf/tradepatner/retail-distributor.pdf"  target="_blank">Download Brochure</a></span>
+                                  </label>
+
+                                  <label style="padding-left: 60%;" class="smallcheck errorbusn ">
+                                     <span class="texts" id="retailer_sales_distributor"><a href="pdf/tradepatner/direct-sales dealer.pdf" target="_blank">Download Brochure</a></span>
+                                  </label>
+
+
+
+                                  </div> -->
+                                        <!-- Row End -->
+                                        <!-- formInnerBox Start -->
+                                        <div class="formInnerBox">
+                                            <h4>Firm Information</h4>
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Name<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="firm_info" id="firm_info"
+                                                        [(ngModel)]="formData.firm_name" required class="form-control">
+                                                    <div id="firmnameerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Status<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <label class="radio-inline smallcheck" id="firmstatus">
+                                                        <input type="radio" name="prop"
+                                                            class="current_bussiness_sales_firm" id=""
+                                                            value="Proprietorship" [(ngModel)]="formData.status">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Proprietorship</span>
+                                                    </label>
+                                                    <label class="radio-inline smallcheck">
+                                                        <input type="radio" name="prop"
+                                                            class="current_bussiness_sales_firm" id=""
+                                                            value="Partnership" [(ngModel)]="formData.status">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Partnership</span>
+                                                    </label>
+                                                    <label class="radio-inline smallcheck">
+                                                        <input type="radio" name="prop"
+                                                            class="current_bussiness_sales_firm" id=""
+                                                            value="Private Limited" [(ngModel)]="formData.status">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Private Limited</span>
+                                                    </label>
+                                                    <div class="clearfix"></div>
+                                                    <div id="firmstatuserror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Pan No.<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-5">
+                                                            <input type="text" name="pannumber" id="pannumber" [(ngModel)]="formData.pan_no" maxlength="10" class="form-control">
+                                                            <div id="pannumerror" class="error"></div>
+                                                        </div>
+                                                        <label class="col-sm-2 gstLabel control-label">GST:</label>
+                                                        <div class="col-sm-5">
+                                                            <input type="text" name="gstnumber" id="gstnumber" [(ngModel)]="formData.gst" maxlength="20" class="form-control">
+                                                            <div id="gstnumerror" class="error"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                        </div>
+                                        <!-- formInnerBox End -->
+                                        <!-- formInnerBox Start -->
+                                        <div class="formInnerBox">
+                                            <h4>Contact Person</h4>
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Title</label>
+                                                <div class="col-sm-9">
+                                                    <label class="radio-inline smallcheck">
+                                                        <input type="radio" name="title" class="title-persion" [(ngModel)]="formData.person_name_title" checked="" value="Mr.">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Mr.</span>
+                                                    </label>
+                                                    <label class="radio-inline smallcheck">
+                                                        <input type="radio" name="title" [(ngModel)]="formData.person_name_title" class="title-persion" value="Mrs.">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Mrs.</span>
+                                                    </label>
+                                                    <label class="radio-inline smallcheck">
+                                                        <input type="radio" name="title" class="title-persion" [(ngModel)]="formData.person_name_title" value="Ms.">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Ms.</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Name<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="f_name" class="form-control" id="trade_f_name" [(ngModel)]="formData.person_name">
+                                                    <div id="trade_f_nameerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Mobile No.<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-5">
+                                                            <input type="text" maxlength="10" name="contact_number" [(ngModel)]="formData.person_mobileno" id="trade_contact_number" class="form-control">
+                                                            <div id="contacterror" class="error pull-left"></div>
+                                                        </div>
+                                                        <label class="col-sm-2 gstLabel control-label">Landline
+                                                            No:</label>
+                                                        <div class="col-sm-5"><input type="text" name="landnumber"
+                                                                maxlength="12" class="form-control" [(ngModel)]="formData.person_landlineno"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">E-Mail<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="email" id="trade_email" class="form-control" [(ngModel)]="formData.person_email">
+                                                    <div id="emailerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                        </div>
+                                        <!-- formInnerBox End -->
+                                        <!-- formInnerBox Start -->
+                                        <div class="formInnerBox">
+                                            <h4>Address Detail</h4>
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Address<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <textarea class="form-control" name="personaddress"
+                                                        id="personaddress" [(ngModel)]="formData.address" style="min-height:50px;"></textarea>
+                                                    <div id="addrerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Pin Code<sup>*</sup></label>
+                                                <div class="col-sm-9 col-md-5">
+                                                    <input type="text" name="pin" id="trade_pin" maxlength="6" [(ngModel)]="formData.pin_code" class="form-control">
+                                                    <div id="pinerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">State<sup>*</sup></label>
+                                                <div class="col-sm-9 col-md-5">
+                                                    <input type="text" name="state" id="state"
+                                                        [(ngModel)]="formData.state"
+                                                        class="form-control">
+                                                    <div id="stateerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">City<sup>*</sup></label>
+                                                <div class="col-sm-9 col-md-5">
+                                                    <input type="text" name="city" id="city"
+                                                        [(ngModel)]="formData.city"
+                                                        class="form-control">
+                                                    <div id="cityerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                        </div>
+                                        <!-- formInnerBox End -->
+                                        <!-- formInnerBox Start -->
+                                        <div class="formInnerBox">
+                                            <h4>Current Business</h4>
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Types of
+                                                    Business<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <label class="radio-inline smallcheck">
+                                                        <input type="radio" name="tob"
+                                                            class="current_bussiness_sales_bus" id="" value="Sales" [(ngModel)]="formData.type_of_business">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Sales</span>
+                                                    </label>
+                                                    <label class="radio-inline smallcheck">
+                                                        <input type="radio" name="tob"
+                                                            class="current_bussiness_sales_bus" id="" value="Service" [(ngModel)]="formData.type_of_business">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Service</span>
+                                                    </label>
+                                                    <div id="typeofbusinesserror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">No. of Sales
+                                                    Staff<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="nooffsta" id="nooffsta" [(ngModel)]="formData.no_of_sale_staff" maxlength="4"
+                                                        class="form-control">
+                                                    <div id="nooffstaerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start  onkeypress="return onlyAllowDigitsOneLakh(event);"  -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Monthly Turnover (last fig.)
+                                                    Lakhs<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="turnover" id="turnover" [(ngModel)]="formData.turnover_lakes"
+                                                        class="form-control">
+                                                    <div id="turnovererror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Brands Dealing
+                                                    with<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="brand" id="brands_dealing" [(ngModel)]="formData.brands_dealing_with"
+                                                        class="form-control">
+                                                    <div id="branddealingerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Product Dealing
+                                                    with<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="productdeal" id="products_dealingRs" [(ngModel)]="formData.product_dealing_with"
+                                                        class="form-control">
+                                                    <div id="productdDetailError" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                        </div>
+                                        <!-- formInnerBox End -->
+                                        <!-- formInnerBox End -->
+                                        <!-- formInnerBox Start -->
+                                        <!-- <div class="formInnerBox">
+                                            <h4>Proposed Investment</h4>
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Investment</label>
+                                                <div class="col-sm-9">
+                                                    <input type="number" name="invest" id="invest" maxlength="12"
+                                                        class="form-control">
+                                                    <div id="investerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Space Available (sq. ft.)</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="space" id="space" maxlength="12"
+                                                        class="form-control">
+                                                    <div id="spaceerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Property Owner ship</label>
+                                                <div class="col-sm-9 d-flex align-item-center">
+                                                    <label class="radio-inline smallcheck">
+                                                        <input type="radio" name="owner"
+                                                            class="current_bussiness_sales_ownner" id="" value="Owned">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Owned</span>
+                                                    </label>
+                                                    <label class="radio-inline smallcheck">
+                                                        <input type="radio" name="owner"
+                                                            class="current_bussiness_sales_ownner" id="" value="Rented">
+                                                        <span class="checkmark"></span>
+                                                        <span class="texts">Rented</span>
+                                                    </label>
+                                                    <div id="currentbussinesswonnererror" class="error">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Remark</label>
+                                                <div class="col-sm-9">
+                                                    <textarea class="form-control" name="remarks" id="remarks"
+                                                        style="min-height:50px;"></textarea>
+                                                    <div id="remarkserror" class="error"></div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <!-- formInnerBox End -->
+                                        <!-- <div class="field half left" style="width:14%;">
+                                            <div class="fb-messenger-checkbox fb_iframe_widget fbiframe_widget_fluid_desktop"
+                                                origin="https://www.kent.co.in" page_id="280779312503693"
+                                                messenger_app_id="1971338619584625" user_ref="81282821"
+                                                prechecked="false" allow_login="true" size="small" skin="light"
+                                                center_align="false" fb-xfbml-state="rendered"
+                                                fb-iframe-plugin-query="allow_login=true&amp;app_id=1971338619584625&amp;center_align=false&amp;container_width=102&amp;locale=en_US&amp;messenger_app_id=1971338619584625&amp;origin=https%3A%2F%2Fwww.kent.co.in&amp;page_id=280779312503693&amp;prechecked=false&amp;sdk=joey&amp;size=small&amp;skin=light&amp;user_ref=81282821"
+                                                style="width: 100%;"><span
+                                                    style="vertical-align: top; width: 100%; height: 0px; overflow: hidden;"><iframe
+                                                        name="ff31a1678e1ce8" width="1000px" height="1000px"
+                                                        data-testid="fb:messenger_checkbox Facebook Social Plugin"
+                                                        title="fb:messenger_checkbox Facebook Social Plugin"
+                                                        frameborder="0" allowtransparency="true" allowfullscreen="true"
+                                                        scrolling="no" allow="encrypted-media"
+                                                        src="https://socialplugin.facebook.net/v3.0/messenger_checkbox.php?allow_login=true&amp;app_id=1971338619584625&amp;center_align=false&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df22682b5f7eabcc%26domain%3Dwww.kent.co.in%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.kent.co.in%252Ff10cda8dc1d2ce8%26relation%3Dparent.parent&amp;container_width=102&amp;locale=en_US&amp;messenger_app_id=1971338619584625&amp;origin=https%3A%2F%2Fwww.kent.co.in&amp;page_id=280779312503693&amp;prechecked=false&amp;sdk=joey&amp;size=small&amp;skin=light&amp;user_ref=81282821"
+                                                        style="border: none; visibility: visible; width: 0px; height: 0px;"
+                                                        data-gtm-yt-inspected-31="true"
+                                                        data-gtm-yt-inspected-6821567_212="true"></iframe></span></div>
+                                        </div>
+                                        <div class="clearfix"></div> -->
+                                        <div class="row justify-content-center">
+                                            <!--  <div class="field full clearfix form-control-div">
+                                     <div style="float: left;" class="g-recaptcha" data-sitekey="6LehzBAUAAAAABEGL7ssB9xfpdcGUbzAHOsW0KVh"></div>
+                                     <div id="captchaerror" class="error pull-left"></div>
+                                     </div>confirmOptIn();-->
+                                            <div class="col-md-6 submit text-center text-md-right p-0 mt-2">
+                                                <input type="submit" class="btn btn-primary btn-sm" value="SUBMIT"
+                                                    id="tradeform-btn" style="max-width: 45% !important; min-width: 170px;">
+                                                <input type="reset" class="btn btn-primary btn-sm" value="CLEAR"
+                                                    style="margin-left:10px; max-width: 45% !important; min-width: 170px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

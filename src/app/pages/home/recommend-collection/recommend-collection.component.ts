@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class RecommendCollectionComponent implements OnInit {
-
+  
   @Input() products = [];
   @Input() loaded = false;
   constructor() { }

@@ -51,8 +51,8 @@ export class ProductTwelveComponent implements OnInit {
 
         // this.minPrice = min;
         // this.maxPrice = max;
-        console.log("inside Product tweleve");
-        console.log(this.product)
+        console.log("inside Product tweleve", this.product.defaultPrice, this.product.mrp);
+        // console.log(this.product.defaultPrice, this.product.mrp)
     }
 
     addToCart(event: Event) {

@@ -1,0 +1,89 @@
+.service-centers-header {
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/images/about-top.webp');
+    background-size: cover;
+    color: white;
+    box-shadow: inset 0px 2000px #00000030;
+
+    h2 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.accordion {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .panel {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .panel-header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .panel-header span {
+    flex: 1;
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #555;
+    transition: transform 0.3s;
+  }
+  
+  .rotated {
+    transform: rotate(180deg);
+  }
+  
+  .panel-content {
+    padding: 10px;
+  }
+
+  .sticky-image {
+    img {
+        position: sticky;
+        top: 20px;
+    }
+  }
+
+  .stores-details {
+    span.pill-red {
+        background-color: #d51313;
+        color: white;
+        padding: 7px;
+        margin: 10px;
+        border-radius: 30px;
+        /* margin-top: 84px; */
+        font-size: 12px;
+    }
+
+    span.pill-blue {
+        background-color: #0d60be;
+        color: white;
+        padding: 7px;
+        margin: 10px;
+        border-radius: 30px;
+        /* margin-top: 84px; */
+        font-size: 12px;
+    }
+  }
+  

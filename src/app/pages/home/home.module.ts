@@ -41,6 +41,15 @@ import { BlogsComponent } from './blogs/blogs/blogs.component';
 import { SingleBlogComponent } from './blogs/single-blog/single-blog.component';
 import { SmallPopupsComponent } from './small-popups/small-popups.component';
 import { RefrenceCodeComponent } from './refrence-code/refrence-code.component';
+import { SecondBannerComponent } from './index/second-banner/second-banner.component';
+import { BecomeTradePartnerComponent } from './become-trade-partner/become-trade-partner.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
+import { BulkOrderComponent } from './bulk-order/bulk-order.component';
+import { BulkOrderPopupComponent } from './index/bulk-order-popup/bulk-order-popup.component';
+import { ExtendedWarrantyComponent } from './extended-warranty/extended-warranty.component';
+import { AsmQueriesComponent } from './asm-queries/asm-queries.component';
+import { AllServiceCentersComponent } from './service-centers/all-service-centers/all-service-centers.component';
+import { ServicecenterTryComponent } from './service-centers/servicecenter-try/servicecenter-try.component';
 
 @NgModule({
 	declarations: [
@@ -74,7 +83,16 @@ import { RefrenceCodeComponent } from './refrence-code/refrence-code.component';
 	BlogsComponent,
   SingleBlogComponent,
   SmallPopupsComponent,
-  RefrenceCodeComponent
+  RefrenceCodeComponent,
+  SecondBannerComponent,
+  BecomeTradePartnerComponent,
+  ThankYouComponent,
+  BulkOrderComponent,
+  BulkOrderPopupComponent,
+  ExtendedWarrantyComponent,
+  AsmQueriesComponent,
+  AllServiceCentersComponent,
+  ServicecenterTryComponent,
 	],
 
 	imports: [

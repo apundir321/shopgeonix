@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { environment } from 'src/environments/environment';
 
-
 declare var Razorpay: any
 
 // import { AnyRecord } from 'dns';
@@ -278,7 +277,11 @@ export class ProductcheckoutComponent implements OnInit {
 				} else {
 					this.loader = false;
 					this.toaster.success("Order Successfull!")
-					this.route.navigate(["/success"])
+					this.route.navigate(['/success'], {
+						queryParams: { key1: this.info.name, key2: this.discountoffer, key3: this.discountoffer + this.priceoncod}
+					})
+					// console.log(this.order.status, 'status is here')
+					// this.route.navigate(["/success"])
 				}
 			}, error => {
 				this.loader = false;
@@ -379,7 +382,12 @@ export class ProductcheckoutComponent implements OnInit {
 				} else {
 					this.loader = false;
 					this.toaster.success("Order Successfull!")
-					window.location.href = '/success';
+					this.route.navigate(['/success'], {
+						queryParams: { key1: this.info.name, key2: this.discountoffer, key3: this.discountoffer + this.priceoncod }
+					})
+					sessionStorage.setItem('condition', 'false');
+					// console.log(this.order.status, 'status is here')
+					// window.location.href = '/success';
 				}
 			}, error => {
 				this.loader = false;
@@ -430,7 +438,11 @@ export class ProductcheckoutComponent implements OnInit {
 				this.toaster.success("Order Successfull!")
 				//   this.route.navigate(["shop/dashboard"])
 				// this.route.navigate(["/success"])
-				window.location.href = '/success';
+				this.route.navigate(['/success'], {
+					queryParams: { key1: this.info.name, key2: this.discountoffer, key3: this.discountoffer + this.priceoncod}
+				})
+				// console.log(this.order.status, 'status is here')
+				// window.location.href = '/success';
 				//  location.reload()
 			} else {
 				this.toaster.error("payment failed");

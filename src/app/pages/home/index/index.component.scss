@@ -1411,11 +1411,8 @@ a{
             cursor: pointer;
             background-color: #000000b0;
             padding: 10px;
-            width: 70px;
-            height: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
 
             molla-modal-basic2 {
@@ -1425,4 +1422,16 @@ a{
             }
         }
     }
+}
+
+.full-width-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    background-image: url('/assets/images/SSD-gif.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }

@@ -1,4 +1,4 @@
-import { Component, DebugNode, OnInit, ViewChild } from '@angular/core';
+import { Component, DebugNode, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ModalService } from 'src/app/shared/services/modal.service';
 import { ApiService } from 'src/app/shared/services/api.service';
 import { UtilsService } from 'src/app/shared/services/utils.service';
@@ -19,6 +19,8 @@ declare var $:any;
 })
 
 export class IndexComponent implements OnInit {
+
+	@ViewChild('fullimage', { static: true }) myElement: ElementRef;
 
 	cats = cats;
 	emailForm?:any
@@ -62,6 +64,11 @@ export class IndexComponent implements OnInit {
 		this.offerList()
 		// this.getlist()
 		this.getproduct()
+		setTimeout(() => {
+			const a = this.myElement.nativeElement
+			a.style.display = 'none';
+			console.log('every thing is working fine');
+		}, 5000)
 		
 	}
 

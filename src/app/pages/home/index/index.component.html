@@ -213,24 +213,9 @@
             <h2 class="title text-center">New Arrivals</h2>
         </div>
         <molla-special-collection [products]="products" [loaded]="loaded" *ngIf="products"></molla-special-collection>
-
-
-        <owl-carousel carouselClasses="category-banners-slider owl-simple owl-nav-inside" [options]="introSlider">
-            <div class="banner banner-poster bg-gray">
-                <a href="javascript:;">
-                    <img src="./assets/images/MOTHERBOARD BANNER 1920X500.jpg" alt="Banner">
-                </a>
-                <div class="banner-content banner-content-right">
-                </div>
-            </div>
-
-            <div class="banner banner-poster bg-gray">
-                <a routerLink="/shop/sidebar/list">
-                    <img src="./assets/images/HDD BANNER 1920X500.jpg" alt="Banner">
-                </a>
-            </div>
-        </owl-carousel>
     </div>
+    
+    <molla-second-banner></molla-second-banner>
 
     <!-- 
     <div class="container">
@@ -291,13 +276,12 @@
 
     <molla-recommend-collection [products]="products" [loaded]="loaded" *ngIf="products"></molla-recommend-collection>
 
-    <div class="last-sec">
+    <!-- <div class="last-sec">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xs-6 col-lg pe-2 mb-3">
                     <div class="last-sec-div" routerLink="/shop/ssd-gold/3cols/" [queryParams]="{category: 6,'page':1}">
                         <div class="video-div">
-                            <!-- <img src="/assets/images/video8.gif" class="img-fluid"> -->
                             <video width="100%" autoplay loop muted>
                                 <source src="/assets/images/video8.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -314,7 +298,6 @@
                 <div class="col-xs-6 col-lg pe-2 mb-3">
                     <div class="last-sec-div" routerLink="/shop/ssd-m2/3cols/" [queryParams]="{category: 7,'page':1}">
                         <div class="video-div">
-                            <!-- <img src="/assets/images/video2.gif" class="img-fluid"> -->
                             <video width="100%" autoplay loop muted>
                                 <source src="/assets/images/video2.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -332,7 +315,6 @@
                     <div class="last-sec-div" routerLink="/shop/motherboard/3cols/"
                         [queryParams]="{category: 13,'page':1}">
                         <div class="video-div">
-                            <!-- <img src="/assets/images/video3.gif" class="img-fluid"> -->
                             <video width="100%" autoplay loop muted>
                                 <source src="/assets/images/video3.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -350,7 +332,6 @@
                     <div class="last-sec-div" routerLink="/shop/graphic-card/3cols/"
                         [queryParams]="{category: 12,'page':1}">
                         <div class="video-div">
-                            <!-- <img src="/assets/images/video7.gif" class="img-fluid"> -->
                             <video width="100%" autoplay loop muted>
                                 <source src="/assets/images/video7.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -367,7 +348,6 @@
                 <div class="col-xs-6 col-lg pe-0 mb-3">
                     <div class="last-sec-div" routerLink="/shop/hdd/3cols/" [queryParams]="{category: 2,'page':1}">
                         <div class="video-div">
-                            <!-- <img src="/assets/images/video6.gif" class="img-fluid"> -->
                             <video width="100%" autoplay loop muted>
                                 <source src="/assets/images/video6.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -383,7 +363,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="gallery py-5">
         <div class="container">
@@ -392,7 +372,17 @@
                 <p>GLIMPSE</p>
             </div>
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-sm-12 gallery-main2">
+                    <picture>
+                        <source media="(min-width:576px)" srcset="/assets/images/Collage%20Image%20Website%20Banner-01.jpg">
+                        <img src="/assets/images/Collage Image Website Banner-02.jpg">
+                      </picture>
+                    <!-- <img src="/assets/images/Collage Image Website Banner-01.jpg" class="img-fluid"> -->
+                    <div class="video-btn" style="display: flex; justify-content: center; align-items: center;">
+                        <molla-modal-basic2></molla-modal-basic2>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-8">
                     <div class="row">
                         <div class="col-sm-4 p-2">
                             <div class="gallery-main">
@@ -433,14 +423,19 @@
                     <div class="video-btn">
                         <molla-modal-basic2></molla-modal-basic2>
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>
     </div>
 
-    <molla-small-popups></molla-small-popups>
+    <div class="full-width-image" #fullimage>
 
+    </div>
+
+    <!-- <molla-small-popups></molla-small-popups> -->
+
+    <molla-bulk-order-popup></molla-bulk-order-popup>
     
     <molla-modal2-basic></molla-modal2-basic>
 

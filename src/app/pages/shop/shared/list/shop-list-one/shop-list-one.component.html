@@ -7,10 +7,7 @@
                 <div class="skel-pro skel-pro-list" *ngFor="let item of fakeArray[type]"></div>
             </div> 
             <ng-template #listBlock>
-               
                     <molla-product-nine [products]="products" (getvalue)="value($event)" ></molla-product-nine>
-               
-            
             </ng-template>
         </div>
         <ng-template #gridBlock>

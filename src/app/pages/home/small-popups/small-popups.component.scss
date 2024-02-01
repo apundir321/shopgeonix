@@ -2,9 +2,9 @@
     max-width: 275px;
     background-color: #f7f4eb;
     position: fixed;
-    bottom: -300px;
-    left: 20px;
-    z-index: 1;
+    top: 60vh;
+    left: -300px;
+    z-index: 11;
     box-shadow: 1px 5px 4px 2px #0000004a;
     animation: popup;
     animation-duration: 10s;
@@ -84,18 +84,24 @@
     position: absolute;
     width: 22px;
     height: 22px;
-    background-color: #e9c7c6;
+    background-color: #f7f4eb;
     z-index: 11111;
-    bottom: -12px;
+    top: 27px;
     transform: rotate(45deg);
-    left: 30px;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    left: -11px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
 }
 
 @keyframes popup {
-    0%   {bottom: -350px; opacity: 0;}
-    30%  {bottom: 50px; opacity: 1;}
-    70%  {bottom: 50px; opacity: 1;}
-    100% {bottom: -350px; opacity: 0;}
+    0%   {left: -300px; opacity: 0;}
+    30%  {left: 35px; opacity: 1;}
+    70%  {left: 35px; opacity: 1;}
+    100% {left: -300px; opacity: 0;}
+  }
+
+  @media screen and (max-width: 576px) {
+    .small-popup-main {
+        top: 47vh;
+    }
   }

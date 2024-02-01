@@ -232,3 +232,9 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
     top: 10px;
     display: none;
 }
+
+.container.special-collection.featured {
+    .owl-dots {
+        display: none;
+    }
+}

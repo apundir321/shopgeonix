@@ -45,7 +45,7 @@ export class DetailOneComponent implements OnInit {
 	minPrice = 99999;
 	ForDisable:boolean
 	// getcolor="red";
-	qty = 1;
+	qty = 10;
 	variantValue:boolean=false;
 	newValue:boolean=true;
 	hidden:boolean=false;
@@ -81,24 +81,15 @@ export class DetailOneComponent implements OnInit {
 
 	ngOnInit(): void {
 
-		
-
 		// this.product.variants.forEach((variant)=>{
 	    //     if(uniqueValue.indexOf(variant.size)===-1){
 		// 		uniqueValue.push(variant.size);
 		// 	}
-
-			
-		
 		// })
+
 		const unique = [...new Set(this.product.variants.map(item => item.size))];
 		console.log("unique set",unique)
 		this.uniquesize = unique;
-
-		
-
-		
-
 
 		// this.product.variants.forEach((variant)=>{
 		// 	let color = variant.colour;
@@ -108,7 +99,6 @@ export class DetailOneComponent implements OnInit {
 		// })
 		
 		// console.log("color",this.colors)
-
 
 		// if(this.token){
 		// 	this.hidden = true

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://geonix.in/sitemap.xml

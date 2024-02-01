@@ -171,8 +171,8 @@ export class SmallPopupsComponent implements OnInit {
       setTimeout(() => {
         this.random = Math.floor(Math.random() * this.products.length);
         this.data = this.products[this.random]
-        console.log(this.data);
-        console.log(i);
+        // console.log(this.data);
+        // console.log(i);
         // Add your code here to execute with a delay
       }, i * 10000); // Delay in milliseconds (i * 1000 ms for increasing delay)
     }

@@ -1,0 +1,196 @@
+<div class="container"> <!-- open container -->
+    <div class="row"> <!--  open row -->
+
+        <div id="form-header" class="col-12">
+            <h1 id="title">ASM Query Form</h1>
+        </div>
+    </div> <!--  close row -->
+
+    <div class="row"> <!--  open row -->
+        <div id="form-tagline" class="col-md-4">
+            <div class="form-tagline">
+                <i class="fa fa-envelope fa-5x"></i>
+                <h2 class="text-white">How Are We Doing?</h2>
+                <p id="description" class="lead text-white">We really value your opinion</p>
+            </div>
+        </div>
+
+        <div id="form-content" class="col-md-8">
+
+            <form id="survey-form" #myForm="ngForm" (ngSubmit)="onSubmit()">
+
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                        <label id="name-label" class="control-label" for="name">*Achivement Before:</label>
+                    </div>
+
+                    <div class="input-group col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon-name"><i class="fa fa-user"></i></span>
+                        </div>
+                        <textarea id="name" class="form-control" placeholder="Achivement Before" name="name" [(ngModel)]="formData.achivement_before"
+                            required></textarea>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                        <label id="name-label" class="control-label" for="name">*Achivement After:</label>
+                    </div>
+
+                    <div class="input-group col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon-name"><i class="fa fa-user"></i></span>
+                        </div>
+                        <textarea id="name" class="form-control" placeholder="Achivement After" name="name" [(ngModel)]="formData.achivement_after" 
+                            required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+
+                    <div class="col-sm-3">
+                        <label class="control-label" for="visit-purpose">*Man Power required:</label>
+                    </div>
+
+                    <div class="col-sm-9">
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="man-power-required" id="five-star" [(ngModel)]="formData.manpower_required"
+                                value="yes">
+                            <label class="form-check-label" for="five-star">Yes</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="man-power-required" id="four-star" [(ngModel)]="formData.manpower_required"
+                                value="no">
+                            <label class="form-check-label" for="four-star">No</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-3">
+                        <label id="email-label" class="control-label" for="email">*Number Of Man Power
+                            required:</label>
+                    </div>
+
+                    <div class="input-group col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon-mail"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <input type="number" class="form-control" id="email" placeholder="Quantity" [(ngModel)]="formData.noof_manpower_required"
+                            style="height: 100%;" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+
+                    <div class="col-sm-3">
+                        <label class="control-label" for="visit-purpose">*Service Center required:</label>
+                    </div>
+
+                    <div class="col-sm-9">
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="service-center-required" id="five-star" [(ngModel)]="formData.service_center_required"
+                                value="yes">
+                            <label class="form-check-label" for="five-star">Yes</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="service-center-required" id="four-star" [(ngModel)]="formData.service_center_required"
+                                value="no">
+                            <label class="form-check-label" for="four-star">No</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-3">
+                        <label id="email-label" class="control-label" for="email">*Service Center Location:</label>
+                    </div>
+
+                    <div class="input-group col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon-mail"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="email" placeholder="Service Center Location" [(ngModel)]="formData.service_center_location"
+                            style="height: 100%;" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-3">
+                        <label id="number-label" class="control-label" for="email">*Quality Issue:</label>
+                    </div>
+
+                    <div class="input-group col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon-room"><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="number" placeholder="Quality Issue" name="number" [(ngModel)]="formData.quality_issue" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-3">
+                        <label id="number-label" class="control-label" for="email">*Logistic Issue:</label>
+                    </div>
+
+                    <div class="input-group col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon-room"><i
+                                    class="fa-solid fa-truck"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="number" placeholder="Logistic Issue" [(ngModel)]="formData.logistic_issue" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-3">
+                        <label id="number-label" class="control-label" for="email">*Marketing Support:</label>
+                    </div>
+
+                    <div class="input-group col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon-room"><i
+                                    class="fa-solid fa-lightbulb"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="number" placeholder="Enter Marketing Support Query" [(ngModel)]="formData.marketing_support" required>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group row">
+                    <div class="col-sm-3">
+                        <label class="control-label" for="comment">Suggestion:</label>
+                    </div>
+
+                    <div class="input-group col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon-mail"><i
+                                    class="fa-solid fa-comments"></i></span>
+                        </div>
+                        <textarea class="form-control" rows="5" id="comment" [(ngModel)]="formData.suggestion"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-12 submit-button">
+                        <button type="submit" id="submit" class="btn btn-default" aria-pressed="true">Submit
+                            Form</button>
+                    </div>
+                </div>
+
+            </form> <!-- close form -->
+
+        </div> <!-- close form content div -->
+
+    </div> <!-- close row -->
+</div><!--  close container -->

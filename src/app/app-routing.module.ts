@@ -28,6 +28,13 @@ import { BlogsComponent } from './pages/home/blogs/blogs/blogs.component';
 import { SingleBlogComponent } from './pages/home/blogs/single-blog/single-blog.component';
 import { DriversComponent } from './pages/home/drivers/drivers.component';
 import { RefrenceCodeComponent } from './pages/home/refrence-code/refrence-code.component';
+import { BecomeTradePartnerComponent } from './pages/home/become-trade-partner/become-trade-partner.component';
+import { ThankYouComponent } from './pages/home/thank-you/thank-you.component';
+import { BulkOrderComponent } from './pages/home/bulk-order/bulk-order.component';
+import { ExtendedWarrantyComponent } from './pages/home/extended-warranty/extended-warranty.component';
+import { AsmQueriesComponent } from './pages/home/asm-queries/asm-queries.component';
+import { AllServiceCentersComponent } from './pages/home/service-centers/all-service-centers/all-service-centers.component';
+import { ServicecenterTryComponent } from './pages/home/service-centers/servicecenter-try/servicecenter-try.component';
 
 const routes: Routes = [
 	
@@ -83,6 +90,34 @@ const routes: Routes = [
 			{
 				path: 'refrence-codes',
 				component: RefrenceCodeComponent
+			},
+			{
+				path: 'become-trade-partner',
+				component: BecomeTradePartnerComponent
+			},
+			{
+				path: 'thank-you',
+				component: ThankYouComponent
+			},
+			{
+				path: 'bulk-order',
+				component: BulkOrderComponent
+			},
+			{
+				path: 'product-registration',
+				component: ExtendedWarrantyComponent
+			},
+			{
+				path: 'asm-queries',
+				component: AsmQueriesComponent
+			},
+			{
+				path: 'all-service-centers',
+				component: AllServiceCentersComponent
+			},
+			{
+				path: 'service-centers-try',
+				component: ServicecenterTryComponent
 			},
 			// {
 			// 	path: 'aboutUs',

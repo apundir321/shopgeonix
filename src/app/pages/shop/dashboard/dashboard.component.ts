@@ -219,9 +219,7 @@ export class DashboardComponent implements OnInit {
 				this.message1="please enter valid password"
 				return 
 			  }
-		}
-	
-		
+		}	
 	}
 
 	GetAllOrder(){

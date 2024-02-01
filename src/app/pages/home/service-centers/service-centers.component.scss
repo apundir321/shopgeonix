@@ -17,72 +17,210 @@
     }
 }
 
-.accordion {
-    width: 100%;
-  }
+// .accordion {
+//     width: 100%;
+//   }
   
-  .panel {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    overflow: hidden;
-  }
+//   .panel {
+//     border: 1px solid #ccc;
+//     border-radius: 4px;
+//     margin-bottom: 10px;
+//     overflow: hidden;
+//   }
   
-  .panel-header {
-    background-color: #f5f5f5;
-    padding: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
+//   .panel-header {
+//     background-color: #f5f5f5;
+//     padding: 10px;
+//     cursor: pointer;
+//     display: flex;
+//     align-items: center;
+//   }
   
-  .panel-header span {
-    flex: 1;
-  }
+//   .panel-header span {
+//     flex: 1;
+//   }
   
-  .arrow {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #555;
-    transition: transform 0.3s;
-  }
+//   .arrow {
+//     width: 0;
+//     height: 0;
+//     border-left: 5px solid transparent;
+//     border-right: 5px solid transparent;
+//     border-top: 5px solid #555;
+//     transition: transform 0.3s;
+//   }
   
-  .rotated {
-    transform: rotate(180deg);
-  }
+//   .rotated {
+//     transform: rotate(180deg);
+//   }
   
-  .panel-content {
-    padding: 10px;
-  }
+//   .panel-content {
+//     padding: 10px;
+//   }
 
-  .sticky-image {
-    img {
-        position: sticky;
-        top: 20px;
-    }
-  }
+//   .sticky-image {
+//     img {
+//         position: sticky;
+//         top: 20px;
+//     }
+//   }
 
-  .stores-details {
-    span.pill-red {
-        background-color: #d51313;
-        color: white;
-        padding: 7px;
-        margin: 10px;
-        border-radius: 30px;
-        /* margin-top: 84px; */
-        font-size: 12px;
-    }
+//   .stores-details {
+//     span.pill-red {
+//         background-color: #d51313;
+//         color: white;
+//         padding: 7px;
+//         margin: 10px;
+//         border-radius: 30px;
+//         /* margin-top: 84px; */
+//         font-size: 12px;
+//     }
 
-    span.pill-blue {
-        background-color: #0d60be;
-        color: white;
-        padding: 7px;
-        margin: 10px;
-        border-radius: 30px;
-        /* margin-top: 84px; */
-        font-size: 12px;
-    }
-  }
+//     span.pill-blue {
+//         background-color: #0d60be;
+//         color: white;
+//         padding: 7px;
+//         margin: 10px;
+//         border-radius: 30px;
+//         /* margin-top: 84px; */
+//         font-size: 12px;
+//     }
+//   }
   
+
+.box-item {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+  margin-bottom: 35px;
+  max-width: 100%;
+}
+
+.flip-box {
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+.flip-box-front,
+.flip-box-back {
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  min-height: 300px;
+  -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+// .flip-box-front:nth-child(odd) {
+//   background: black !important;
+// }
+
+.flip-box-front:nth-child(even) {
+  background: #990610 !important;
+}
+
+.flip-box:hover .flip-box-front {
+  -ms-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-back {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box .inner {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 25px;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+  
+  transform: translateY(-50%) translateZ(60px) scale(.94);
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+  -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+  top: 50%;
+}
+
+.flip-box-header {
+  font-size: 30px;
+}
+
+.flip-box p {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.flip-box-img {
+  margin-top: 25px;
+}
+
+.flip-box-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+
+.flip-box-front.text-center.contact {
+  background-image: url('/assets/images/Service\ Centers\ Banner\ Geonix-01.jpeg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+a.red-btn {
+  background-color: white;
+  padding: 15px;
+  color: black;
+  font-weight: 600;
+}
+
+.flip-box-front.text-center.servicecenter {
+  background-image: url('/assets/images/Service\ Centers\ Banner\ Geonix-02.jpeg');
+  background-size: 100% 100%;
+}

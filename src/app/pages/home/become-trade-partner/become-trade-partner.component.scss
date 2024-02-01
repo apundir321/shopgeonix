@@ -1,0 +1,46 @@
+
+
+.become-partner-main {
+    padding: 50px;
+
+    span.texts {
+        padding: 0px 30px 0px 10px;
+    }
+
+    .divideBox {
+        display: flex;
+        justify-content: space-around;
+
+        span.texts {
+            padding-left: 15px;
+        }
+    }
+}
+
+.form-control {
+    height: 41px;
+    padding: 0.85rem 2rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #777;
+    background-color: #f7f7f7;
+    border: 1px solid #ebebeb;
+    border-radius: 0;
+    margin-bottom: 2rem;
+    transition: all .3s;
+    outline-width: 0;
+    border: none;
+    border-bottom: 2px solid #4665ac;
+}
+
+.col-md-6.submit.text-center.text-md-right.p-0.mt-2 {
+    display: flex;
+}
+
+@media screen and (max-width: 576px) {
+    .become-partner-main {
+        padding: 50px 10px;
+    }
+}
+

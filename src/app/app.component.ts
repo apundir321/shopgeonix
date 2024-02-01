@@ -1,16 +1,15 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import { filter, first } from 'rxjs/operators';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-
 import { Store } from '@ngrx/store';
-
 import { StoreService } from './core/store/store.service';
 import { UtilsService } from './shared/services/utils.service';
-
 import { RefreshStoreAction } from 'src/app/core/actions/actions';
 import { environment } from 'src/environments/environment';
+import { CustomPopupComponent } from './shared/components/custom-popup/custom-popup.component';
+import { WindowCloseService } from './shared/services/window-close.service';
 
 declare var $: any;
 
@@ -22,7 +21,20 @@ declare var $: any;
 
 export class AppComponent {
 
-	
+	// @HostListener('window:beforeunload', ['$event'])
+	// unloadNotification($event: any): void {
+	//   $event.returnValue = true;
+	//   window.alert('Are you sure you want to leave?')
+	//   console.log($event.returnValue)
+	// }
+
+	ngOnInit() {
+		this.windowCloseService.getWindowCloseObservable().subscribe(() => {
+		  // Open the custom popup when the window close event occurs
+		  console.log('on close function is working')
+		  this.modalService.open(CustomPopupComponent, { centered: true });
+		});
+	  }
 
 	constructor(
 		public store: Store<any>,
@@ -30,7 +42,8 @@ export class AppComponent {
 		public viewPort: ViewportScroller,
 		public storeService: StoreService,
 		public utilsService: UtilsService,
-		public modalService: NgbModal
+		public modalService: NgbModal,
+		private windowCloseService: WindowCloseService
 	) {
 		const navigationEnd = this.router.events.pipe(
 			filter(event => event instanceof NavigationEnd)
@@ -67,6 +80,7 @@ export class AppComponent {
 
 		localStorage.setItem("molla-angular-demo", environment.demo);
 	}
+
 
 	@HostListener('window: scroll', ['$event'])
 	onWindowScroll(e: Event) {

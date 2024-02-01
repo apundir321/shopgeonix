@@ -1,0 +1,174 @@
+.products-banner-home {
+    position: relative;
+
+    .monitor {
+        position: absolute;
+        top: 16%;
+        z-index: 11;
+        left: 26%;
+        display: inline-flex;
+        transform: translate(26%, -16%);
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 4vw;
+            height: 4vw;
+            background-color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+            i {
+                font-size: 2vw;
+                transition: all 0.5s;
+            }
+        }
+
+        .icon::after {
+            content: '';
+            width: 50px;
+            height: 35px;
+            background-color: transparent;
+            position: absolute;
+            right: -40px;
+        }
+
+        .main {
+            flex: 1;
+            width: 100%;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            text-align: center;
+            opacity: 1;
+            transition: all .5s;
+            position: absolute;
+            left: 6vw;
+            top: 0px;
+            min-width: 25vw;
+            opacity: 0;
+
+            h3 {
+                font-size: 2.5vw;
+            }
+
+            p {
+                font-size: 1.5vw;
+            }
+        }
+    }
+
+    .monitor.keyboard {
+        right: -105% !important;
+        top: 29% !important;
+        z-index: 1 !important;
+
+        .main {
+            left: auto !important;
+            right: 6vw !important;
+        }
+    }
+
+    .monitor.motherboard {
+        top: 56% !important;
+        right: -130%;
+
+        .main {
+            left: auto;
+            right: 130%;
+        }
+    }
+
+    .monitor.hdd {
+        top: 51% !important;
+        left: 17% !important;
+        z-index: 32 !important;
+    }
+
+    .monitor.ssd {
+        top: 58% !important;
+        z-index: 30 !important;
+    }
+
+    .monitor.ram {
+        top: 70% !important;
+        left: 20% !important;
+        z-index: 31 !important;
+    }
+
+    .monitor.Keyboard-mouse {
+        top: 63% !important;
+        left: 45% !important;
+    }
+}
+
+.icon:hover i {
+    transform: rotate(135deg);
+}
+
+.icon:hover .main {
+    opacity: 1 !important;
+}
+
+.icon:hover {
+    overflow: visible !important;
+}
+
+.main-hover {
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000052;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1111111111 !important;
+
+    .main-hover-text {
+        position: absolute;
+        bottom: 0px;
+        width: 90%;
+        background-color: white;
+        margin-left: 3%;
+        margin-bottom: 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .products-banner-home {
+
+        .monitor {
+            .icon {
+                max-width: 2.5vw;
+                max-height: 2.5vw;
+
+                i {
+                    font-size: 1.3vw;
+                }
+            }
+
+            .main {
+                left: 5vw;
+                min-width: 22vw;
+
+                h3 {
+                    font-size: 2vw;
+                }
+
+                p {
+                    font-size: 0.9vw;
+                }
+            }
+        }
+
+        .monitor.cabinet {
+            left: 27%;
+        }
+    }
+}

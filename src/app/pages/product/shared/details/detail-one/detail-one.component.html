@@ -82,21 +82,22 @@
 
     <div *ngIf="!product.outOfStock">
 
-    <div class="details-filter-row details-row-size">
-        <label for="qty">Qty:</label>
-        <molla-quantity-input [max]="product.stock" (changeQty)="onChangeQty( $event )" [value]="qty">
-        </molla-quantity-input>
-    </div>
+        <!-- <div class="bulk-order">
+            <span class="d-flex align-items-center"><img src="/assets/images/wired-gradient-298-coins.gif" class="img-fluid" style="width: 30px; margin-right: 10px;"> Corporate Deal</span>
+            <h3>Bulk Order</h3>
+            <a href="https://b2b.geonix.in/">Click To Enquire</a>
+        </div> -->
 
-   
-    
-    <div class="product-details-action">
+    <!-- <div class="details-filter-row details-row-size">
+        <label for="qty">Qty:</label>
+        <molla-quantity-input [max]="product.stock" min="10" (changeQty)="onChangeQty( $event )" [value]="qty">
+        </molla-quantity-input>
+    </div> -->
+ 
+    <!-- <div class="product-details-action">
         <a  href="javascript:;" class="btn-product btn-cart"
             [class.btn-disabled]="!( product.variants.length > 0 )"
             (click)="addCart( $event, 0 )"><span>Add to Cart</span></a>
-
-        
-
 
         <div class="details-action-wrapper">
             <a  href="javascript:;" class="btn-product btn-wishlist" [class.added-to-wishlist]="isInWishlist()"
@@ -104,14 +105,18 @@
                 <span>{{ isInWishlist() ? 'Go' : 'Add' }} to Wishlist</span>
             </a>
         </div>
-    </div>
+    </div> -->
 
     <div style="padding-bottom: 10px;">
-        <a><button  class="btn btn-outline-primary-2" (click)="buyNowLink($event)">
+        <a target="_blank" href="https://www.amazon.in/stores/Geonix/page/497D8A9A-8622-43C4-99D4-D0A5A314EF6D?ref_=ast_bln">
+            <button  class="btn btn-outline-primary-2">
+            <i class="fa-brands fa-amazon fa-beat"></i>
+            <!-- <img src="/assets/images/icons/logo.png" class="img-fluid"> -->
             <span>Buy Now</span><i
             class="icon-long-arrow-right"></i>
         </button></a>
     </div>
+
 
 </div>
 
@@ -178,11 +183,6 @@
                         <a [routerLink]="['/product/'+product.category.categoryUrl+'/'+ product.productUrl]">{{ product.name }}</a>
                     </h3>
                 </div>
-
-
-
-
-
 
                 <div class="col-6 justify-content-end">
                     <!-- <div class="product-price" *ngIf="selectedVariant.color && selectedVariant.size != '' else variationPrice">

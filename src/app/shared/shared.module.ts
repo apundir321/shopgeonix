@@ -76,6 +76,7 @@ import { PostThreeComponent } from './components/blog-post/post-three/post-three
 import { PostFourComponent } from './components/blog-post/post-four/post-four.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SingleComponent } from './single/single.component';
+import { CustomPopupComponent } from './components/custom-popup/custom-popup.component';
 
 @NgModule({
 	declarations: [
@@ -142,6 +143,7 @@ import { SingleComponent } from './single/single.component';
 		PostFourComponent,
 		CountToComponent,
   		SingleComponent,
+    CustomPopupComponent,
 	],
 
 	imports: [

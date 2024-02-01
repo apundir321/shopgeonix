@@ -15,3 +15,93 @@
         }
     }
 }
+
+.product-image{
+    min-height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 7px #00000045;
+    transition: all 0.5s;
+}
+
+.product-image:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.one {
+    background-image: url('/assets/images/WIRELESS\ KEYBOARD\ AND\ MOUSE.jpg');
+}
+
+.two {
+    background-image: url('/assets/images/banner1-2.png');
+}
+
+.three {
+    background-image: url('/assets/images/22inch\ IPS\ Monitor.jpg');
+}
+
+.four {
+    background-image: url('/assets/images/WIRED\ KEYBOARD\ AND\ MOUSE.jpg');
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    width: 25vw;
+    height: 25vw;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 0 8px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 350px;
+    max-height: 350px;
+
+    input {
+        width: 75%;
+        padding: 5px;
+        border: 1px solid #b3b3b3;
+    }
+
+    h3 {
+        font-weight: 700;
+
+        span {
+            color: #00004d;
+        }
+    }
+
+    .btn {
+        color: white;
+        background-color: #00004d;
+        margin-top: 15px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        color: white;
+        background-color: #00004d;
+        margin-top: 15px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .coupon-single {
+        .extra {
+            padding: 50px 0px;
+        }
+    }
+}

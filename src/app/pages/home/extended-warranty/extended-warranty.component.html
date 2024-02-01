@@ -1,0 +1,155 @@
+<div class="become-partner-main mt-5">
+    <div class="container">
+        <div class="form-main">
+            <div class="row">
+                <div class="col-sm-8 m-auto">
+                    <div class="content form-content trade-partner">
+                        <div class="alert success_msg" id="tradepartner-success_msg" style="display: none;">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">
+                            </a>
+                        </div>
+                        <div class="alert common_error" id="tradepartner-common_error" style="display:none;color:red;">
+                        </div>
+                        <div class="clearfix"></div>
+                        <form class="flexForm" #myForm="ngForm" (ngSubmit)="onSubmit()">
+                            <input type="hidden" name="action" value="Trade-partner">
+                            <!-- Row Start -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <!-- formInnerBox Start -->
+                                        <div class="formInnerBox">
+                                            <!-- <h4>Contact Person</h4> -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Name<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" [(ngModel)]="formData.name">
+                                                    <div id="trade_f_nameerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Row End -->
+                                            <!-- Row Start -->
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Mobile No.<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-5">
+                                                            <input type="text" maxlength="10" name="contact_number" id="trade_contact_number" class="form-control" [(ngModel)]="formData.mobileno">
+                                                            <div id="contacterror" class="error pull-left"></div>
+                                                        </div>
+                                                        <label class="col-sm-2 gstLabel control-label">E-Mail<sup>*</sup></label>
+                                                        <div class="col-sm-5">
+                                                            <input type="text" name="email" id="trade_email" class="form-control" [(ngModel)]="formData.email">
+                                                            <div id="emailerror" class="error"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">State<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <!--- India states -->
+                                                    <select id="country-state" name="country-state" class="form-control" [(ngModel)]="formData.state">
+                                                        <option value="">Select state</option>
+                                                        <option value="AN">Andaman and Nicobar Islands</option>
+                                                        <option value="AP">Andhra Pradesh</option>
+                                                        <option value="AR">Arunachal Pradesh</option>
+                                                        <option value="AS">Assam</option>
+                                                        <option value="BR">Bihar</option>
+                                                        <option value="CH">Chandigarh</option>
+                                                        <option value="CT">Chhattisgarh</option>
+                                                        <option value="DN">Dadra and Nagar Haveli</option>
+                                                        <option value="DD">Daman and Diu</option>
+                                                        <option value="DL">Delhi</option>
+                                                        <option value="GA">Goa</option>
+                                                        <option value="GJ">Gujarat</option>
+                                                        <option value="HR">Haryana</option>
+                                                        <option value="HP">Himachal Pradesh</option>
+                                                        <option value="JK">Jammu and Kashmir</option>
+                                                        <option value="JH">Jharkhand</option>
+                                                        <option value="KA">Karnataka</option>
+                                                        <option value="KL">Kerala</option>
+                                                        <option value="LA">Ladakh</option>
+                                                        <option value="LD">Lakshadweep</option>
+                                                        <option value="MP">Madhya Pradesh</option>
+                                                        <option value="MH">Maharashtra</option>
+                                                        <option value="MN">Manipur</option>
+                                                        <option value="ML">Meghalaya</option>
+                                                        <option value="MZ">Mizoram</option>
+                                                        <option value="NL">Nagaland</option>
+                                                        <option value="OR">Odisha</option>
+                                                        <option value="PY">Puducherry</option>
+                                                        <option value="PB">Punjab</option>
+                                                        <option value="RJ">Rajasthan</option>
+                                                        <option value="SK">Sikkim</option>
+                                                        <option value="TN">Tamil Nadu</option>
+                                                        <option value="TG">Telangana</option>
+                                                        <option value="TR">Tripura</option>
+                                                        <option value="UP">Uttar Pradesh</option>
+                                                        <option value="UT">Uttarakhand</option>
+                                                        <option value="WB">West Bengal</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Market Name<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" [(ngModel)]="formData.marketName">
+                                                    <div id="trade_f_nameerror" class="error"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Attach Invoice<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <input type="file" class="form-control" (change)="onFileChange($event)">
+                                                    <div id="trade_f_nameerror" class="error"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Serial Number<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" [(ngModel)]="formData.serialNumber">
+                                                    <div id="trade_f_nameerror" class="error"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Product Name<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" [(ngModel)]="formData.prodeuctName">
+                                                    <div id="trade_f_nameerror" class="error"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label">Note<sup>*</sup></label>
+                                                <div class="col-sm-9">
+                                                    <textarea class="form-control" [(ngModel)]="formData.note"></textarea>
+                                                    <div id="trade_f_nameerror" class="error"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row form-group">
+                                                <label class="col-sm-3 control-label"></label>
+                                                <div class="col-sm-9">
+                                                    <input type="submit" class="btn btn-primary btn-sm" value="SUBMIT"
+                                                    id="tradeform-btn" style="max-width: 45% !important; min-width: 170px;">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

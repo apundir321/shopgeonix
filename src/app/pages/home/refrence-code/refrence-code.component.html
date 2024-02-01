@@ -1,13 +1,13 @@
 
 
-<div class="coupon-main pt-5">
+<!-- <div class="coupon-main pt-5">
     <div class="container">
         <div class="coupon-single">
             <div class="row">
-                <div class="col-6 p-0">
+                <div class="col-sm-6 p-0">
                     <img src="./assets/images/refrencecode/one.jpeg" class="img-fluid">
                 </div>
-                <div class="col-6" style="display: flex; align-items: center; justify-content: center; background-color: #01b5d8; text-align: center; color: white;">
+                <div class="col-sm-6" style="display: flex; align-items: center; justify-content: center; background-color: #01b5d8; text-align: center; color: white;">
                     <div class="extra">
                         <h1>Keyboard and Mouse</h1>
                         <p>use refrrer code to get 5% discount</p>
@@ -23,14 +23,14 @@
     <div class="container">
         <div class="coupon-single">
             <div class="row">
-                <div class="col-6" style="display: flex; align-items: center; justify-content: center; background-color: #2e7c5c; text-align: center; color: white;">
+                <div class="col-sm-6" style="display: flex; align-items: center; justify-content: center; background-color: #2e7c5c; text-align: center; color: white;">
                     <div class="extra">
                         <h1>Thinkline</h1>
-                        <p>Share all the fall feels by treating someone you care about.</p>
+                        <p>use refrrer code to get 5% discount</p>
                         <button class="btn btn-primary mt-2">Get Refrrer Code</button>
                     </div>
                 </div>
-                <div class="col-6 p-0">
+                <div class="col-sm-6 p-0">
                     <img src="./assets/images/refrencecode/two.jpeg" class="img-fluid">
                 </div>
             </div>
@@ -42,13 +42,13 @@
     <div class="container">
         <div class="coupon-single">
             <div class="row">
-                <div class="col-6 p-0">
-                    <img src="./assets/images/refrencecode/three.jpg" class="img-fluid">
+                <div class="col-sm-6 p-0">
+                    <img src="./assets/images/refrencecode/three.jpeg" class="img-fluid">
                 </div>
-                <div class="col-6" style="display: flex; align-items: center; justify-content: center; background-color: #e31c79; text-align: center; color: white;">
+                <div class="col-sm-6" style="display: flex; align-items: center; justify-content: center; background-color: #48356c; text-align: center; color: white;">
                     <div class="extra">
-                        <h1>Give a pumpkiny present</h1>
-                        <p>Share all the fall feels by treating someone you care about.</p>
+                        <h1>Printer Toner</h1>
+                        <p>use refrrer code to get 5% discount</p>
                         <button class="btn btn-primary mt-2">Get Refrrer Code</button>
                     </div>
                 </div>
@@ -61,17 +61,52 @@
     <div class="container">
         <div class="coupon-single">
             <div class="row">
-                <div class="col-6" style="display: flex; align-items: center; justify-content: center; background-color: #76232f; text-align: center; color: white;">
+                <div class="col-sm-6" style="display: flex; align-items: center; justify-content: center; background-color: #aa0844; text-align: center; color: white;">
                     <div class="extra">
-                        <h1>Give a pumpkiny present</h1>
-                        <p>Share all the fall feels by treating someone you care about.</p>
+                        <h1>Cabinet</h1>
+                        <p>use refrrer code to get 5% discount</p>
                         <button class="btn btn-primary mt-2">Get Refrrer Code</button>
                     </div>
                 </div>
-                <div class="col-6 p-0">
-                    <img src="./assets/images/refrencecode/four.jpg" class="img-fluid">
+                <div class="col-sm-6 p-0">
+                    <img src="./assets/images/refrencecode/five.jpeg" class="img-fluid">
                 </div>
             </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="second-section container position-relative mt-5 mb-3">
+    <div class="row">
+        <div class="col-sm-6 mb-2"
+            routerLink="/product/keyboard-mouse/geonix-wireless-keyboard-mouse-combo--gxwbk-01-gxwbm-01">
+            <div class="product-image one">
+
+            </div>
+        </div>
+        <div class="col-sm-6 mb-2" routerLink="/shop/ssd-sata/3cols/" [queryParams]="{category: 6,'page':1}">
+            <div class="product-image two">
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 mb-2" routerLink="/shop/pc-monitor/3cols/" [queryParams]="{category: 11,'page':1}">
+            <div class="product-image three">
+
+            </div>
+        </div>
+        <div class="col-sm-6 mb-2"
+            routerLink="/product/keyboard-mouse/geonix-wired-keyboard-mouse-combo-gxbk-01-gxbm-01">
+            <div class="product-image four">
+
+            </div>
+        </div>
+    </div>
+    <div class="center-content">
+        <div class="extra">
+            <input type="text" placeholder="Apply Coupon" #inputField>
+            <a class="btn" (click)="getValue(inputField.value)">Apply Code</a>
         </div>
     </div>
 </div>

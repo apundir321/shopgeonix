@@ -37,9 +37,14 @@ export class QuantityInputComponent implements OnInit, OnChanges {
 	}
 
 	decrement () {
-		if ( this.current > 1 ) {
-			this.current--;
-			this.changeQty.emit( this.current );
+		console.log('current values are here', this.current)
+		if(this.current >= 11){
+			if ( this.current > 1 ) {
+				this.current--;
+				this.changeQty.emit( this.current );
+			}
+		}else {
+			window.alert('atleast 10 quantity is required')
 		}
 	}
 

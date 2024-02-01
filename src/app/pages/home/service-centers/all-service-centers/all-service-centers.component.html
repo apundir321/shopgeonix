@@ -1,0 +1,148 @@
+<div class="service-centers-header">
+    <div class="container text-center">
+        <h2>Service Centers</h2>
+        <p>Home / Service Centers</p>
+    </div>
+</div>
+
+<!-- <div class="service-centers mt-5 mb-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="accordion">
+                    <div *ngFor="let panel of panels" class="panel">
+                      <div class="panel-header" (click)="togglePanel(panel)">
+                        <span style="text-transform: uppercase;">{{ panel.title }}</span>
+                        <i class="arrow" [ngClass]="{'rotated': panel.expanded}"></i>
+                      </div>
+                      <div *ngIf="panel.expanded" class="panel-content">
+                        <div class="stores-details pt-2">
+                            <h3>{{ panel.shop }}</h3>
+                            <p>{{ panel.address }}</p>
+                            <p><b>Contact Person :</b> {{panel.contactperson}}</p>
+                            <a href="mailto: {{panel.email}}"><b>Email :</b> {{panel.email}}</a><br>
+                            <a href="tel: {{panel.phone1}}"><b>Phone1 :</b> {{panel.phone1}}</a><br>
+                            <a class="mb-1 d-block" href="tel: {{panel.phone2}}"><b>Phone2 :</b> {{panel.phone2}}</a>
+                            <span class="pill-red"><b>State :</b> {{panel.state}}</span>
+                            <span class="pill-blue"><b>City :</b> {{panel.city}}</span>
+                            <a href="{{panel.location}}" target="_blank" class="mt-2 btn btn-primary d-block w-100">View Location</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="service-centers mt-5 mb-5">
+    <h3 class="text-center mb-5">Our Service Center Locations</h3>
+    <div class="container-fluid">
+        <div class="row mx-5">
+            <div class="col-sm-3">
+                <h4>North Bharat</h4>
+                <div class="accordion">
+                    <div *ngFor="let panel of northcenters" class="panel">
+                        <div class="panel-header" (click)="togglePanel(panel)">
+                            <span style="text-transform: uppercase;">{{ panel.state }}</span>
+                            <i class="arrow" [ngClass]="{'rotated': panel.expanded}"></i>
+                        </div>
+                        <div *ngIf="panel.expanded" class="panel-content">
+                            <div class="stores-details pt-2" *ngFor="let panel of panel.interneldata">
+                                <h3>{{ panel.shop }}</h3>
+                                <p>{{ panel.address }}</p>
+                                <p><b>Contact Person :</b> {{panel.contactperson}}</p>
+                                <a href="mailto: {{panel.email}}"><b>Email :</b> {{panel.email}}</a><br>
+                                <a href="tel: {{panel.phone1}}"><b>Phone1 :</b> {{panel.phone1}}</a><br>
+                                <a class="mb-1 d-block" href="tel: {{panel.phone2}}"><b>Phone2 :</b>
+                                    {{panel.phone2}}</a>
+                                <span class="pill-red"><b>State :</b> {{panel.state}}</span>
+                                <span class="pill-blue"><b>City :</b> {{panel.city}}</span>
+                                <a href="{{panel.location}}" target="_blank"
+                                    class="mt-2 btn btn-primary d-block w-100">View Location</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3"> 
+                <h4>South Bharat</h4>
+                <div class="accordion">
+                    <div *ngFor="let panel of southcenters" class="panel">
+                        <div class="panel-header" (click)="togglePanel(panel)">
+                            <span style="text-transform: uppercase;">{{ panel.state }}</span>
+                            <i class="arrow" [ngClass]="{'rotated': panel.expanded}"></i>
+                        </div>
+                        <div *ngIf="panel.expanded" class="panel-content">
+                            <div class="stores-details pt-2" *ngFor="let panel of panel.interneldata">
+                                <h3>{{ panel.shop }}</h3>
+                                <p>{{ panel.address }}</p>
+                                <p><b>Contact Person :</b> {{panel.contactperson}}</p>
+                                <a href="mailto: {{panel.email}}"><b>Email :</b> {{panel.email}}</a><br>
+                                <a href="tel: {{panel.phone1}}"><b>Phone1 :</b> {{panel.phone1}}</a><br>
+                                <a class="mb-1 d-block" href="tel: {{panel.phone2}}"><b>Phone2 :</b>
+                                    {{panel.phone2}}</a>
+                                <span class="pill-red"><b>State :</b> {{panel.state}}</span>
+                                <span class="pill-blue"><b>City :</b> {{panel.city}}</span>
+                                <a href="{{panel.location}}" target="_blank"
+                                    class="mt-2 btn btn-primary d-block w-100">View Location</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+            <div class="col-sm-3">
+                <h4>East Bharat</h4>
+                <div class="accordion">
+                    <div *ngFor="let panel of eastcenters" class="panel">
+                        <div class="panel-header" (click)="togglePanel(panel)">
+                            <span style="text-transform: uppercase;">{{ panel.state }}</span>
+                            <i class="arrow" [ngClass]="{'rotated': panel.expanded}"></i>
+                        </div>
+                        <div *ngIf="panel.expanded" class="panel-content">
+                            <div class="stores-details pt-2" *ngFor="let panel of panel.interneldata">
+                                <h3>{{ panel.shop }}</h3>
+                                <p>{{ panel.address }}</p>
+                                <p><b>Contact Person :</b> {{panel.contactperson}}</p>
+                                <a href="mailto: {{panel.email}}"><b>Email :</b> {{panel.email}}</a><br>
+                                <a href="tel: {{panel.phone1}}"><b>Phone1 :</b> {{panel.phone1}}</a><br>
+                                <a class="mb-1 d-block" href="tel: {{panel.phone2}}"><b>Phone2 :</b>
+                                    {{panel.phone2}}</a>
+                                <span class="pill-red"><b>State :</b> {{panel.state}}</span>
+                                <span class="pill-blue"><b>City :</b> {{panel.city}}</span>
+                                <a href="{{panel.location}}" target="_blank"
+                                    class="mt-2 btn btn-primary d-block w-100">View Location</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-sm-3">
+                <h4>West Bharat</h4>
+                <div class="accordion">
+                    <div *ngFor="let panel of westcenters" class="panel">
+                        <div class="panel-header" (click)="togglePanel(panel)">
+                            <span style="text-transform: uppercase;">{{ panel.state }}</span>
+                            <i class="arrow" [ngClass]="{'rotated': panel.expanded}"></i>
+                        </div>
+                        <div *ngIf="panel.expanded" class="panel-content">
+                            <div class="stores-details pt-2" *ngFor="let panel of panel.interneldata">
+                                <h3>{{ panel.shop }}</h3>
+                                <p>{{ panel.address }}</p>
+                                <p><b>Contact Person :</b> {{panel.contactperson}}</p>
+                                <a href="mailto: {{panel.email}}"><b>Email :</b> {{panel.email}}</a><br>
+                                <a href="tel: {{panel.phone1}}"><b>Phone1 :</b> {{panel.phone1}}</a><br>
+                                <a class="mb-1 d-block" href="tel: {{panel.phone2}}"><b>Phone2 :</b>
+                                    {{panel.phone2}}</a>
+                                <span class="pill-red"><b>State :</b> {{panel.state}}</span>
+                                <span class="pill-blue"><b>City :</b> {{panel.city}}</span>
+                                <a href="{{panel.location}}" target="_blank"
+                                    class="mt-2 btn btn-primary d-block w-100">View Location</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>

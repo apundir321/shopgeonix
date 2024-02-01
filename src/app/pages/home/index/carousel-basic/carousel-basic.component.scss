@@ -10,6 +10,7 @@
         color: white;
 
         .extra {
+            text-align: left;
 
             h3 span {
                 color: #df6616;
@@ -26,8 +27,13 @@
             }
 
             h1 {
-                font-size: 6vw;
+                font-size: 3.2vw;
                 color: white;
+                font-weight: 700;
+
+                span.second.text {
+                    font-weight: 400 !important;
+                }
             }
 
             p {
@@ -84,7 +90,11 @@
     }
 
     .one {
-        background-image: url('/assets/images/Geonix\ Hero\ Banner.jpeg');
+        background-image: url('/assets/images/background-two.jpeg');
+        background-size: cover;
+    }
+    .two {
+        background-image: url('/assets/images/background-two.jpeg');
         background-size: cover;
     }
 }
@@ -95,11 +105,13 @@
     padding: 10px 20px;
     font-size: 18px;
     font-weight: 600;
+    max-width: 145px;
     color: black;
     position: relative;
     overflow: hidden;
     color: transparent;
     background-color: white;
+    border-radius: 5px;
 
     span {
         position: absolute;
@@ -108,7 +120,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
-        color: black;
+        color: #2d406d;
     }
 }
 
@@ -116,7 +128,7 @@
     content: '';
     width: 0px;
     height: 100%;
-    background-color: black;
+    background-color: #2d406d;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -138,19 +150,36 @@
     }
 }
 
+.homeslider-main.two {
+    h1 {
+        span.second.text {
+            font-size: 4vw;
+        }
+    }
+}
+
 // mobile size style starts here
 
 @media screen and (max-width: 576px) {
 
     .homeslider {
         .homeslider-main {
-            align-items: flex-start !important;
+            align-items: center !important;
+            justify-content: center !important;
             padding-top: 6vw;
             min-height: 125vw;
-            box-shadow: inset 0 700px #0000003d;            
+            box-shadow: inset 0 700px #0000003d;
+            padding-left: 0px; 
+            .extra {
+                text-align: center;
+            }    
 
             h3.smart {
                 font-size: 4vw !important;
+            }
+
+            h1 {
+                font-size: 35px !important;
             }
 
             .desktop-image, .hdd, .motherboard {
@@ -176,12 +205,26 @@
             }
 
             .shop-white-btn {
-                display: none;
+                min-width: 100px;
+                font-size: 14px;
+                margin-top: 200px !important;
+            }
+        }
+
+        .homeslider-main.two {
+            h1 {
+                span.second.text {
+                font-size: 45px !important;
+                }
             }
         }
 
         .one {
-            background-image: url('/assets/images/Mobile\ GIF\ Geonix.jpeg');
+            background-image: url('/assets/images/mobile-background-two.jpeg');
+            background-size: cover;
+        }
+        .two {
+            background-image: url('/assets/images/mobile-background-two.jpeg');
             background-size: cover;
         }
     }

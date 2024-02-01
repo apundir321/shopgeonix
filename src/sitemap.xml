@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://geonix.in//</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://geonix.in/service-centers</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://geonix.in/become-trade-partner</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://geonix.mcrm.in/serual_no_search.php</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://geonix.in/shop/sidebar/3cols?category=3&amp;page=1</loc>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

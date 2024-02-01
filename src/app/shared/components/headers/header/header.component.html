@@ -50,6 +50,10 @@
 
             <div class="header-right">
                 <!-- <molla-compare-menu></molla-compare-menu> -->
+                <a href="/assets/images/Geonix Horizontal Product brochure.pdf" download>
+                    <img src="/assets/images/download.gif" class="img-fluid" style="width: 50px; margin: auto;">
+                    <p style="font-weight: 600; font-size: 14px;">Brochure</p>
+                </a>
                 <div *ngIf="isTrue==true" class="account">
                     <a routerLink="/shop/dashboard" title="My account">
                         <div class="icon profile-icon">
@@ -61,11 +65,11 @@
                         <!-- <p>Account</p> -->
                     </a>
                 </div>
-                <molla-wishlist-menu></molla-wishlist-menu>
+                <!-- <molla-wishlist-menu></molla-wishlist-menu>
 
-                <molla-cart-menu></molla-cart-menu>
+                <molla-cart-menu></molla-cart-menu> -->
             </div>
-            <div class="login-buttons">
+            <!-- <div class="login-buttons">
                 <ul class="top-menu">
                     <li>
                         <a href="javascript:;" class="pl-4">Links <i class="fa-solid fa-caret-down"></i></a>
@@ -83,7 +87,7 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -93,7 +97,7 @@
 
                 <div class="header-center">
                     <!-- <molla-main-menu></molla-main-menu> -->
-                    <ul class="newcat">
+                    <ul class="newcat" style="display: flex;">
                         <li class="megamenu-main">Categories <i class="fa-solid fa-chevron-down"></i>
                             <div class="megamenu-child">
                                 <div class="div-category">
@@ -288,8 +292,23 @@
                         </li>
                         <li [routerLink]="['shop/sidebar/3cols/']" [queryParams]="{category: 2,'page':1}">Shop</li>
                         <!-- <li routerLink='shop/sidebar/3cols/'>About</li> -->
-                        <li routerLink='/service-centers'>Service Centers</li>
-                        <li routerLink='/track-order'><i class="fa-solid fa-location-dot"></i> Track Order</li>
+                        <a class="main-link bulk" href="http://becomepartner.geonix.in/">
+                            <li>Bulk/Corporate Orders
+                            </li>
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                        </a>
+                        <li routerLink='/become-trade-partner' style="display: inline-flex; align-items: center; padding: 0px;"> <img src="/assets/images/icons/wired-outline-1103-confetti.gif" style="max-width: 50px;"> Become Partner</li>
+                        <a class="main-link" href="https://geonix.mcrm.in/serual_no_search.php">
+                            <li>
+                                Check Warranty
+                            </li>
+                        </a>
+                        <a class="main-link" href="https://geonix.in/service-centers">
+                            <li>Service Centers</li>
+                        </a>
                         <!-- <li routerLink='/blogs'> Blogs </li> -->
                     </ul>
                 </div>
