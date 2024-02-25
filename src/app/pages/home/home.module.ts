@@ -50,6 +50,7 @@ import { ExtendedWarrantyComponent } from './extended-warranty/extended-warranty
 import { AsmQueriesComponent } from './asm-queries/asm-queries.component';
 import { AllServiceCentersComponent } from './service-centers/all-service-centers/all-service-centers.component';
 import { ServicecenterTryComponent } from './service-centers/servicecenter-try/servicecenter-try.component';
+import { NewhomeComponent } from './index/newhome/newhome.component';
 
 @NgModule({
 	declarations: [
@@ -93,6 +94,7 @@ import { ServicecenterTryComponent } from './service-centers/servicecenter-try/s
   AsmQueriesComponent,
   AllServiceCentersComponent,
   ServicecenterTryComponent,
+  NewhomeComponent,
 	],
 
 	imports: [

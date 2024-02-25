@@ -35,6 +35,7 @@ import { ExtendedWarrantyComponent } from './pages/home/extended-warranty/extend
 import { AsmQueriesComponent } from './pages/home/asm-queries/asm-queries.component';
 import { AllServiceCentersComponent } from './pages/home/service-centers/all-service-centers/all-service-centers.component';
 import { ServicecenterTryComponent } from './pages/home/service-centers/servicecenter-try/servicecenter-try.component';
+import { NewhomeComponent } from './pages/home/index/newhome/newhome.component';
 
 const routes: Routes = [
 	
@@ -118,6 +119,10 @@ const routes: Routes = [
 			{
 				path: 'service-centers-try',
 				component: ServicecenterTryComponent
+			},
+			{
+				path: 'newhomepage',
+				component: NewhomeComponent
 			},
 			// {
 			// 	path: 'aboutUs',

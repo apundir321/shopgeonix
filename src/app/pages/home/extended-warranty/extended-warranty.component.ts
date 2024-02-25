@@ -18,6 +18,8 @@ export class ExtendedWarrantyComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  file: any = {};
+
   formData = {
     name: "",
     mobileno: "",
@@ -31,11 +33,13 @@ export class ExtendedWarrantyComponent implements OnInit {
 
   onSubmit() {
     console.log('form data is consoled here', this.formData)
+    const file = new FormData();
+    file.append('file', this.file.data);
 
     if((this.formData.name == "" || this.formData.name == null) || (this.formData.mobileno == "" || this.formData.mobileno == null) || (this.formData.email == "" || this.formData.email == null) || (this.formData.state == "" || this.formData.state == null) || (this.formData.marketName == "" || this.formData.marketName == null) || (this.formData.serialNumber == "" || this.formData.serialNumber == null) || (this.formData.prodeuctName == "" || this.formData.prodeuctName == null) || (this.formData.note == "" || this.formData.note == null)){
       this.toastr.error('all fields are required')
     }else {
-      this.http.post('https://geonixbackend.in/product/insert_invoice', this.formData)
+      this.http.post(`https://geonixbackend.in/product/insert_invoice?name=${this.formData.name}&mobile=${this.formData.mobileno}&email=${this.formData.email}&state=${this.formData.state}&marketName=${this.formData.marketName}&serialNumber=${this.formData.serialNumber}&productName=${this.formData.prodeuctName}&note=${this.formData.note}`, file)
       .subscribe(response => {
         console.log('Form submitted successfully!', response);
         this.route.navigate(["/thank-you"])
@@ -64,8 +68,10 @@ export class ExtendedWarrantyComponent implements OnInit {
     // });
   }
 
-  onFileChange(event: any) {  
-    const file = event.target.files[0]
-    console.log('file is console here', file)
+  onFileChange(event: any) {
+    const fileList: FileList = event.target.files;
+    if (fileList.length > 0) {
+      this.file.data = fileList[0];
+    }
   }
 }

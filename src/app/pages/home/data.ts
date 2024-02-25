@@ -106,6 +106,30 @@ export const blogSlider = {
         }
     }
 }
+
+export const teamslider = {
+    items:3,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:500,
+    autoplayHoverPause:true,
+    responsive: {
+        0: {
+            items:2
+        },
+        480: {
+            items:2
+        },
+        768: {
+            items:3
+        },
+        992: {
+            items:4
+        }
+    }
+}
+
 interface Category {
     image: string;
     name: string;
